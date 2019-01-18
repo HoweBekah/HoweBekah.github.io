@@ -26,8 +26,11 @@ h2 {
     border-bottom: 1px solid #bbb;
 }
 
-li a:hover, footer a:hover{
+li a:hover, {
     background-color: antiquewhite;
+}
+footer a:hover {
+    background-color: rgb(253, 130, 116);
 }
 main {
     font-size: 1.5rem;

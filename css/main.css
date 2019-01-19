@@ -43,7 +43,7 @@ main {
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 100%;
+    max-width: 80%;
 }
 
 header, footer, footer a {

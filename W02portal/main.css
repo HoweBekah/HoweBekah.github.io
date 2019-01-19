@@ -26,7 +26,7 @@ h2 {
     border-bottom: 1px solid #bbb;
 }
 
-li a:hover, {
+#assignmentnames a:hover {
     background-color: antiquewhite;
 }
 footer a:hover {

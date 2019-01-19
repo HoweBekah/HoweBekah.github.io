@@ -23,7 +23,7 @@ h2 {
     font-size: 2em;
     text-align: left;
     padding: .5rem;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 2px solid  rgb(253, 130, 116);
 }
 
 li a:hover {

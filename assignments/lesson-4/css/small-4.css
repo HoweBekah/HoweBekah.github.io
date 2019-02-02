@@ -58,7 +58,7 @@ h3 {
   text-align: center;
 }
 #summarytitle {
-  -webkit-text-stroke: 5px #75485e;
+  -webkit-text-stroke: 1px #75485e;
 }
 article {
   background-color: #f4fbeb;

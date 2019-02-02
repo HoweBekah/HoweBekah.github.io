@@ -1,71 +1,94 @@
 #logo {
   position: absolute;
-  top: 0px;
-  background-color: #ffffff;
   border: solid thick #cb904d;
-  width: 150px;
+  width: 15%;
   height: auto;
+  align-self: center;
 }
 
 nav {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   background-color: #75485e;
-  padding-top: 5px;
-  padding-bottom: 5px;
   width: 75%;
-  text-align: right;
-  padding-right: 20px;
-  width: 200px;
-  height: 150px;
-  overflow-y: auto;
+
+  text-align: center;
+  margin: auto;
 }
 nav a {
   color: #f4fbeb;
   font-size: 1.1em;
-  font-weight: bold;
+  height: auto;
+  display: block;
+  text-decoration: none;
+  padding: 5px;
 }
 nav a:hover {
-  background-color: #75485e;
-  color: #f4fbeb;
-
-  box-shadow: 5px 5px 5px bf4fbeb;
+  background-color: #f4fbeb;
+  color: #75485e;
+}
+ul {
+  list-style-type: none;
 }
 
-nav li {
-  
-}
-
-
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #51a3a3;
+  text-align: center;
 }
 
+#motto {
+  color: #75485e;
+}
 #content {
   width: 75%;
   margin: 0 auto;
+  text-align: center;
+  align-content: center;
 }
 
 h2,
 h1,
 h3 {
-  font-family: 'Fjalla One', sans-serif;
-  margin: 0px;
+  font-family: "Fjalla One", sans-serif;
+  text-align: center;
 }
-h1 {
-  padding: 0px;
-  text-decoration: underline;
+#summarytitle {
+  -webkit-text-stroke: 5px #75485e;
 }
-
-p {
-  margin: 0px;
+article {
+  background-color: #f4fbeb;
+}
+#summarybox {
+  background-color: #cb904d;
+  width: 35%;
+  display: flex;
+  display: -webkit-flex;
+  position: relative;
+}
+#snowidaho {
+  width: 60%;
+  height: auto;
+}
+#contactbox {
+  background-color: #75485e;
+  color: #dfcc74;
+}
+#map {
+  width: 200px;
+  height: auto;
+  margin: auto;
 }
 body {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   background-color: #dfcc74;
+  text-align: center;
 }
 
-.foot {
+#socialmedia {
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
@@ -74,8 +97,12 @@ body {
   padding-top: 15px;
   justify-content: space-between;
 }
+#copywrite {
+  display: inline;
+}
 img {
   max-width: 100%;
+  text-align: center;
 }
 #facebook,
 #insta,

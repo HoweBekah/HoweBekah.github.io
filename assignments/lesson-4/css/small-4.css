@@ -58,11 +58,12 @@ h3 {
   text-align: center;
 }
 #summarytitle {
-  -webkit-text-stroke: 1px #75485e;
+  color: #75485e;
 }
 article {
   background-color: #f4fbeb;
 }
+
 #summarybox {
   background-color: #cb904d;
   width: 35%;

@@ -4,6 +4,8 @@
   background-color: #ffffff;
   border: solid thick #4a567f;
   margin-left: 20px;
+  width: 200px;
+  height: auto;
 }
 
 nav {
@@ -30,28 +32,7 @@ nav li {
   display: inline-block;
 }
 
-#whitewater-rush {
-  background-color: #4a567f;
-  width: 75%;
-}
-#familyraft,
-#grouprapids {
-  width: 77%;
-}
-#whitewater-rush,
-#riverrelax,
-#bella-test,
-#shawn-test {
-  padding: 1em;
-  width: 75%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-#grouprapids {
-  padding-top: 10px;
-}
+
 
 h1, h2, h3, h4, h5, h6 {
   color: #be5a38;
@@ -98,4 +79,6 @@ img {
 #twitter {
   margin-left: 10px;
   margin-right: 10px;
+  width: 100px;
+  height: auto;
 }

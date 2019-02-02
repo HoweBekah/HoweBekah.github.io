@@ -2,14 +2,14 @@
   position: absolute;
   top: 0px;
   background-color: #ffffff;
-  border: solid thick #4a567f;
-  margin-left: 20px;
-  width: 200px;
+  border: solid thick #cb904d;
+  width: 150px;
   height: auto;
 }
 
 nav {
-  background-color: #fbee7c;
+  font-family: 'Fjalla One', sans-serif;
+  background-color: #75485e;
   padding-top: 5px;
   padding-bottom: 5px;
   width: 75%;
@@ -17,15 +17,15 @@ nav {
   padding-right: 20px;
 }
 nav a {
-  color: #4a567f;
+  color: #f4fbeb;
   font-size: 1.1em;
   font-weight: bold;
 }
 nav a:hover {
-  background-color: #4a567f;
-  color: #fbee7c;
+  background-color: #75485e;
+  color: #f4fbeb;
 
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px bf4fbeb;
 }
 
 nav li {
@@ -35,7 +35,7 @@ nav li {
 
 
 h1, h2, h3, h4, h5, h6 {
-  color: #be5a38;
+  color: #51a3a3;
 }
 
 #content {
@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 h2,
 h1,
 h3 {
-  font-family: "Gloria Hallelujah", cursive;
+  font-family: 'Fjalla One', sans-serif;
   margin: 0px;
 }
 h1 {
@@ -58,8 +58,8 @@ p {
   margin: 0px;
 }
 body {
-  font-family: "PT Serif", serif;
-  background-color: #b7d9f4;
+  font-family: 'Libre Baskerville', serif;
+  background-color: #dfcc74;
 }
 
 .foot {

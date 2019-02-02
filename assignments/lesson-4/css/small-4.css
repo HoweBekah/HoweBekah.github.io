@@ -1,0 +1,101 @@
+#logo {
+  position: absolute;
+  top: 0px;
+  background-color: #ffffff;
+  border: solid thick #4a567f;
+  margin-left: 20px;
+}
+
+nav {
+  background-color: #fbee7c;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 75%;
+  text-align: right;
+  padding-right: 20px;
+}
+nav a {
+  color: #4a567f;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+nav a:hover {
+  background-color: #4a567f;
+  color: #fbee7c;
+
+  box-shadow: 5px 5px 5px black;
+}
+
+nav li {
+  display: inline-block;
+}
+
+#whitewater-rush {
+  background-color: #4a567f;
+  width: 75%;
+}
+#familyraft,
+#grouprapids {
+  width: 77%;
+}
+#whitewater-rush,
+#riverrelax,
+#bella-test,
+#shawn-test {
+  padding: 1em;
+  width: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+#grouprapids {
+  padding-top: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #be5a38;
+}
+
+#content {
+  width: 75%;
+  margin: 0 auto;
+}
+
+h2,
+h1,
+h3 {
+  font-family: "Gloria Hallelujah", cursive;
+  margin: 0px;
+}
+h1 {
+  padding: 0px;
+  text-decoration: underline;
+}
+
+p {
+  margin: 0px;
+}
+body {
+  font-family: "PT Serif", serif;
+  background-color: #b7d9f4;
+}
+
+.foot {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  width: 77%;
+  align-items: flex-end;
+  padding-top: 15px;
+  justify-content: space-between;
+}
+img {
+  max-width: 100%;
+}
+#facebook,
+#insta,
+#twitter {
+  margin-left: 10px;
+  margin-right: 10px;
+}

@@ -1,16 +1,35 @@
 #logo {
-  position: absolute;
-  border: solid thick #cb904d;
-  width: 15%;
+  width: 25%;
   height: auto;
-  align-self: center;
-  background-color: white;
+  float: left;
+  padding: 10px;
 }
-
+.top {
+  width: 100%;
+  background-color: #cb904d;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  color: #75485e;
+  text-align: center;
+  display: block;
+}
+.top #titlemotto {
+  width: 75%;
+  float: right;
+}
+#motto {
+  margin-top: -5px;
+  padding-bottom: 10px;
+}
+#webname {
+  color: #f4fbeb;
+  padding-top: 10px;
+  letter-spacing: 1px;
+}
 nav {
   font-family: "Fjalla One", sans-serif;
   background-color: #75485e;
-  width: 75%;
+  width: 100%;
 
   text-align: center;
   margin: auto;
@@ -27,10 +46,21 @@ nav a:hover {
   background-color: #f4fbeb;
   color: #75485e;
 }
+
+a.current {
+  background: #51a3a3;
+}
 ul {
+  padding-left: 0px;
+  margin-left: 0px;
   list-style-type: none;
 }
-
+#preston {
+  border: thick solid #75485e;
+  border-radius: 8px;
+  padding: 5px;
+  display: inline-block;
+}
 h1,
 h2,
 h3,
@@ -41,11 +71,8 @@ h6 {
   text-align: center;
 }
 
-#motto {
-  color: #75485e;
-}
 #content {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   align-content: center;
@@ -59,6 +86,7 @@ h3 {
 }
 #summarytitle {
   color: #75485e;
+  font-weight: bold;
 }
 article {
   background-color: #f4fbeb;
@@ -66,14 +94,15 @@ article {
 
 #summarybox {
   background-color: #cb904d;
-  width: 35%;
+  width: 40%;
   display: flex;
   display: -webkit-flex;
-  position: relative;
 }
+
 #snowidaho {
-  width: 60%;
+  width: 75%;
   height: auto;
+  padding-bottom: 10px;
 }
 #contactbox {
   background-color: #75485e;
@@ -83,6 +112,7 @@ article {
   width: 200px;
   height: auto;
   margin: auto;
+  padding-bottom: 10px;
 }
 body {
   font-family: "Libre Baskerville", serif;
@@ -94,7 +124,7 @@ body {
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
-  width: 77%;
+  width: 50%;
   align-items: flex-end;
   padding-top: 15px;
   justify-content: space-between;

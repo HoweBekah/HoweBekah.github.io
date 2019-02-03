@@ -13,21 +13,35 @@
       @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville");
     </style>
     <title>Preston, ID Weather</title>
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script>
+      $(function() {
+        $("a").each(function() {
+          if ($(this).prop("href") == window.location.href) {
+            $(this).addClass("current");
+          }
+        });
+      });
+    </script>
   </head>
   <body>
     <div id="content">
       <header>
-        <div id="logo">
+        <div id="logo" class="top">
           <a href="index.html"
             ><img src="images/logo.jpg" alt="Southeast ID The Weather logo"
           /></a>
         </div>
-        <h1 id="webname">Southeast ID the Weather</h1>
-        <div id="motto">We ID the weather for you!</div>
+        <div id="titlemotto" class="top">
+          <h1 id="webname">Southeast ID the Weather</h1>
+          <div id="motto">We ID the weather for you!</div>
+        </div>
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="lesson-4/preston-4.html">Preston</a></li>
+            <li><a href="random.html">Home</a></li>
+            <li>
+              <a href="preston-4.html">Preston</a>
+            </li>
             <li><a href="random.html">Soda Springs</a></li>
             <li><a href="random.html">Fish Haven</a></li>
             <li><a href="random.html">Storm Center</a></li>
@@ -36,9 +50,9 @@
         </nav>
       </header>
       <main>
-        <h1>Preston</h1>
+        <h1 id="preston">Preston</h1>
         <section id="weathersummary">
-          <img src="images/heroimage.jpg" alt="Snow falling" />
+          <img id="snowfall" src="images/heroimage.jpg" alt="Snow falling" />
           <div id="summarybox">
             <h2 id="summarytitle">
               Weather Summary

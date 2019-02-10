@@ -1,8 +1,9 @@
-#logo {
-  width: 2rem;
+#logo  {
+  width: 5rem;
   height: auto;
   float: left;
   padding: 10px;
+  margin: auto;
 }
 .top {
   width: 75%;
@@ -12,6 +13,7 @@
   color: #75485e;
   text-align: center;
   display: block;
+  margin: auto;
 }
 .top #titlemotto {
   width: 50%;
@@ -72,7 +74,7 @@ h6 {
 }
 
 #content {
-  width: 100%;
+  width: 75%;
   margin: 0 auto;
   text-align: center;
   align-content: center;

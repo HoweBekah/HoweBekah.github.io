@@ -4,6 +4,7 @@
   float: left;
   padding: 10px;
 }
+
 .top {
   width: 100%;
   background-color: #cb904d;
@@ -13,19 +14,23 @@
   text-align: center;
   display: block;
 }
+
 .top #titlemotto {
   width: 75%;
   float: right;
 }
+
 #motto {
   margin-top: -5px;
   padding-bottom: 10px;
 }
+
 #webname {
   color: #f4fbeb;
   padding-top: 10px;
   letter-spacing: 1px;
 }
+
 nav {
   font-family: "Fjalla One", sans-serif;
   background-color: #75485e;
@@ -34,6 +39,9 @@ nav {
   text-align: center;
   margin: auto;
 }
+
+
+
 nav a {
   color: #f4fbeb;
   font-size: 1.1em;
@@ -42,6 +50,7 @@ nav a {
   text-decoration: none;
   padding: 5px;
 }
+
 nav a:hover {
   background-color: #f4fbeb;
   color: #75485e;
@@ -50,17 +59,20 @@ nav a:hover {
 a.current {
   background: #51a3a3;
 }
+
 ul {
   padding-left: 0px;
   margin-left: 0px;
   list-style-type: none;
 }
+
 #preston {
   border: thick solid #75485e;
   border-radius: 8px;
   padding: 5px;
   display: inline-block;
 }
+
 h1,
 h2,
 h3,
@@ -84,10 +96,12 @@ h3 {
   font-family: "Fjalla One", sans-serif;
   text-align: center;
 }
+
 #summarytitle {
   color: #75485e;
   font-weight: bold;
 }
+
 article {
   background-color: #f4fbeb;
 }
@@ -104,16 +118,19 @@ article {
   height: auto;
   padding-bottom: 10px;
 }
+
 #contactbox {
   background-color: #75485e;
   color: #dfcc74;
 }
+
 #map {
   width: 200px;
   height: auto;
   margin: auto;
   padding-bottom: 10px;
 }
+
 body {
   font-family: "Libre Baskerville", serif;
   background-color: #dfcc74;
@@ -129,13 +146,16 @@ body {
   padding-top: 15px;
   justify-content: space-between;
 }
+
 #copywrite {
   display: inline;
 }
+
 img {
   max-width: 100%;
   text-align: center;
 }
+
 #facebook,
 #insta,
 #twitter {

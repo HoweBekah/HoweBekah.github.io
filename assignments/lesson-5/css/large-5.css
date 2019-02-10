@@ -48,18 +48,22 @@ nav a {
     color: #f4fbeb;
     font-size: 1.5em;
     height: auto;
-
     display: inline-block;
-
     text-decoration: none;
     padding: 5px;
-
 }
-
 
 nav a:hover {
     background-color: #f4fbeb;
     color: #75485e;
+}
+
+.dropbtn {
+    display: none;
+}
+
+#content {
+    align-items: center;
 }
 
 a.current {
@@ -70,7 +74,6 @@ ul {
     padding-left: 0px;
     margin-left: 0px;
     list-style-type: none;
-
 }
 
 #preston {
@@ -78,9 +81,6 @@ ul {
     border-radius: .5rem;
     padding: .5rem;
     display: inline-block;
-
-
-
 }
 
 h1,
@@ -110,12 +110,57 @@ h3 {
 #summarytitle {
     color: #75485e;
     font-weight: bold;
+    float: left;
+}
+
+#weathersummary {
+    overflow: wrap;
+    position: relative;
+    display: inline-block;
+    display: -webkit-flex;
+
+    justify-items: center;
+}
+
+#summarybox {
+    padding: .5rem;
+    background-color: #cb904d;
+    width: 40%;
+    height: auto;
+    z-index: 2;
+    left: 2rem;
+    position: absolute;
+    box-shadow: .5rem .5rem .5rem #51a3a3;
+    display: block;
+}
+
+#summarybox p {
+    text-align: left;
+    display: block;
+}
+
+#snowfall {
+
+    width: 75%;
+    z-index: 1;
+    position: absolute;
+    top: 2rem;
 }
 
 article {
     background-color: #f4fbeb;
     padding: 1rem;
     clear: both;
+    display: flex;
+    align-items: center;
+}
+
+#snowidaho {
+    width: 50%;
+    height: 40%;
+    float: left;
+    padding-left: .5rem;
+
 }
 
 #forcast {
@@ -135,8 +180,6 @@ article {
     grid-auto-rows: 1fr 1fr;
     align-items: center;
     margin: auto;
-
-
 }
 
 #day1,
@@ -177,7 +220,6 @@ article {
 
 #days li {
     float: left;
-
 }
 
 #weather1,
@@ -221,29 +263,7 @@ article {
     display: -webkit-flex;
 }
 
-#snowidaho {
-    width: 40%;
-    height: auto;
 
-}
-
-#contactbox {
-    margin: 0 auto;
-    background-color: #75485e;
-    color: #dfcc74;
-    display: flex;
-
-
-}
-
-
-
-#map {
-    width: 10rem;
-    height: auto;
-    margin: auto;
-    float: right;
-}
 
 body {
     font-family: "Libre Baskerville", serif;
@@ -253,9 +273,7 @@ body {
 
 
 
-#copywrite {
-    display: inline;
-}
+
 
 img {
     max-width: 100%;
@@ -267,8 +285,55 @@ footer {
     margin: auto;
 }
 
-#socialmedia {
+#contactbox {
+    margin: 0 auto;
+    background-color: #75485e;
+    color: #dfcc74;
+    display: grid;
+    grid-auto-columns: repeat(3, 1fr);
+    grid-auto-rows: repeat(2, 1fr);
+    padding: 1rem;
+    align-items: center;
+}
 
-    width: 1.5rem;
+#map {
+    width: 10rem;
     height: auto;
+    margin: auto;
+    float: right;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#contactinfo {
+
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#footbar {
+    align-items: center;
+    width: 75%;
+    display: inline-block;
+}
+
+#socialmedia {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+
+    align-items: flex-end;
+}
+
+#socialmedia li {
+
+    float: left;
+    width: 2rem;
+    height: auto;
+}
+
+#copywrite {
+    float: left;
+
+
 }

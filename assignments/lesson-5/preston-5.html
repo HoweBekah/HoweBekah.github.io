@@ -22,6 +22,24 @@
                 }
             });
         })
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
     </script>
 </head>
 
@@ -39,16 +57,21 @@
                 </div>
             </div>
             <nav id="nav">
-                <ul>
-                    <li><a href="random.html">Home</a></li>
-                    <li>
-                        <a href="preston-5.html">Preston</a>
-                    </li>
-                    <li><a href="random.html">Soda Springs</a></li>
-                    <li><a href="random.html">Fish Haven</a></li>
-                    <li><a href="random.html">Storm Center</a></li>
-                    <li><a href="random.html">Gallery</a></li>
-                </ul>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">MENU</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <ul>
+                            <li><a href="random.html">Home</a></li>
+                            <li>
+                                <a href="preston-5.html">Preston</a>
+                            </li>
+                            <li><a href="random.html">Soda Springs</a></li>
+                            <li><a href="random.html">Fish Haven</a></li>
+                            <li><a href="random.html">Storm Center</a></li>
+                            <li><a href="random.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <main>
@@ -80,48 +103,60 @@
                 </ul>
             </section>
             <article>
-                <h2>Idaho Snow Potential</h2>
-                <h4>by Kelly Sunderson</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, ex eam clita pertinax, in vis saperet interesset. Ea usu ferri indoctum
-                    mnesarchum, justo
-                    augue id vis, legendos persequeris nam at. Sit stet quando denique ne, per id docendi nominavi
-                    tincidunt, quem
-                    definiebas assueverit vix ne. Mel ex modo eruditi. In delicata perpetua ius, omnes admodum ne eum.
+                <div id="articlewords">
+                    <h2>Idaho Snow Potential</h2>
+                    <h4>by Kelly Sunderson</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, ex eam clita pertinax, in vis saperet interesset. Ea usu ferri
+                        indoctum
+                        mnesarchum, justo
+                        augue id vis, legendos persequeris nam at. Sit stet quando denique ne, per id docendi nominavi
+                        tincidunt, quem
+                        definiebas assueverit vix ne. Mel ex modo eruditi. In delicata perpetua ius, omnes admodum ne
+                        eum.
 
-                    Error graece ei sed, duo an bonorum omittantur. Quo tation legimus nusquam an, dicunt regione ne
-                    pro, ex autem omnes
-                    mea. Sit suscipit copiosae placerat ad, ut vix ubique urbanitas. Sit ad suas delectus moderatius,
-                    nonumes patrioque cu
-                    vix. At eam viris similique, mea et labitur accommodare. Cu reque essent cum.
+                        Error graece ei sed, duo an bonorum omittantur. Quo tation legimus nusquam an, dicunt regione
+                        ne
+                        pro, ex autem omnes
+                        mea. Sit suscipit copiosae placerat ad, ut vix ubique urbanitas. Sit ad suas delectus
+                        moderatius,
+                        nonumes patrioque cu
+                        vix. At eam viris similique, mea et labitur accommodare. Cu reque essent cum.
 
-                    Ubique facilisi explicari te vis. Cu vis duis detraxit volutpat, facete quaeque contentiones eu
-                    vis. Legere commune cu
-                    qui, quod numquam intellegam mel ne, ne quo ubique indoctum facilisis. No cum epicuri adolescens,
-                    legimus nominati mei
-                    in, eam libris luptatum ut. Mei oblique legimus accusata in, adolescens deseruisse sit id. In sea
-                    facer persecuti, diam
-                    nonumes laboramus ut mel. Suavitate necessitatibus nam ne, audire forensibus ad vel.
-                </p>
+                        Ubique facilisi explicari te vis. Cu vis duis detraxit volutpat, facete quaeque contentiones eu
+                        vis. Legere commune cu
+                        qui, quod numquam intellegam mel ne, ne quo ubique indoctum facilisis. No cum epicuri
+                        adolescens,
+                        legimus nominati mei
+                        in, eam libris luptatum ut. Mei oblique legimus accusata in, adolescens deseruisse sit id. In
+                        sea
+                        facer persecuti, diam
+                        nonumes laboramus ut mel. Suavitate necessitatibus nam ne, audire forensibus ad vel.
+                    </p>
+                </div>
+
                 <img id="snowidaho" src="images/articlephoto.jpg" alt="Snowboarder on fresh powder" />
             </article>
         </main>
         <footer>
             <div id="contactbox">
                 <div id="contactinfo">
-                    <p>Contact info. Number. Email</p>
+                    <p>Contact info.<br><br>Number.<br><br>Email</p>
                 </div>
-                <div id="socialmedia">
-                    <a href="https://www.facebook.com/"><img src="images/fblogo.png" alt="facebook icon" id="facebook" /></a>
-                    <a href="https://www.instagram.com/"><img src="images/instagramlogo.jpg" alt="instagram icon" id="insta" /></a>
-                    <a href="https://twitter.com/?lang=en"><img src="images/twitterlogo.png" alt="twitter icon" id="twitter" /></a>
-                </div>
+
                 <div id="map">
                     <img src="images/prestonmap.jpg" alt="Map of Preston, ID." />
                 </div>
 
             </div>
             <div id="footerbar">
+
+                <ul id="socialmedia">
+                    <li><a href="https://www.facebook.com/"><img src="images/fblogo.png" alt="facebook icon" id="facebook" /></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="images/instagramlogo.jpg" alt="instagram icon"
+                                id="insta" /></a></li>
+                    <li><a href="https://twitter.com/?lang=en"><img src="images/twitterlogo.png" alt="twitter icon" id="twitter" /></a></li>
+                </ul>
                 <div id="copywrite">
                     <p>&copy; 2019 Southeast ID the Weather - Bekah Howe</p>
                 </div>

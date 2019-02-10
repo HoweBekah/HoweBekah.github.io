@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Preston page of Southeast ID the Weather website" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small-4.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville");
+    </style>
+    <title>Preston, ID Weather</title>
+    <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script>
+        $(function () {
+            $("a").each(function () {
+                if ($(this).prop("href") == window.location.href) {
+                    $(this).addClass("current");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div id="logo" class="top">
+                <a href="index.html"></a><img src="images/logo.jpg" alt="Southeast ID The Weather logo" /></a>
+            </div>
+            <div id="titlemotto" class="top">
+                <h1 id="webname">Southeast ID the Weather</h1>
+                <div id="motto">We ID the weather for you!</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="random.html">Home</a></li>
+                    <li>
+                        <a href="preston-4.html">Preston</a>
+                    </li>
+                    <li><a href="random.html">Soda Springs</a></li>
+                    <li><a href="random.html">Fish Haven</a></li>
+                    <li><a href="random.html">Storm Center</a></li>
+                    <li><a href="random.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 id="preston">Preston</h1>
+            <section id="weathersummary">
+                <img id="snowfall" src="images/heroimage.jpg" alt="Snow falling" />
+                <div id="summarybox">
+                    <h2 id="summarytitle">
+                        Weather Summary
+                    </h2>
+                    <p>
+                        Made up weather report. Placeholder words.
+                    </p>
+                </div>
+            </section>
+            <article>
+                <h2>Article Title</h2>
+                <h4>by Author</h4>
+                <p>
+                    Article words. Sentences made up things.
+                </p>
+                <img id="snowidaho" src="images/articlephoto.jpg" alt="Snowboarder on fresh powder" />
+            </article>
+        </main>
+        <footer>
+            <div id="contactbox">
+                <div id="contactinfo">
+                    <p>Contact info. Number. Email</p>
+                </div>
+                <div id="map">
+                    <img src="images/prestonmap.jpg" alt="Map of Preston, ID." />
+                </div>
+            </div>
+            <div id="footerbar">
+                <div id="copywrite">
+                    <p>&copy; 2019 Southeast ID the Weather - Bekah Howe</p>
+                </div>
+                <div id="socialmedia">
+                    <a href="https://www.facebook.com/"><img src="images/fblogo.png" alt="facebook icon"
+                            id="facebook" /></a>
+                    <a href="https://www.instagram.com/"><img src="images/instagramlogo.jpg" alt="instagram icon"
+                            id="insta" /></a>
+                    <a href="https://twitter.com/?lang=en"><img src="images/twitterlogo.png" alt="twitter icon"
+                            id="twitter" /></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

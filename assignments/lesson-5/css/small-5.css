@@ -100,10 +100,8 @@ h3 {
   font-weight: bold;
 }
 
-
-
-#weathersummary {
-  display: flex;
+//#weathersummary {
+display: flex;
 }
 
 #summarybox {
@@ -115,9 +113,10 @@ h3 {
   position: relative;
 }
 
-#snowfall {
-  z-index: 1;
-  position: absolute;
+//#snowfall {
+width: 100%;
+z-index: 1;
+position: absolute;
 }
 
 article {
@@ -176,4 +175,8 @@ img {
   float: left;
   width: 2rem;
   height: auto;
+}
+
+#forcast {
+  display: none;
 }

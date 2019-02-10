@@ -132,7 +132,7 @@ main {
 }
 
 #weathersummary {
-  overflow: wrap;
+
   position: relative;
   display: inline-block;
   display: -webkit-flex;
@@ -168,6 +168,7 @@ article {
   background-color: #f4fbeb;
   padding: 1rem;
   z-index: 0;
+  position: relative;
 
 
 }
@@ -186,6 +187,7 @@ article {
 #contactbox {
   background-color: #75485e;
   color: #dfcc74;
+  position: relative;
 }
 
 #map {
@@ -218,6 +220,10 @@ img {
 
 #contactinfo {
   padding-top: 1rem;
+}
+
+#footerbar {
+  position: relative;
 }
 
 #facebook,

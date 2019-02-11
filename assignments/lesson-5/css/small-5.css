@@ -13,6 +13,7 @@
   color: #75485e;
   text-align: center;
   display: flex;
+  align-items: center;
 }
 
 #titlemotto {
@@ -166,6 +167,7 @@ article {
   padding: 1rem;
   z-index: 0;
   position: relative;
+  margin-top: 25rem;
 
 
 }
@@ -188,10 +190,10 @@ article {
 }
 
 #map {
-  width: 200px;
+  width: 15rem;
   height: auto;
   margin: auto;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 body {

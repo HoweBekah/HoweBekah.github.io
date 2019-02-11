@@ -12,10 +12,10 @@
   padding-bottom: 0px;
   color: #75485e;
   text-align: center;
-  display: block;
+  display: flex;
 }
 
-.top #titlemotto {
+#titlemotto {
   width: 75%;
   float: right;
 }
@@ -38,8 +38,6 @@
   cursor: pointer;
 
 }
-
-
 
 .dropdown {
 
@@ -64,11 +62,10 @@
   color: #75485e;
 }
 
-nav {
+#ddown {
   font-family: "Fjalla One", sans-serif;
   background-color: #75485e;
   width: 100%;
-
   text-align: center;
   margin: auto;
 }

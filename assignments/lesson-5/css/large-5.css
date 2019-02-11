@@ -62,9 +62,7 @@ nav a:hover {
     display: none;
 }
 
-#content {
-    align-items: center;
-}
+
 
 a.current {
     background: #51a3a3;
@@ -81,6 +79,7 @@ ul {
     border-radius: .5rem;
     padding: .5rem;
     display: inline-block;
+    text-align: center;
 }
 
 h1,
@@ -110,15 +109,14 @@ h3 {
 #summarytitle {
     color: #75485e;
     font-weight: bold;
-    float: left;
+
 }
 
 #weathersummary {
-    overflow: wrap;
     position: relative;
-    display: inline-block;
+    display: flex;
     display: -webkit-flex;
-
+    margin: auto;
     justify-items: center;
 }
 
@@ -153,6 +151,7 @@ article {
     clear: both;
     display: flex;
     align-items: center;
+
 }
 
 #snowidaho {
@@ -170,7 +169,7 @@ article {
     display: block;
     padding-top: 0;
     margin-bottom: 6rem;
-    margin-top: 1rem;
+    margin-top: 40rem;
 
 }
 

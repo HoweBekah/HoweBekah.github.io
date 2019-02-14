@@ -1,0 +1,238 @@
+#logo {
+  width: 25%;
+  height: auto;
+  float: left;
+  padding: .5rem;
+}
+
+.top {
+  width: 100%;
+  background-color: #cb904d;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  color: #75485e;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#titlemotto {
+  width: 75%;
+  float: right;
+}
+
+#motto {
+  margin-top: -5px;
+  padding-bottom: 10px;
+}
+
+#webname {
+  color: #f4fbeb;
+  padding-top: 10px;
+  letter-spacing: 1px;
+}
+
+.dropbtn {
+  background-color: #75485e;
+  color: #f4fbeb;
+  border: none;
+  cursor: pointer;
+
+}
+
+.dropdown {
+
+  overflow: hidden;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  min-width: 5rem;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f4fbeb;
+  color: #75485e;
+}
+
+#ddown {
+  font-family: "Fjalla One", sans-serif;
+  background-color: #75485e;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+nav a {
+  color: #f4fbeb;
+  font-size: 1.1em;
+  height: auto;
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav a:hover {
+  background-color: #f4fbeb;
+  color: #75485e;
+}
+
+a.current {
+  background: #51a3a3;
+}
+
+ul {
+  padding-left: 0px;
+  margin-left: 0px;
+  list-style-type: none;
+}
+
+#preston {
+  border: thick solid #75485e;
+  border-radius: 8px;
+  padding: 5px;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #51a3a3;
+  text-align: center;
+}
+
+h2,
+h1,
+h3 {
+  font-family: "Fjalla One", sans-serif;
+  text-align: center;
+}
+
+main {
+  overflow: visible;
+  position: relative;
+}
+
+#summarytitle {
+  color: #75485e;
+  font-weight: bold;
+}
+
+#weathersummary {
+
+  position: relative;
+  display: inline-block;
+  display: -webkit-flex;
+
+}
+
+#summarybox {
+  padding: .5rem;
+  background-color: #cb904d;
+  width: 40%;
+  z-index: 2;
+  left: 1rem;
+  position: absolute;
+  box-shadow: .5rem .5rem .5rem #51a3a3;
+}
+
+#summarybox p {
+  text-align: left;
+}
+
+#snowfall {
+
+  z-index: 1;
+  position: relative;
+  top: 2rem;
+}
+
+article {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-auto-rows: 7fr;
+  background-color: #f4fbeb;
+  padding: 1rem;
+  z-index: 0;
+  position: relative;
+  margin-top: 4rem;
+
+
+}
+
+#articlewords {
+  grid-row: 2/7;
+}
+
+#snowidaho {
+  grid-row: 1;
+  width: 75%;
+  height: auto;
+
+}
+
+#contactbox {
+  background-color: #75485e;
+  color: #dfcc74;
+  position: relative;
+}
+
+#map {
+  width: 15rem;
+  height: auto;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+body {
+  font-family: "Libre Baskerville", serif;
+  background-color: #dfcc74;
+  text-align: center;
+}
+
+#copywrite {
+  display: inline;
+}
+
+img {
+  max-width: 100%;
+  text-align: center;
+}
+
+#socialmedia {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+#contactinfo {
+  padding-top: 1rem;
+}
+
+#footerbar {
+  position: relative;
+}
+
+#facebook,
+#insta,
+#twitter {
+  float: left;
+  width: 2rem;
+  height: auto;
+}
+
+#forcast {
+  display: none;
+}

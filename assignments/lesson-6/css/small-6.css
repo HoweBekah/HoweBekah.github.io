@@ -73,10 +73,6 @@ nav ul.hide {
   padding: .5rem;
 }
 
-#navul {
-  display: block;
-}
-
 #navul a:hover {
   background-color: #f4fbeb;
   color: #75485e;
@@ -155,7 +151,7 @@ main {
   margin: auto;
   z-index: 1;
   position: relative;
-  top: 2rem;
+  top: 1rem;
 }
 
 article {

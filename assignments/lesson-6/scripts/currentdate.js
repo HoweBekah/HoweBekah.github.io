@@ -1,5 +1,5 @@
-var year = getFullYear();
-var monthnum = getMonth();
+var year = now.getFullYear();
+var monthnum = now.getMonth();
 switch (monthnum) {
     case 0:
         var month = "January";
@@ -38,5 +38,30 @@ switch (monthnum) {
         var month = "December";
         break;
 }
-var datenum = getDate();
-var daynum = getDay();
+var datenum = now.getDate();
+var daynum = now.getDay();
+switch (daynum) {
+    case 0:
+        var day = "Sunday";
+        break;
+    case 1:
+        var day = "Monday";
+        break;
+    case 2:
+        var day = "Tuesday";
+        break;
+    case 3:
+        var day = "Wednesday";
+        break;
+    case 4:
+        var day = "Thursday";
+        break;
+    case 5:
+        var day = "Friday";
+        break;
+    case 6:
+        var day = "Saturday";
+        break;
+}
+document.getElementById("currentdate").innerHTML = day + ", " + datenum + " " + month + " "
+year;

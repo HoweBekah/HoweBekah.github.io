@@ -220,6 +220,11 @@ img {
   position: relative;
 }
 
+#currentdate {
+  padding-bottom: .5rem;
+  font-weight: bold;
+}
+
 #facebook,
 #insta,
 #twitter {

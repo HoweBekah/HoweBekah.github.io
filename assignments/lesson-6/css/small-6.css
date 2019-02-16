@@ -67,10 +67,15 @@ nav ul.hide {
   background-color: #75485e;
   font-family: "Fjalla One",
     sans-serif;
-
 }
 
+#navul li {
+  padding: .5rem;
+}
 
+#navul {
+  display: block;
+}
 
 #navul a:hover {
   background-color: #f4fbeb;

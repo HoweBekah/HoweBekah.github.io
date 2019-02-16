@@ -47,14 +47,16 @@
     margin: auto;
 }
 
+.table {
+    display: table;
+    margin: 0 auto;
+}
+
 nav {
     font-family: "Fjalla One", sans-serif;
     background-color: #75485e;
 
     margin: 0 auto;
-
-
-
 }
 
 nav li {

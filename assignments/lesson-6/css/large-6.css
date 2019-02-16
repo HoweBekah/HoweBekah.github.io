@@ -28,6 +28,10 @@
     letter-spacing: 1px;
 }
 
+#menubutton {
+    display: none;
+}
+
 nav {
     font-family: "Fjalla One", sans-serif;
     background-color: #75485e;

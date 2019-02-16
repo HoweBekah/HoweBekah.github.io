@@ -32,60 +32,46 @@
   letter-spacing: 1px;
 }
 
-.dropbtn {
+#menubutton {
+  font-size: 1.5em;
   background-color: #75485e;
   color: #f4fbeb;
   border: none;
-  cursor: pointer;
-
-}
-
-.dropdown {
-
-  overflow: hidden;
-  width: 100%;
-  font-size: 2rem;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  min-width: 5rem;
-}
-
-.dropdown-content a {
+  text-decoration: none;
+  padding: .25rem;
   display: block;
+  width: 100%;
+  margin: auto;
 }
 
-.dropdown:hover .dropbtn {
+#menubutton:hover {
   background-color: #f4fbeb;
   color: #75485e;
 }
 
-#ddown {
-  font-family: "Fjalla One", sans-serif;
-  background-color: #75485e;
-  width: 100%;
-  text-align: center;
-  margin: auto;
+
+nav ul.hide {
+  display: none;
 }
 
-nav a {
+#navul a {
   color: #f4fbeb;
   font-size: 1.1em;
   height: auto;
   display: block;
   text-decoration: none;
-  padding: 5px;
+  padding: .25rem;
+  text-align: center;
+  background-color: #75485e;
+
 }
 
-nav a:hover {
+#navul a:hover {
   background-color: #f4fbeb;
   color: #75485e;
 }
 
-a.current {
+#navul a.current {
   background: #51a3a3;
 }
 
@@ -97,8 +83,8 @@ ul {
 
 #preston {
   border: thick solid #75485e;
-  border-radius: 8px;
-  padding: 5px;
+  border-radius: .5rem;
+  padding: .4rem;
   display: inline-block;
 }
 
@@ -127,6 +113,7 @@ main {
 #summarytitle {
   color: #75485e;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 #weathersummary {
@@ -141,6 +128,7 @@ main {
   padding: .5rem;
   background-color: #cb904d;
   width: 40%;
+  height: 70%;
   z-index: 2;
   left: 1rem;
   position: absolute;
@@ -149,10 +137,11 @@ main {
 
 #summarybox p {
   text-align: left;
+  font-size: .75rem;
 }
 
 #sunnyid {
-
+  margin: auto;
   z-index: 1;
   position: relative;
   top: 2rem;

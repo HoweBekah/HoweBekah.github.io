@@ -15,6 +15,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin: 0 auto;
+    grid-row: 1;
 }
 
 #motto {
@@ -32,12 +33,28 @@
     display: none;
 }
 
+#navandtop {
+    display: grid;
+    grid-auto-rows: 1fr 1fr;
+    row-gap: 0px;
+
+}
+
+#nav {
+    grid-row: 2;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+
 nav {
     font-family: "Fjalla One", sans-serif;
     background-color: #75485e;
-    text-align: center;
-    width: 75%;
-    margin: auto;
+
+    margin: 0 auto;
+
+
+
 }
 
 nav li {
@@ -49,9 +66,10 @@ nav a {
     color: #f4fbeb;
     font-size: 1.5em;
     height: auto;
-    display: inline-block;
+    display: block;
     text-decoration: none;
     padding: 0.3rem;
+    text-align: center;
 }
 
 nav a:hover {
@@ -59,18 +77,8 @@ nav a:hover {
     color: #75485e;
 }
 
-.dropbtn {
-    display: none;
-}
-
-a.current {
+#navul a.current {
     background: #51a3a3;
-}
-
-#myDropdown {
-    display: inline-block;
-
-    align-items: center;
 }
 
 #navul {
@@ -90,6 +98,7 @@ ul {
     padding: 0.5rem;
     display: inline-block;
     text-align: center;
+
 }
 
 h1,
@@ -305,6 +314,12 @@ footer {
 
 #footerbar {
     text-align: center;
+
+}
+
+#currentdate {
+    padding-bottom: .5rem;
+    font-weight: bold;
 }
 
 #socialmedia {

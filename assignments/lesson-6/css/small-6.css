@@ -33,7 +33,7 @@
 }
 
 #menubutton {
-  font-size: 1.5em;
+  font-size: 2em;
   background-color: #75485e;
   color: #f4fbeb;
   border: none;
@@ -42,6 +42,8 @@
   display: block;
   width: 100%;
   margin: auto;
+  font-family: "Fjalla One",
+    sans-serif;
 }
 
 #menubutton:hover {
@@ -56,15 +58,19 @@ nav ul.hide {
 
 #navul a {
   color: #f4fbeb;
-  font-size: 1.1em;
+  font-size: 1.5em;
   height: auto;
-  display: block;
+  display: -inline-block;
   text-decoration: none;
   padding: .25rem;
   text-align: center;
   background-color: #75485e;
+  font-family: "Fjalla One",
+    sans-serif;
 
 }
+
+
 
 #navul a:hover {
   background-color: #f4fbeb;

@@ -1,67 +1,66 @@
-var year = now.getFullYear();
-var monthnum = now.getMonth();
-switch (monthnum) {
-    case 0:
-        var month = "January";
-        break;
-    case 1:
-        var month = "February";
-        break;
-    case 2:
-        var month = "March";
-        break;
-    case 3:
-        var month = "April";
-        break;
-    case 4:
-        var month = "May";
-        break;
-    case 5:
-        var month = "June";
-        break;
-    case 6:
-        var month = "July";
-        break;
-    case 7:
-        var month = "August";
-        break;
-    case 8:
-        var month = "September";
-        break;
-    case 9:
-        var month = "October";
-        break;
-    case 10:
-        var month = "November";
-        break;
-    case 11:
-        var month = "December";
-        break;
-}
-var datenum = now.getDate();
-var daynum = now.getDay();
-switch (daynum) {
-    case 0:
-        var day = "Sunday";
-        break;
-    case 1:
-        var day = "Monday";
-        break;
-    case 2:
-        var day = "Tuesday";
-        break;
-    case 3:
-        var day = "Wednesday";
-        break;
-    case 4:
-        var day = "Thursday";
-        break;
-    case 5:
-        var day = "Friday";
-        break;
-    case 6:
-        var day = "Saturday";
-        break;
-}
-document.getElementById("currentdate").innerHTML = day + ", " + datenum + " " + month + " "
-year;
+var d = new Date();
+var days = new Array(7);
+days[0] = "Sunday";
+days[1] = "Monday";
+days[2] = "Tuesday";
+days[3] = "Wednesday";
+days[4] = "Thursday";
+days[5] = "Friday";
+days[6] = "Saturday";
+
+var day = days[d.getDay()];
+
+
+var year = d.getFullYear();
+
+var months = new Array(12);
+months[0] = "January";
+months[1] = "February";
+months[2] = "March";
+months[3] = "April";
+months[4] = "May";
+months[5] = "June";
+months[6] = "July";
+months[7] = "August";
+months[8] = "September";
+months[9] = "October";
+months[10] = "November";
+months[11] = "December";
+var month = months[d.getMonth()];
+
+var datenum = d.getDate();
+
+var year = d.getFullYear();
+var d = new Date();
+var days = new Array(7);
+days[0] = "Sunday";
+days[1] = "Monday";
+days[2] = "Tuesday";
+days[3] = "Wednesday";
+days[4] = "Thursday";
+days[5] = "Friday";
+days[6] = "Saturday";
+
+var day = days[d.getDay()];
+
+
+
+
+var months = new Array(12);
+months[0] = "January";
+months[1] = "February";
+months[2] = "March";
+months[3] = "April";
+months[4] = "May";
+months[5] = "June";
+months[6] = "July";
+months[7] = "August";
+months[8] = "September";
+months[9] = "October";
+months[10] = "November";
+months[11] = "December";
+var month = months[d.getMonth()];
+
+var datenum = d.getDate();
+
+document.getElementById("currentdate").innerHTML = day + ", " + datenum + " " + month + " " + year;

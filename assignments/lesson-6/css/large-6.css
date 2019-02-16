@@ -291,6 +291,7 @@ footer {
     float: right;
     grid-column: 2/3;
     grid-row: 1/2;
+    align-items: center;
 }
 
 #contactinfo {
@@ -298,10 +299,8 @@ footer {
     grid-row: 1;
 }
 
-#footbar {
-    align-items: center;
-    width: 75%;
-    display: inline-block;
+#footerbar {
+    text-align: center;
 }
 
 #socialmedia {
@@ -310,14 +309,12 @@ footer {
     flex-direction: row;
 
     align-items: flex-end;
+    justify-content: center;
+
 }
 
 #socialmedia li {
     float: left;
     width: 2rem;
     height: auto;
-}
-
-#copywrite {
-    float: left;
 }

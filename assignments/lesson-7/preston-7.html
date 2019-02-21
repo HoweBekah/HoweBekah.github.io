@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="Preston page of Southeast ID the Weather website" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/small-7.css" media="screen and (max-width: 730px)" />
-    <link rel="stylesheet" href="css/large-7.css" media="screen and (min-width: 731px)" />
+    <link rel="stylesheet" href="css/small-7.css" media="screen and (max-width: 450px)" />
+    <link rel="stylesheet" href="css/medium-7.css" media="screen and (max-width: 768px)" />
+    <link rel="stylesheet" href="css/large-7.css" media="screen and (min-width: 769px)" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville");
@@ -45,12 +46,12 @@
                         <ul class="hide" id="navul">
                             <li><a href="random.html">Home</a></li>
                             <li>
-                                <a href="preston-6.html">Preston</a>
+                                <a href="preston-7.html">Preston</a>
                             </li>
                             <li><a href="random.html">Soda Springs</a></li>
                             <li><a href="random.html">Fish Haven</a></li>
                             <li><a href="random.html">Storm Center</a></li>
-                            <li><a href="random.html">Gallery</a></li>
+                            <li><a href="gallery-7.html">Gallery</a></li>
                     </div>
 
                     </ul>
@@ -67,9 +68,15 @@
                         <h2 id="summarytitle">
                             Weather Summary
                         </h2>
-                        <p>
-                            Made up weather report. Placeholder words.
-                        </p>
+                        <div id="sumwords">
+                            <div id="currenttemp">
+                                45&#176;
+                            </div>
+                            <div id="windspeed">
+                                5 MPH
+                            </div>
+                            Wind Chill: <div id="windchill"></div>
+                        </div>
                     </div>
                 </section>
                 <section id="forcast">
@@ -155,6 +162,7 @@
             </div>
         </footer>
     </div>
+    <script src="scripts/windchill.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
 </body>

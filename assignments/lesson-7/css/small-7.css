@@ -1,3 +1,8 @@
+#navandtop {
+  display: flex;
+  flex-flow: column wrap;
+}
+
 #logo {
   width: 25%;
   height: auto;
@@ -39,7 +44,7 @@
   border: none;
   text-decoration: none;
   padding: .25rem;
-  display: block;
+
   width: 100%;
   margin: auto;
   font-family: "Fjalla One",
@@ -51,6 +56,10 @@
   color: #75485e;
 }
 
+nav {
+  display: flex;
+  flex-flow: column wrap;
+}
 
 nav ul.hide {
   display: none;
@@ -60,7 +69,7 @@ nav ul.hide {
   color: #f4fbeb;
   font-size: 1.5em;
   height: auto;
-  display: -inline-block;
+
   text-decoration: none;
   padding: .25rem;
   text-align: center;
@@ -120,7 +129,8 @@ main {
 #summarytitle {
   color: #75485e;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  margin: .2rem;
 }
 
 #weathersummary {
@@ -135,15 +145,33 @@ main {
   padding: .5rem;
   background-color: #cb904d;
   width: 40%;
-  height: 70%;
+
   z-index: 2;
   left: 1rem;
   position: absolute;
   box-shadow: .5rem .5rem .5rem #51a3a3;
 }
 
-#summarybox p {
-  text-align: left;
+#sumwords {
+  text-align: center;
+  font-size: .75rem;
+  color: #f4fbeb;
+  text-shadow: .2rem .2rem #75485e;
+}
+
+#currenttemp {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+#windspeed {
+  font-size: 1rem;
+  margin: 0;
+  padding-bottom: .3rem;
+}
+
+#windchill {
   font-size: .75rem;
 }
 

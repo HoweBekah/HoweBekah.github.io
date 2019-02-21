@@ -1,0 +1,239 @@
+#logo {
+  width: 25%;
+  height: auto;
+  float: left;
+  padding: .5rem;
+}
+
+.top {
+  width: 100%;
+  background-color: #cb904d;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  color: #75485e;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#titlemotto {
+  width: 75%;
+  float: right;
+}
+
+#motto {
+  margin-top: -5px;
+  padding-bottom: 10px;
+}
+
+#webname {
+  color: #f4fbeb;
+  padding-top: 10px;
+  letter-spacing: 1px;
+}
+
+#menubutton {
+  font-size: 2em;
+  background-color: #75485e;
+  color: #f4fbeb;
+  border: none;
+  text-decoration: none;
+  padding: .25rem;
+  display: block;
+  width: 100%;
+  margin: auto;
+  font-family: "Fjalla One",
+    sans-serif;
+}
+
+#menubutton:hover {
+  background-color: #f4fbeb;
+  color: #75485e;
+}
+
+
+nav ul.hide {
+  display: none;
+}
+
+#navul a {
+  color: #f4fbeb;
+  font-size: 1.5em;
+  height: auto;
+  display: -inline-block;
+  text-decoration: none;
+  padding: .25rem;
+  text-align: center;
+  background-color: #75485e;
+  font-family: "Fjalla One",
+    sans-serif;
+}
+
+#navul li {
+  padding: .5rem;
+}
+
+#navul a:hover {
+  background-color: #f4fbeb;
+  color: #75485e;
+}
+
+#navul a.current {
+  background: #51a3a3;
+}
+
+ul {
+  padding-left: 0px;
+  margin-left: 0px;
+  list-style-type: none;
+}
+
+#preston {
+  border: thick solid #75485e;
+  border-radius: .5rem;
+  padding: .4rem;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #51a3a3;
+  text-align: center;
+}
+
+h2,
+h1,
+h3 {
+  font-family: "Fjalla One", sans-serif;
+  text-align: center;
+}
+
+main {
+  overflow: visible;
+  position: relative;
+}
+
+#summarytitle {
+  color: #75485e;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#weathersummary {
+
+  position: relative;
+  display: inline-block;
+  display: -webkit-flex;
+
+}
+
+#summarybox {
+  padding: .5rem;
+  background-color: #cb904d;
+  width: 40%;
+  height: 70%;
+  z-index: 2;
+  left: 1rem;
+  position: absolute;
+  box-shadow: .5rem .5rem .5rem #51a3a3;
+}
+
+#summarybox p {
+  text-align: left;
+  font-size: .75rem;
+}
+
+#sunnyid {
+  margin: auto;
+  z-index: 1;
+  position: relative;
+  top: 1rem;
+}
+
+article {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-auto-rows: 7fr;
+  background-color: #f4fbeb;
+  padding: 1rem;
+  z-index: 0;
+  position: relative;
+  margin-top: 4rem;
+
+
+}
+
+#articlewords {
+  grid-row: 2/7;
+}
+
+#snowidaho {
+  grid-row: 1;
+  width: 75%;
+  height: auto;
+
+}
+
+#contactbox {
+  background-color: #75485e;
+  color: #dfcc74;
+  position: relative;
+}
+
+#map {
+  width: 15rem;
+  height: auto;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+body {
+  font-family: "Libre Baskerville", serif;
+  background-color: #dfcc74;
+  text-align: center;
+}
+
+#copywrite {
+  display: inline;
+}
+
+img {
+  max-width: 100%;
+  text-align: center;
+}
+
+#socialmedia {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+#contactinfo {
+  padding-top: 1rem;
+}
+
+#footerbar {
+  position: relative;
+}
+
+#currentdate {
+  padding-bottom: .5rem;
+  font-weight: bold;
+}
+
+#facebook,
+#insta,
+#twitter {
+  float: left;
+  width: 2rem;
+  height: auto;
+}
+
+#forcast {
+  display: none;
+}

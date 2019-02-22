@@ -133,7 +133,12 @@ main {
 
 }
 
-#picwithcap:hover {
+#picwithcap1,
+#picwithcap2,
+#picwithcap3,
+#picwithcap4,
+#picwithcap5,
+#picwithcap6:hover {
     box-shadow: 0.5rem 0.5rem 0.5rem #51a3a3;
 }
 

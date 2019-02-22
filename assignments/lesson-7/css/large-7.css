@@ -133,11 +133,11 @@ main {
 
 }
 
-#picwithcap1,
-#picwithcap2,
-#picwithcap3,
-#picwithcap4,
-#picwithcap5,
+#picwithcap1:hover,
+#picwithcap2:hover,
+#picwithcap3:hover,
+#picwithcap4:hover,
+#picwithcap5:hover,
 #picwithcap6:hover {
     box-shadow: 0.5rem 0.5rem 0.5rem #51a3a3;
 }

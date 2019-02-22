@@ -51,6 +51,9 @@
   color: #75485e;
 }
 
+nav {
+  display: block;
+}
 
 nav ul.hide {
   display: none;
@@ -161,7 +164,12 @@ section p {
   margin-top: 0;
 }
 
-section img {
+#picwithcap1,
+#picwithcap2,
+#picwithcap3,
+#picwithcap4,
+#picwithcap5,
+#picwithcap6 img {
   border-bottom: .25rem solid #cb904d;
   margin-bottom: .25rem;
 }

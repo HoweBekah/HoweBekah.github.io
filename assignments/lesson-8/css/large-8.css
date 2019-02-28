@@ -1,0 +1,412 @@
+#logo {
+    width: 5rem;
+    height: auto;
+    float: left;
+    margin: auto;
+}
+
+.top {
+    width: 75%;
+    background-color: #cb904d;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: #75485e;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
+}
+
+#motto {
+    margin-top: -5px;
+    padding-bottom: 10px;
+}
+
+#webname {
+    color: #f4fbeb;
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+
+#menubutton {
+    display: none;
+}
+
+#navandtop {
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+#nav {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+
+.table {
+    display: table;
+    margin: 0 auto;
+}
+
+nav {
+    font-family: "Fjalla One", sans-serif;
+    background-color: #75485e;
+    display: flex;
+    margin: 0 auto;
+}
+
+nav li {
+    float: left;
+    background-color: #75485e;
+}
+
+nav a {
+    color: #f4fbeb;
+    font-size: 1.5em;
+    height: auto;
+    display: block;
+    text-decoration: none;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #f4fbeb;
+    color: #75485e;
+}
+
+#navul a.current {
+    background: #51a3a3;
+}
+
+#navul {
+    margin: auto;
+}
+
+ul {
+    padding-left: 0px;
+    margin-left: 0px;
+    list-style-type: none;
+}
+
+
+#preston {
+    border: thick solid #75485e;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: inline-block;
+    text-align: center;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #51a3a3;
+    text-align: center;
+}
+
+main {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+}
+
+#gallery {
+    border: thick solid #75485e;
+    border-radius: .5rem;
+    padding: .4rem;
+    display: inline-block;
+}
+
+#galpics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+    padding: .5rem;
+
+}
+
+#picwithcap1:hover,
+#picwithcap2:hover,
+#picwithcap3:hover,
+#picwithcap4:hover,
+#picwithcap5:hover,
+#picwithcap6:hover {
+    box-shadow: 0.5rem 0.5rem 0.5rem #51a3a3;
+}
+
+
+
+#picwithcap1,
+#picwithcap2,
+#picwithcap3,
+#picwithcap4,
+#picwithcap5,
+#picwithcap6 {
+    background-color: #75485e;
+    color: #f4fbeb;
+    font-size: 1rem;
+    text-align: center;
+    padding: .35rem;
+    margin: 0;
+    justify-content: center;
+}
+
+
+
+#picwithcap1,
+#picwithcap2,
+#picwithcap3,
+#picwithcap4,
+#picwithcap5,
+#picwithcap6 img {
+    border-bottom: .35rem solid #cb904d;
+    margin-bottom: .25rem;
+}
+
+h2,
+h1,
+h3 {
+    font-family: "Fjalla One", sans-serif;
+    text-align: center;
+}
+
+#summarytitle {
+    color: #75485e;
+    font-weight: bold;
+    display: block;
+    margin: .5rem;
+}
+
+#weathersummary {
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    margin: auto;
+    justify-content: center;
+}
+
+#summarybox {
+    padding: 0.5rem;
+    background-color: #cb904d;
+    width: 30%;
+    z-index: 2;
+    left: 1rem;
+    top: 2rem;
+    display: block;
+    position: absolute;
+    box-shadow: 0.5rem 0.5rem 0.5rem #51a3a3;
+}
+
+#sumwords {
+    text-align: center;
+    display: block;
+    color: #f4fbeb;
+    text-shadow: .25rem .2rem #75485e;
+}
+
+#currenttemp {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#windspeed {
+    font-size: 1.5rem;
+    margin: 0;
+    padding-bottom: .3rem;
+}
+
+#windchill {
+    font-size: 1.25rem;
+}
+
+#sunnyid {
+
+    z-index: 1;
+    position: relative;
+}
+
+article {
+    background-color: #f4fbeb;
+    padding: 1rem;
+    clear: both;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+#snowidaho {
+    width: 50%;
+    height: 40%;
+    float: left;
+    padding-left: 0.5rem;
+}
+
+#forcast {
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    padding-top: 0;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+#days {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 2.5rem;
+    grid-column-gap: .5rem;
+}
+
+#day1,
+#day2,
+#day3,
+#day4,
+#day5 {
+    border: 0.2rem solid #75485e;
+    padding: 0.5rem;
+    font-weight: bold;
+    background-color: #f4fbeb;
+}
+
+#day1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#day2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#day3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#day4 {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+#day5 {
+    grid-column: 5;
+    grid-row: 1;
+}
+
+#days li {
+    float: left;
+}
+
+#weather1,
+#weather2,
+#weather3,
+#weather4,
+#weather5 {
+    height: 3rem;
+}
+
+#weather1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#weather2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#weather3 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#weather4 {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+#weather5 {
+    grid-column: 5;
+    grid-row: 2;
+}
+
+body {
+    font-family: "Libre Baskerville", serif;
+    background-color: #dfcc74;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    text-align: center;
+}
+
+footer {
+    width: 75%;
+    margin: auto;
+}
+
+#contactbox {
+    margin: 0 auto;
+    background-color: #75485e;
+    color: #dfcc74;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 1rem;
+    align-items: center;
+}
+
+#map {
+    width: 10rem;
+    height: auto;
+    margin: auto;
+    float: right;
+    grid-column: 3/5;
+    grid-row: 1/3;
+    align-items: center;
+}
+
+#contactinfo {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+#footerbar {
+    text-align: center;
+
+}
+
+#currentdate {
+    padding-bottom: .5rem;
+    font-weight: bold;
+}
+
+#socialmedia {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+#socialmedia li {
+    float: left;
+    width: 2rem;
+    height: auto;
+}

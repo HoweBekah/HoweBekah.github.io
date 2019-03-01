@@ -405,16 +405,82 @@ footer {
 
 }
 
+#formstorming {
+    text-align: left;
+    align-content: center;
+    width: 85%;
+    margin: auto;
+}
+
 #socialmedia li {
     float: left;
     width: 2rem;
     height: auto;
 }
 
-.stormform {
+form.stormform {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: auto;
+    background-color: #cb904d;
+    font-weight: bold;
+    font-size: 1.5rem;
+
 }
 
-.danger {
-    align-content: left;
+#inputtext {
+    grid-column: 1;
+    padding: 1rem;
+}
+
+#stormdescript {
+    grid-column: 2;
+    padding: 1rem;
+}
+
+#rangeValue {
+    text-align: center;
+}
+
+#coms {
+    margin-top: 1.5rem;
+    grid-column: 1;
+
+
+}
+
+input#submit {
+    font-size: 2rem;
+    padding: .5rem;
+    background-color: #51a3a3;
+    color: #f4fbeb;
+    box-shadow: .35rem .35rem .25rem #75485e;
+    margin: 1rem;
+}
+
+.stormsevreg {
+    margin: .5rem;
+}
+
+input.textinput {
+    margin: .5rem;
+}
+
+fieldset {
+    border: none;
+    padding: 1rem;
+}
+
+legend {
+    font-size: 2rem;
+    color: #f4fbeb;
+    border-bottom: .25rem dashed #75485e;
+}
+
+input {
+    padding: .25rem;
+}
+
+textarea {
+    margin: .25rem;
 }

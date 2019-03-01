@@ -63,87 +63,100 @@ document.getElementById("rangeValue").innerHTML = rating;
 
         <main>
             <h1 id="stormcenter">Storm Center</h1>
+            <div id="formstorming">
+                <form class="stormform">
+                    <div id="inputtext">
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <label for="fullname" class="textinput">Enter Your Full Name:</label>
+                            <input type="text" name="fullname" class="textinput" minlength="5" pattern="[A-Za-z]"
+                                required><br>
 
-            <form class="stormform">
-                <label for="fullname" class="textinput">Enter Your Full Name:</label>
-                <input type="text" name="fullname" class="textinput" minlength="5" pattern="[A-Za-z]" required>
+                            <label for="email" class="textinput">Enter Your Email:</label>
+                            <input type="email" name="email" placeholder="jonsmith@demo.com" class="textinput"><br>
 
-                <label for="email" class="textinput">Enter Your Email:</label>
-                <input type="email" name="email" placeholder="jonsmith@demo.com" class="textinput">
+                            <label for="phone" class="textinput">Enter Your Phone Number:</label>
+                            <input type="tel" name="phone" required class="textinput"><br>
 
-                <label for="phone" class="textinput">Enter Your Phone Number:</label>
-                <input type="tel" name="phone" required class="textinput">
+                            <label for="zipcode" class="textinput">Enter Your Zipcode:</label>
+                            <input type="number" name="zipcode" required class="textinput"><br>
+                            <div id="coms">
+                                <label for="comments" class="addComments">Additional Information or Comments:</label>
+                                <textarea name="comments" rows="3" cols="20" class="addComments"></textarea>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div id="stormdescript">
+                        <fieldset>
+                            <legend>Storm Information</legend>
+                            <label for="stormdate" class="textinput">Date of Storm:</label>
+                            <input type="date" name="stormdate" class="textinput"><br>
 
-                <label for="zipcode" class="textinput">Enter Your Zipcode:</label>
-                <input type="number" name="zipcode" required class="textinput">
+                            <label for="stormtype" class="textinput">Type of Storm:</label>
+                            <input type="text" name="stormtype" list="typeoptions" class="textinput" pattern="[Ff]lash [Ff]lood|[Hh]ail|[Hh]urricane|[Tt]hunderstorm|[Tt]ornado">
+                            <datalist id="typeoptions">
+                                <option>Flash Flood</option>
+                                <option>Hail</option>
+                                <option>Hurricane</option>
+                                <option>Thunderstorm</option>
+                                <option>Tornado</option>
+                            </datalist><br>
 
-                <label for="stormdate" class="textinput">Date of Storm:</label>
-                <input type="date" name="stormdate" class="textinput">
 
-                <label for="stormtype" class="textinput">Type of Storm:</label>
-                <input type="text" name="stormtype" list="typeoptions" class="textinput" pattern="[Ff]lash [Ff]lood|[Hh]ail|[Hh]urricane|[Tt]hunderstorm|[Tt]ornado">
-                <datalist id="typeoptions">
-                    <option>Flash Flood</option>
-                    <option>Hail</option>
-                    <option>Hurricane</option>
-                    <option>Thunderstorm</option>
-                    <option>Tornado</option>
-                </datalist>
+                            <label for="severity" class="stormsevreg">Severity of Storm (1-10):</label>
+                            <input type="range" name="severity" class="stormsevreg" value="5" min="1" max="10" step="1"
+                                oninput="adjustRange(this.value)" onchange="adjustRange(this.value)">
+                            <div id="rangeValue" class="stormsevreg">5</div>
 
-                <label for="severity" class="stormsevreg">Severity of Storm (1-10):</label>
-                <input type="range" name="severity" class="stormsevreg" value="5" min="1" max="10" step="1" oninput="adjustRange(this.value)"
-                    onchange="adjustRange(this.value)">
-                <div id="rangeValue" class="stormsevreg">5</div>
+                            <label for="region" class="stormsevreg">Region of Storm:</label>
+                            <select name="region" class="stormsevreg">
+                                <option value="selregion" selected disabled>Select Region</option>
+                                <option value="saab">Preston</option>
+                                <option value="sodasprings">Soda Springs</option>
+                                <option value="fishhaven">Fish Haven</option>
+                            </select><br><br>
 
-                <label for="region" class="stormsevreg">Region of Storm:</label>
-                <select name="region" class="stormsevreg">
-                    <option value="selregion" selected disabled>Select Region</option>
-                    <option value="saab">Preston</option>
-                    <option value="sodasprings">Soda Springs</option>
-                    <option value="fishhaven">Fish Haven</option>
-                </select>
-
-                <label for="in-danger" class="danger">In Danger:</label><br>
-                <input type="radio" name="in-danger" value="yes" checked class="danger"><label for="yes" class="danger">Yes</label>
-                <br>
-                <input type="radio" name="in-danger" value="maybe" class="danger"><label for="maybe" class="danger">Maybe</label>
-                <br>
-                <input type="radio" name="in-danger" value="no" class="danger"><label for="no" class="danger">No</label>
-                <br>
-
-                <label for="comments" class="addComments">Additional Information or Comments:</label>
-                <textarea name="comments" rows="3" cols="20" class="addComments"></textarea>
-
-                <input type="submit" name="submit" class="submit">
+                            <label for="in-danger" class="stormsevreg">In Danger:</label><br>
+                            <input type="radio" name="in-danger" value="yes" checked class="stormsevreg"><label for="yes"
+                                class="danger">Yes</label>
+                            <br>
+                            <input type="radio" name="in-danger" value="maybe" class="stormsevreg"><label for=" maybe"
+                                class="danger">Maybe</label>
+                            <br>
+                            <input type="radio" name="in-danger" value="no" class="stormsevreg"><label for="no" class="danger">No</label>
+                            <br>
+                    </div>
+                    </fieldset>
+            </div>
+            <input type="submit" name="submit" id="submit">
 
             </form>
-
-        </main>
-        <footer>
-            <div id="contactbox">
-                <div id="contactinfo">
-                    <p>Contact info.<br><br>Number.<br><br>Email</p>
-                    <ul id="socialmedia">
-                        <li><a href="https://www.facebook.com/"><img src="images/fblogo.png" alt="facebook icon" id="facebook" /></a></li>
-                        <li><a href="https://www.instagram.com/"><img src="images/instagramlogo.jpg" alt="instagram icon"
-                                    id="insta" /></a></li>
-                        <li><a href="https://twitter.com/?lang=en"><img src="images/twitterlogo.png" alt="twitter icon"
-                                    id="twitter" /></a></li>
-                    </ul>
-                </div>
-
-                <div id="map">
-                    <img src="images/prestonmap.jpg" alt="Map of Preston, ID." />
-                </div>
+    </div>
+    </main>
+    <footer>
+        <div id="contactbox">
+            <div id="contactinfo">
+                <p>Contact info.<br><br>Number.<br><br>Email</p>
+                <ul id="socialmedia">
+                    <li><a href="https://www.facebook.com/"><img src="images/fblogo.png" alt="facebook icon" id="facebook" /></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="images/instagramlogo.jpg" alt="instagram icon"
+                                id="insta" /></a></li>
+                    <li><a href="https://twitter.com/?lang=en"><img src="images/twitterlogo.png" alt="twitter icon" id="twitter" /></a></li>
+                </ul>
             </div>
-            <div id="footerbar">
-                <div id="copywrite">
-                    <p>&copy; 2019 | Southeast ID the Weather | Bekah Howe</p>
-                    <div id="currentdate"></div>
-                </div>
 
+            <div id="map">
+                <img src="images/prestonmap.jpg" alt="Map of Preston, ID." />
             </div>
-        </footer>
+        </div>
+        <div id="footerbar">
+            <div id="copywrite">
+                <p>&copy; 2019 | Southeast ID the Weather | Bekah Howe</p>
+                <div id="currentdate"></div>
+            </div>
+
+        </div>
+    </footer>
     </div>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/currentdate.js"></script>

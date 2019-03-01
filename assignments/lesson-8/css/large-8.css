@@ -410,3 +410,11 @@ footer {
     width: 2rem;
     height: auto;
 }
+
+.stormform {
+    margin: auto;
+}
+
+.danger {
+    align-content: left;
+}

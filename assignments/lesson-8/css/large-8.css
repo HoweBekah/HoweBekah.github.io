@@ -90,7 +90,7 @@ ul {
     list-style-type: none;
 }
 
-
+#stormcenter,
 #preston {
     border: thick solid #75485e;
     border-radius: 0.5rem;
@@ -161,11 +161,11 @@ main {
 
 
 
-#picwithcap1,
-#picwithcap2,
-#picwithcap3,
-#picwithcap4,
-#picwithcap5,
+#picwithcap1 img,
+#picwithcap2 img,
+#picwithcap3 img,
+#picwithcap4 img,
+#picwithcap5 img,
 #picwithcap6 img {
     border-bottom: .35rem solid #cb904d;
     margin-bottom: .25rem;

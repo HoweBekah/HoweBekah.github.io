@@ -91,11 +91,14 @@ ul {
   list-style-type: none;
 }
 
+#stormcenter,
+#gallery,
 #preston {
   border: thick solid #75485e;
   border-radius: .5rem;
   padding: .4rem;
   display: inline-block;
+  background-color: #f4fbeb;
 }
 
 h1,
@@ -120,12 +123,6 @@ main {
   position: relative;
 }
 
-#gallery {
-  border: thick solid #75485e;
-  border-radius: .5rem;
-  padding: .4rem;
-  display: inline-block;
-}
 
 #picwithcap1,
 #picwithcap2,
@@ -315,4 +312,96 @@ img {
 
 #forcast {
   display: none;
+}
+
+#formstorming {
+  text-align: left;
+  align-content: center;
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  background-color: #cb904d;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#inputtext {
+  grid-column: 1;
+  padding: 1rem;
+}
+
+#stormdescript {
+  grid-column: 2;
+  padding: 1rem;
+}
+
+#rangeValue {
+  text-align: center;
+}
+
+#coms {
+  margin-top: 1.5rem;
+  grid-column: 1;
+
+
+}
+
+input#submit {
+  font-size: 2rem;
+  padding: .5rem;
+  background-color: #51a3a3;
+  color: #f4fbeb;
+  box-shadow: .35rem .35rem .25rem #75485e;
+  margin: 1rem;
+}
+
+.stormsevreg {
+  margin: .5rem;
+}
+
+input.textinput {
+  margin: .5rem;
+}
+
+fieldset {
+  border: none;
+  padding: 1rem;
+}
+
+legend {
+  font-size: 2rem;
+  color: #f4fbeb;
+  border-bottom: .25rem dashed #75485e;
+}
+
+input {
+  padding: .25rem;
+}
+
+textarea {
+  margin: .25rem;
+}
+
+input[type=range] {
+  width: 18rem;
+}
+
+#mainthanks {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f4fbeb;
+  border: .5rem dashed #cb904d;
+  border-radius: 1rem;
+  display: inline-block;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#mainthanks h2 {
+  color: #75485e;
 }

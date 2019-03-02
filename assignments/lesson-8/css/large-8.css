@@ -90,6 +90,7 @@ ul {
     list-style-type: none;
 }
 
+#gallery,
 #stormcenter,
 #preston {
     border: thick solid #75485e;
@@ -97,7 +98,7 @@ ul {
     padding: 0.5rem;
     display: inline-block;
     text-align: center;
-
+    background-color: #f4fbeb;
 }
 
 h1,
@@ -115,13 +116,6 @@ main {
     margin: 0 auto;
     text-align: center;
     align-content: center;
-}
-
-#gallery {
-    border: thick solid #75485e;
-    border-radius: .5rem;
-    padding: .4rem;
-    display: inline-block;
 }
 
 #galpics {
@@ -405,27 +399,24 @@ footer {
 
 }
 
-#formstorming {
-    text-align: left;
-    align-content: center;
-    width: 85%;
-    margin: auto;
-}
-
 #socialmedia li {
     float: left;
     width: 2rem;
     height: auto;
 }
 
-form.stormform {
+
+#formstorming {
+    text-align: left;
+    align-content: center;
+    width: 85%;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
     background-color: #cb904d;
     font-weight: bold;
     font-size: 1.5rem;
-
 }
 
 #inputtext {
@@ -444,9 +435,6 @@ form.stormform {
 
 #coms {
     margin-top: 1.5rem;
-    grid-column: 1;
-
-
 }
 
 input#submit {
@@ -483,4 +471,26 @@ input {
 
 textarea {
     margin: .25rem;
+}
+
+input[type=range] {
+    width: 18rem;
+}
+
+#mainthanks {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f4fbeb;
+    border: .5rem dashed #cb904d;
+    border-radius: 1rem;
+    display: inline-block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#mainthanks h2 {
+    color: #75485e;
 }

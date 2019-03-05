@@ -1,63 +1,67 @@
 var header = document.querySelector('header');
 var section = document.querySelector('section');
 
-var requestURL = 'https://howebekah.github.io/CIT261/json/villain.json';
+var requestURL = 'https://howebekah.github.io/assignments/lesson-9/json/heroes.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'text';
 request.send();
 
 request.onload = function () {
-    var villainsText = request.response;
-    var villain = JSON.parse(villainsText);
-    populateHeader(villain);
-    showHeroes(villain);
+    var heroText = request.response;
+    var heroes = JSON.parse(heroText);
+    populateHeader(heroes);
+    showHeroes(heroes);
 }
 
-function populateHeader(jsonObj) {
+function populateHeader(jObj) {
     var myH1 = document.createElement('h1');
-    myH1.textContent = jsonObj['teamName'];
+    myH1.textContent = jObj['squadName'];
     header.appendChild(myH1);
 
     var myPara = document.createElement('p');
-    myPara.textContent = 'Hometown: ' + jsonObj['homeTown'];
+    myPara.textContent = 'Hometown: ' + jObj['homeTown'] + ' || Formed: ' + jObj['formed'];
+    header.appendChild(myPara);
+
+    var myPara = document.createElement('p');
+    myPara.textContent = 'Hometown: ' + jObj['homeTown'];
     header.appendChild(myPara);
 
     var myBase = document.createElement('p');
-    myBase.textContent = 'Secret Sanctum: ' + jsonObj['secretBase'];
+    myBase.textContent = 'Secret Sanctum: ' + jObj['secretBase'];
     header.appendChild(myBase);
 
 }
 
-function showHeroes(jsonObj) {
-    var villains = jsonObj['members'];
+function showHeroes(jObj) {
+    var heroes = jObj['members'];
 
-    for (var i = 0; i < villains.length; i++) {
-        var myArticle = document.createElement('article');
-        var myH2 = document.createElement('h2');
-        var myPara1 = document.createElement('p');
-        var myPara2 = document.createElement('p');
-        var myPara3 = document.createElement('p');
-        var myList = document.createElement('ul');
+    for (var i = 0; i < heroes.length; i++) {
+        var articleC = document.createElement('article');
+        var h2C = document.createElement('h2');
+        var para1C = document.createElement('p');
+        var para2C = document.createElement('p');
+        var para3C = document.createElement('p');
+        var listC = document.createElement('ul');
 
-        myH2.textContent = villains[i].name;
-        myPara1.textContent = 'Secret Identity: ' + villains[i].secretIdentity;
-        myPara2.textContent = 'Age: ' + villains[i].age;
-        myPara3.textContent = 'Evil Powers: ';
+        h2C.textContent = heroes[i].name;
+        para1C.textContent = 'Secret Identity: ' + heroes[i].secretIdentity;
+        para2C.textContent = 'Age: ' + heroes[i].age;
+        para3C.textContent = 'Super Powers: ';
 
-        var powers = villains[i].powers;
+        var powers = heroes[i].powers;
         for (var j = 0; j < powers.length; j++) {
             var listItem = document.createElement('li');
             listItem.textContent = powers[j];
-            myList.appendChild(listItem);
+            listC.appendChild(listItem);
         }
 
-        myArticle.appendChild(myH2);
-        myArticle.appendChild(myPara1);
-        myArticle.appendChild(myPara2);
-        myArticle.appendChild(myPara3);
-        myArticle.appendChild(myList);
+        articleC.appendChild(h2C);
+        articleC.appendChild(para1C);
+        articleC.appendChild(para2C);
+        articleC.appendChild(para3C);
+        articleC.appendChild(listC);
 
-        section.appendChild(myArticle);
+        section.appendChild(articleC);
     }
 }

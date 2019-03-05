@@ -1,17 +1,17 @@
 {
-    "squadName": "Super hero squad",
+    "squadName": "Super Hero Squad",
     "homeTown": "Metro City",
     "formed": 2016,
-    "secretBase": "Super tower",
+    "secretBase": "Super Tower",
     "active": true,
     "members": [{
             "name": "Molecule Man",
             "age": 29,
             "secretIdentity": "Dan Jukes",
             "powers": [
-                "Radiation resistance",
-                "Turning tiny",
-                "Radiation blast"
+                "Radiation Resistance",
+                "Turning Tiny",
+                "Radiation Blast"
             ]
         },
         {
@@ -19,9 +19,9 @@
             "age": 39,
             "secretIdentity": "Jane Wilson",
             "powers": [
-                "Million tonne punch",
-                "Damage resistance",
-                "Superhuman reflexes"
+                "Million Tonne Punch",
+                "Damage Resistance",
+                "Superhuman Reflexes"
             ]
         },
         {
@@ -33,7 +33,7 @@
                 "Heat Immunity",
                 "Inferno",
                 "Teleportation",
-                "Interdimensional travel"
+                "Interdimensional Travel"
             ]
         }
     ]

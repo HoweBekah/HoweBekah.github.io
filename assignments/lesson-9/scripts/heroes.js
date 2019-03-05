@@ -15,21 +15,17 @@ request.onload = function () {
 }
 
 function populateHeader(jObj) {
-    var myH1 = document.createElement('h1');
-    myH1.textContent = jObj['squadName'];
-    header.appendChild(myH1);
+    var h1C = document.createElement('h1');
+    h1C.textContent = jObj['squadName'];
+    header.appendChild(h1C);
 
-    var myPara = document.createElement('p');
-    myPara.textContent = 'Hometown: ' + jObj['homeTown'] + ' || Formed: ' + jObj['formed'];
-    header.appendChild(myPara);
+    var paraC = document.createElement('p');
+    paraC.textContent = 'Hometown: ' + jObj['homeTown'] + ' || Formed: ' + jObj['formed'];
+    header.appendChild(paraC);
 
-    var myPara = document.createElement('p');
-    myPara.textContent = 'Hometown: ' + jObj['homeTown'];
-    header.appendChild(myPara);
-
-    var myBase = document.createElement('p');
-    myBase.textContent = 'Secret Sanctum: ' + jObj['secretBase'];
-    header.appendChild(myBase);
+    var baseC = document.createElement('p');
+    baseC.textContent = 'Secret Sanctum: ' + jObj['secretBase'];
+    header.appendChild(baseC);
 
 }
 

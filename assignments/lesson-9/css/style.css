@@ -1,49 +1,60 @@
-/* || general styles */
-
-html {
-    font-family: 'helvetica neue', helvetica, arial, sans-serif;
-}
-
 body {
-    width: 800px;
+    width: 75%;
     margin: 0 auto;
-}
 
-h1,
-h2 {
-    font-family: 'Faster One', cursive;
-}
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-align: center;
+    font-family: 'Permanent Marker',
+        cursive;
+    background-color: rgb(179, 245, 196);
+    color: rgb(97, 42, 3);
 
-/* header styles */
+}
 
 h1 {
-    font-size: 4rem;
-    text-align: center;
+    display: inline-block;
+    padding: 2rem;
+    padding-left: 0rem;
+    margin-bottom: 1rem;
+    font-size: 4em;
+    color: rgb(98, 114, 255);
+    border-bottom: .5rem dashed rgb(252, 88, 88);
+
 }
 
 header p {
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
+
 }
 
-/* section styles */
-
 section article {
+
     width: 33%;
     float: left;
 }
 
 section p {
     margin: 5px 0;
+
 }
 
 section ul {
     margin-top: 0;
+    text-align: center;
+    color: rgb(97, 42, 3);
+    padding-left: 0px;
+    margin-left: 0px;
+    list-style-type: none;
+    text-shadow: .1rem .1rem .2rem rgb(252, 88, 88);
 }
 
 h2 {
     font-size: 2.5rem;
-    letter-spacing: -5px;
+    color: rgb(252, 88, 88);
     margin-bottom: 10px;
+    line-height: 2rem;
+    text-shadow: .25rem .25rem .25rem rgb(97, 42, 3);
 }

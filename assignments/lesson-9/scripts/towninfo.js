@@ -1,9 +1,10 @@
 var section = document.querySelector('section');
+
 var pics = [
-    "images/preston.jpg",
-    "images/sodasprings.jpg",
-    "images/fishhaven.jpg"
-]
+    "https://howebekah.github.io/assignments/lesson-9/images/preston.jpg",
+    "https://howebekah.github.io/assignments/lesson-9/images/sodasprings.jpg",
+    "https://howebekah.github.io/assignments/lesson-9/images/fishhaven.jpg"
+];
 
 var requestURL = 'https://howebekah.github.io/assignments/lesson-9/json/towndata.json';
 var request = new XMLHttpRequest();
@@ -14,11 +15,10 @@ request.send();
 request.onload = function () {
     var townText = request.response;
     var towns = JSON.parse(townText);
-    populateTown(towns);
-    populatePic(pics);
+    populateTown(towns, pics);
 }
 
-function populateTown(jObj) {
+function populateTown(jObj, jPics) {
     var towns = jObj['towns'];
 
     for (var i = 0; i < towns.length; i++) {
@@ -43,6 +43,7 @@ function populateTown(jObj) {
             listC.appendChild(listItem);
         }
 */
+
         articleC.appendChild(h3C);
         articleC.appendChild(para1C);
         articleC.appendChild(para2C);
@@ -50,15 +51,22 @@ function populateTown(jObj) {
         articleC.appendChild(para4C);
         //articleC.appendChild(listC);
 
+        for (var j = 0; j < jPics.length; j++) {
+            var pic = document.createElement('img');
+            pic.src = jPics[j];
+            articleC.appendChild(pic);
+
+        }
+
         section.appendChild(articleC);
     }
 }
 
-function populatePic(jPics) {
+/*function populatePic(jPics) {
     for (var i = 0; i < jPics.length; i++) {
         var pic = document.createElement('img');
         pic.src = jPics[i];
         articleC.appendChild(pic);
         section.appendChild(articleC);
     }
-}
+}*/

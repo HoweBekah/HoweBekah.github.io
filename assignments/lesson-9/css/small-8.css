@@ -1,0 +1,407 @@
+#logo {
+  width: 25%;
+  height: auto;
+  float: left;
+  padding: .5rem;
+}
+
+.top {
+  width: 100%;
+  background-color: #cb904d;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  color: #75485e;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#titlemotto {
+  width: 75%;
+  float: right;
+}
+
+#motto {
+  margin-top: -5px;
+  padding-bottom: 10px;
+}
+
+#webname {
+  color: #f4fbeb;
+  padding-top: 10px;
+  letter-spacing: 1px;
+}
+
+#menubutton {
+  font-size: 2em;
+  background-color: #75485e;
+  color: #f4fbeb;
+  border: none;
+  text-decoration: none;
+  padding: .25rem;
+  display: block;
+  width: 100%;
+  margin: auto;
+  font-family: "Fjalla One",
+    sans-serif;
+}
+
+#menubutton:hover {
+  background-color: #f4fbeb;
+  color: #75485e;
+}
+
+nav {
+  display: block;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+#navul a {
+  color: #f4fbeb;
+  font-size: 1.5em;
+  height: auto;
+  display: -inline-block;
+  text-decoration: none;
+  padding: .25rem;
+  text-align: center;
+  background-color: #75485e;
+  font-family: "Fjalla One",
+    sans-serif;
+}
+
+#navul li {
+  padding: .5rem;
+}
+
+#navul a:hover {
+  background-color: #f4fbeb;
+  color: #75485e;
+}
+
+#navul a.current {
+  background: #51a3a3;
+}
+
+ul {
+  padding-left: 0px;
+  margin-left: 0px;
+  list-style-type: none;
+}
+
+#stormcenter,
+#gallery,
+#preston {
+  border: thick solid #75485e;
+  border-radius: .5rem;
+  padding: .4rem;
+  display: inline-block;
+  background-color: #f4fbeb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #51a3a3;
+  text-align: center;
+}
+
+h2,
+h1,
+h3 {
+  font-family: "Fjalla One", sans-serif;
+  text-align: center;
+}
+
+main {
+  overflow: visible;
+  position: relative;
+}
+
+
+#picwithcap1,
+#picwithcap2,
+#picwithcap3,
+#picwithcap4,
+#picwithcap5,
+#picwithcap6 {
+  background-color: #75485e;
+  color: #f4fbeb;
+  font-size: 1rem;
+  text-align: center;
+  padding: .35rem;
+  margin: 0;
+  justify-content: center;
+}
+
+#galpics {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  padding: .5rem;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+
+}
+
+section p {
+  background-color: #75485e;
+  color: #f4fbeb;
+  padding: .25rem;
+  margin-top: 0;
+}
+
+#picwithcap1,
+#picwithcap2,
+#picwithcap3,
+#picwithcap4,
+#picwithcap5,
+#picwithcap6 img {
+  border-bottom: .25rem solid #cb904d;
+  margin-bottom: .25rem;
+}
+
+#summarytitle {
+  color: #75485e;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#weathersummary {
+
+  position: relative;
+  display: inline-block;
+  display: -webkit-flex;
+
+}
+
+#summarybox {
+  padding: .5rem;
+  background-color: #cb904d;
+  width: 40%;
+  z-index: 2;
+  left: 1rem;
+  position: absolute;
+  box-shadow: .5rem .5rem .5rem #51a3a3;
+}
+
+#summarybox p {
+  text-align: left;
+  font-size: .75rem;
+}
+
+#sumwords {
+  text-align: center;
+  display: block;
+  color: #f4fbeb;
+  text-shadow: .2rem .2rem #75485e;
+}
+
+#currenttemp {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+#windspeed {
+  font-size: 1.5rem;
+  margin: 0;
+  padding-bottom: .3rem;
+}
+
+#windchill {
+  font-size: 1rem;
+}
+
+#sunnyid {
+  margin: auto;
+  z-index: 1;
+  position: relative;
+  top: 1rem;
+}
+
+article {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: 7fr;
+  background-color: #f4fbeb;
+  padding: 1rem;
+  z-index: 0;
+  position: relative;
+  margin-top: 4rem;
+
+
+}
+
+#articlewords {
+  grid-row: 2/7;
+}
+
+#snowidaho {
+  grid-row: 1;
+  width: 75%;
+  height: auto;
+
+}
+
+#contactbox {
+  background-color: #75485e;
+  color: #dfcc74;
+  position: relative;
+}
+
+#map {
+  width: 15rem;
+  height: auto;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+body {
+  font-family: "Libre Baskerville", serif;
+  background-color: #dfcc74;
+  text-align: center;
+}
+
+#copywrite {
+  display: inline;
+}
+
+img {
+  max-width: 100%;
+  text-align: center;
+}
+
+#socialmedia {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+#contactinfo {
+  padding-top: 1rem;
+}
+
+#footerbar {
+  position: relative;
+}
+
+#currentdate {
+  padding-bottom: .5rem;
+  font-weight: bold;
+}
+
+#facebook,
+#insta,
+#twitter {
+  float: left;
+  width: 2rem;
+  height: auto;
+}
+
+#forcast {
+  display: none;
+}
+
+#formstorming {
+  text-align: left;
+  align-content: center;
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  background-color: #cb904d;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#inputtext {
+  grid-column: 1;
+  padding: 1rem;
+}
+
+#stormdescript {
+  grid-column: 2;
+  padding: 1rem;
+}
+
+#rangeValue {
+  text-align: center;
+}
+
+#coms {
+  margin-top: 1.5rem;
+  grid-column: 1;
+
+
+}
+
+input#submit {
+  font-size: 2rem;
+  padding: .5rem;
+  background-color: #51a3a3;
+  color: #f4fbeb;
+  box-shadow: .35rem .35rem .25rem #75485e;
+  margin: 1rem;
+}
+
+.stormsevreg {
+  margin: .5rem;
+}
+
+input.textinput {
+  margin: .5rem;
+}
+
+fieldset {
+  border: none;
+  padding: 1rem;
+}
+
+legend {
+  font-size: 2rem;
+  color: #f4fbeb;
+  border-bottom: .25rem dashed #75485e;
+}
+
+input {
+  padding: .25rem;
+}
+
+textarea {
+  margin: .25rem;
+}
+
+input[type=range] {
+  width: 18rem;
+}
+
+#mainthanks {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f4fbeb;
+  border: .5rem dashed #cb904d;
+  border-radius: 1rem;
+  display: inline-block;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#mainthanks h2 {
+  color: #75485e;
+}

@@ -511,7 +511,7 @@ input[type=range] {
 
 #towninfo article {
     display: block;
-    box-shadow: .25rem .25rem .25rem #75485e;
+    box-shadow: .35rem .35rem .5rem #75485e;
 }
 
 #towninfo h3 {

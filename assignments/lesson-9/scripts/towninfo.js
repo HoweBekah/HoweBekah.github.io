@@ -13,7 +13,7 @@ request.open("GET", requestURL);
 request.responseType = "text";
 request.send();
 
-request.onload = function() {
+request.onload = function () {
   var townText = request.response;
   var towns = JSON.parse(townText);
   populateTown(towns, pics);
@@ -52,9 +52,16 @@ function populateTown(jObj, jPics) {
     articleC.appendChild(para4C);
     //articleC.appendChild(listC);
 
-    for (var j = i; j < jPics.length; ) {
+    for (var j = i; j < jPics.length;) {
       var pic = document.createElement("img");
       pic.src = jPics[j];
+      if (j === 0) {
+        pic.alt = "Landscape picture of a pond with mountains in the background in Preston, ID"
+      } else if (j === 1) {
+        pic.alt = "Landscape picture of a geyser in Soda Spirngs, ID"
+      } else {
+        pic.alt = "Landscape picture of a pond surrounded by green trees in Fish Haven, ID"
+      }
       articleC.appendChild(pic);
       break;
     }

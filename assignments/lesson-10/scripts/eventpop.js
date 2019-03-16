@@ -15,14 +15,47 @@ request.onload = function () {
 
 function populateEvents(jObj) {
     var townList = jObj["towns"];
-    var articleL = document.createElement("article");
-    var listC = document.createElement('ul');
-    var events = townList[0].events;
-    for (var j = 0; j < events.length; j++) {
-        var listItem = document.createElement('li');
-        listItem.textContent = events[j];
-        listC.appendChild(listItem);
+    for (var i = 0; i < townList.length; i++) {
+
+        switch (townList.name) {
+
+            case 'Preston':
+                var articleL = document.createElement("article");
+                var listC = document.createElement('ul');
+                var events = townList[0].events;
+                console.log(events);
+                for (var j = 0; j < events.length; j++) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = events[j];
+                    listC.appendChild(listItem);
+                }
+                articleL.appendChild(listC);
+                section.appendChild(articleL);
+                break;
+            case 'Soda Springs':
+                var articleL = document.createElement("article");
+                var listC = document.createElement('ul');
+                var events = townList[1].events;
+                for (var j = 0; j < events.length; j++) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = events[j];
+                    listC.appendChild(listItem);
+                }
+                articleL.appendChild(listC);
+                section.appendChild(articleL);
+                break;
+            case 'Fish Haven':
+                var articleL = document.createElement("article");
+                var listC = document.createElement('ul');
+                var events = townList[2].events;
+                for (var j = 0; j < events.length; j++) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = events[j];
+                    listC.appendChild(listItem);
+                }
+                articleL.appendChild(listC);
+                section.appendChild(articleL);
+                break;
+        }
     }
-    articleL.appendChild(listC);
-    section.appendChild(articleL);
 }

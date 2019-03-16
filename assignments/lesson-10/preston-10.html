@@ -68,30 +68,33 @@
                         Weather Summary
                     </h2>
                     <div id="sumwords">
-                        <div id="currenttemp">
-                            45&#176;
-                        </div>
-                        <div id="windspeed">
-                            5 MPH
-                        </div>
+                        Currently: <div id="currently"></div>
+                        High:<div id="hightemp"></div>
                         Wind Chill: <div id="windchill"></div>
+                        Humidity: <div id="humidity"></div>
+                        Wind Speed<div id="windspeed"></div>
                     </div>
                 </div>
             </section>
             <section id="forcast">
                 <h2>5 Day Forcast</h2>
-                <ul id="days">
-                    <li id="day1">Wed</li>
-                    <li id="day2">Thur</li>
-                    <li id="day3">Fri</li>
-                    <li id="day4">Sat</li>
-                    <li id="day5">Sun</li>
-                    <li id="weather1"><img src="images/forcasticons/cloudy.jpg" alt="cloudy forcast"></li>
-                    <li id="weather2"><img src="images/forcasticons/rainsnow.jpg" alt="rain/snow forcast"></li>
-                    <li id="weather3"><img src="images/forcasticons/coldovernight.jpg" alt="cold overnight forcast"></li>
-                    <li id="weather4"><img src="images/forcasticons/snow.jpg" alt="snow forcast"></li>
-                    <li id="weather5"><img src="images/forcasticons/cloudy.jpg" alt="cloudy forcast"></li>
-                </ul>
+                <section id="forcastbox">
+                    <ul id="days">
+                        <li id="day1">Wed</li>
+                        <li id="day2">Thur</li>
+                        <li id="day3">Fri</li>
+                        <li id="day4">Sat</li>
+                        <li id="day5">Sun</li>
+                        <li id="weather1"><img src="images/forcasticons/cloudy.jpg" alt="cloudy forcast"></li>
+                        <li id="weather2"><img src="images/forcasticons/rainsnow.jpg" alt="rain/snow forcast"></li>
+                        <li id="weather3"><img src="images/forcasticons/coldovernight.jpg" alt="cold overnight forcast"></li>
+                        <li id="weather4"><img src="images/forcasticons/snow.jpg" alt="snow forcast"></li>
+                        <li id="weather5"><img src="images/forcasticons/cloudy.jpg" alt="cloudy forcast"></li>
+                    </ul>
+                    <section>
+
+                    </section>
+                </section>
             </section>
             <article id="idarticle">
                 <div id="articlewords">
@@ -154,13 +157,14 @@
             </div>
             <div id="footerbar">
                 <div id="copywrite">
-                    <p>&copy; 2019 | Southeast ID the Weather | Bekah Howe</p>
+                    <p>&copy; 2019 | Southeast ID the Weather | Bekah Howe | Weather data provided by <a href="https://openweathermap.org">OpenWeatherMap</a></p>
                     <div id="currentdate"></div>
                 </div>
 
             </div>
         </footer>
     </div>
+    <script src="scripts/prestonweather.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>

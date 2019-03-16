@@ -204,23 +204,21 @@ h3 {
     text-align: center;
     display: block;
     color: #f4fbeb;
-    text-shadow: .25rem .2rem #75485e;
-}
-
-#currenttemp {
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0;
-}
-
-#windspeed {
+    text-shadow: .25rem .25rem .25rem #75485e;
+    line-height: 2rem;
     font-size: 1.5rem;
-    margin: 0;
-    padding-bottom: .3rem;
 }
 
-#windchill {
-    font-size: 1.25rem;
+#hightemp {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+#currently,
+#windchill,
+#humidity {
+    padding-bottom: 1rem;
 }
 
 #sunnyid {

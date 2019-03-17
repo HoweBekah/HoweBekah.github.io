@@ -15,7 +15,6 @@ request.onload = function () {
 
 function populateEvents(jObj) {
     var townList = jObj["towns"];
-    var articleL = document.createElement("article");
     var listC = document.createElement('ul');
     var events = townList[0].events;
     for (var j = 0; j < events.length; j++) {
@@ -23,6 +22,5 @@ function populateEvents(jObj) {
         listItem.textContent = events[j];
         listC.appendChild(listItem);
     }
-    articleL.appendChild(listC);
-    eventid.appendChild(articleL);
+    eventid.appendChild(listC);
 }

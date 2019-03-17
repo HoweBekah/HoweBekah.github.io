@@ -12,8 +12,6 @@ forcastRequest.send();
 
 weatherRequest.onload = function () {
     var weatherData = JSON.parse(weatherRequest.responseText);
-    console.log(weatherData);
-
     document.getElementById("currently").innerHTML = weatherData.weather[0].description;
     document.getElementById("hightemp").innerHTML = Math.round(weatherData.main.temp_max) + "&#176;F";
     document.getElementById("humidity").innerHTML = weatherData.main.humidity + "%";
@@ -22,7 +20,6 @@ weatherRequest.onload = function () {
 
 forcastRequest.onload = function () {
     var forcastData = JSON.parse(forcastRequest.responseText);
-    console.log(forcastData);
     for (var i = 0; i <= 40; i++) {
         var list = forcastData.list[i];
         var ulList = document.getElementById('daytemp');

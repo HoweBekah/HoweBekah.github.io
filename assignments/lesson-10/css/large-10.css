@@ -178,6 +178,8 @@ h3 {
     font-weight: bold;
     display: block;
     margin: .5rem;
+    font-size: 2rem;
+    opacity: 1;
 }
 
 #weathersummary {
@@ -186,6 +188,7 @@ h3 {
     display: -webkit-flex;
     margin: auto;
     justify-content: center;
+
 }
 
 #summarybox {
@@ -198,6 +201,11 @@ h3 {
     display: block;
     position: absolute;
     box-shadow: 0.5rem 0.5rem 0.5rem #51a3a3;
+    opacity: .85;
+}
+
+#allsumword {
+    opacity: 1;
 }
 
 #sumwords {
@@ -298,7 +306,7 @@ li article {
 }
 
 li article img {
-    width: 10rem;
+    width: 6rem;
 }
 
 #day1,
@@ -341,11 +349,30 @@ li article img {
     float: left;
 }
 
+#townevents {
+    color: #75485e;
+    background-color: #f4fbeb;
+    border-radius: 50%;
+    padding: 2rem;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
 #events {
     justify-content: center;
     width: 75%;
     margin: auto;
     margin-bottom: 2rem;
+    background-color: #75485e;
+    color: #f4fbeb;
+    font-size: 2rem;
+    padding: .5rem;
+
+}
+
+#events ul li {
+    padding: .5rem;
 }
 
 body {

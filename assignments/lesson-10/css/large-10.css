@@ -245,13 +245,24 @@ article {
     padding-left: 0.5rem;
 }
 
+#fortitle {
+    font-size: 3rem;
+    margin-top: 1rem;
+    border: thick solid #75485e;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: inline-block;
+    text-align: center;
+    background-color: #f4fbeb;
+}
+
 #forcast {
     margin: auto;
     padding: 1rem;
     text-align: center;
     display: block;
     padding-top: 0;
-    margin-bottom: 4rem;
+
     margin-top: 2rem;
 }
 
@@ -330,6 +341,12 @@ li article img {
     float: left;
 }
 
+#events {
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
 
 body {
     font-family: "Libre Baskerville", serif;

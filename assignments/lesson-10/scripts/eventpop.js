@@ -10,11 +10,8 @@ request.send();
 request.onload = function () {
     var townText = request.responseText;
     var towns = JSON.parse(townText);
-    populateEvents(towns);
-}
 
-function populateEvents(jObj) {
-    var townList = jObj["towns"];
+    var townList = towns["towns"];
     var listC = document.createElement('ul');
     console.log(townList[0].events);
     for (var index = 0; index < townList[0].events.length; index++) {

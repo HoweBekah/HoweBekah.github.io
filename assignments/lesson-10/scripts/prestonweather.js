@@ -25,7 +25,7 @@ forcastRequest.onload = function () {
         var ulList = document.getElementById('daytemp');
         var checkList = list.dt_txt;
 
-        if (checkList.includes('18:00:00') == true) {
+        if (checkList.includes('18:00:00')) {
             var listItem = document.createElement('li');
             var articleL = document.createElement('article');
             var icon = document.createElement("img");

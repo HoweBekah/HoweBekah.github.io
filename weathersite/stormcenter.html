@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Preston page of Southeast ID the Weather website" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/small-8.css" media="screen and (max-width: 450px)" />
+  <link rel="stylesheet" href="css/medium-8.css" media="screen and (min-width: 451px) and (max-width: 800px)" />
+  <link rel="stylesheet" href="css/large-8.css" media="screen and (min-width: 801px)" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville");
+    </style>
+  <title>Preston, ID Weather</title>
+  <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+  <script>
+    $(function() {
+        $("a").each(function() {
+          if ($(this).prop("href") == window.location.href) {
+            $(this).addClass("current");
+          }
+        });
+      });
+      function adjustRange(rating) {
+        document.getElementById("rangeValue").innerHTML = rating;
+      }
+    </script>
+</head>
+
+<body>
+  <div id="content">
+    <header>
+      <div id="navandtop">
+        <div class="top">
+          <div id="logo">
+            <a href="/assignments/lesson-9/index.html"><img src="images/logo.jpg" alt="Southeast ID The Weather logo" /></a>
+          </div>
+          <div id="titlemotto">
+            <h1 id="webname">Southeast ID the Weather</h1>
+            <div id="motto">We ID the weather for you!</div>
+          </div>
+        </div>
+        <nav id="nav">
+          <button id="menubutton" onclick="iconFunction()">
+            Menu &#9776;
+          </button>
+          <div class="table">
+            <ul class="hide" id="navul">
+              <li><a href="/assignments/lesson-9/index.html">Home</a></li>
+              <li>
+                <a href="preston-8.html">Preston</a>
+              </li>
+              <li><a href="random.html">Soda Springs</a></li>
+              <li><a href="random.html">Fish Haven</a></li>
+              <li><a href="stormcenter.html">Storm Center</a></li>
+              <li><a href="gallery-8.html">Gallery</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 id="stormcenter">Storm Center</h1>
+
+      <form class="stormform" action="thanks.html">
+        <div id="formstorming">
+          <div id="inputtext">
+            <fieldset>
+              <legend>Personal Information</legend>
+              <label for="fullname" class="textinput">Enter Your Full Name:</label>
+              <input type="text" name="fullname" id="fullname" class="textinput" minlength="5" pattern="[a-zA-Z]+[ ][a-zA-Z]+"
+                required /><br />
+
+              <label for="email" class="textinput">Enter Your Email:</label>
+              <input type="email" name="email" id="email" placeholder="jonsmith@demo.com" class="textinput" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" /><br />
+
+              <label for="phone" class="textinput">Enter Your Phone Number:</label>
+              <input type="tel" name="phone" id="phone" required class="textinput" pattern="[0-9]{7,10}" /><br />
+
+              <label for="zipcode" class="textinput">Enter Your Zipcode:</label>
+              <input type="number" id="zipcode" name="zipcode" required class="textinput" /><br />
+              <div id="coms">
+                <label for="comments" class="addComments">Additional Information or Comments:</label>
+                <textarea name="comments" id="comments" rows="3" cols="20" class="addComments"></textarea>
+              </div>
+            </fieldset>
+          </div>
+          <div id="stormdescript">
+            <fieldset>
+              <legend>Storm Information</legend>
+              <label for="stormdate" class="textinput">Date of Storm:</label>
+              <input type="date" name="stormdate" id="stormdate" class="textinput" /><br />
+
+              <label for="stormtype" class="textinput">Type of Storm:</label>
+              <input type="text" id="stormtype" name="stormtype" list="typeoptions" class="textinput" pattern="[Ff]lash [Ff]lood|[Hh]ail|[Hh]urricane|[Tt]hunderstorm|[Tt]ornado" />
+              <datalist id="typeoptions">
+                <option>Flash Flood</option>
+                <option>Hail</option>
+                <option>Hurricane</option>
+                <option>Thunderstorm</option>
+                <option>Tornado</option>
+              </datalist><br />
+
+              <label for="severity" class="stormsevreg">Severity of Storm (1-10):</label>
+              <input type="range" id="severity" name="severity" class="stormsevreg" value="5" min="1" max="10" step="1"
+                oninput="adjustRange(this.value)" onchange="adjustRange(this.value)" />
+              <div id="rangeValue" class="stormsevreg">5</div>
+
+              <label for="region" class="stormsevreg">Region of Storm:</label>
+              <select name="region" id="region" class="stormsevreg">
+                <option value="selregion" selected disabled>Select Region</option>
+                <option value="preston">Preston</option>
+                <option value="sodasprings">Soda Springs</option>
+                <option value="fishhaven">Fish Haven</option>
+              </select><br /><br />
+
+              <label for="in-danger" class="stormsevreg">In Danger:</label><br />
+              <input type="radio" id="in-danger" name="in-danger" value="yes" checked class="stormsevreg" />Yes
+              <br />
+              <input type="radio" name="in-danger" value="maybe" class="stormsevreg" />Maybe
+              <br />
+              <input type="radio" name="in-danger" value="no" class="stormsevreg" />No
+              <br />
+            </fieldset>
+          </div>
+        </div>
+        <input type="submit" name="submit" id="submit" />
+      </form>
+    </main>
+    <footer>
+      <div id="contactbox">
+        <div id="contactinfo">
+          <p>Contact info.<br /><br />Number.<br /><br />Email</p>
+          <ul id="socialmedia">
+            <li>
+              <a href="https://www.facebook.com/"><img src="images/fblogo.png" alt="facebook icon" id="facebook" /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/"><img src="images/instagramlogo.jpg" alt="instagram icon" id="insta" /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/?lang=en"><img src="images/twitterlogo.png" alt="twitter icon" id="twitter" /></a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="map">
+          <img src="images/prestonmap.jpg" alt="Map of Preston, ID." />
+        </div>
+      </div>
+      <div id="footerbar">
+        <div id="copywrite">
+          <p>&copy; 2019 | Southeast ID the Weather | Bekah Howe</p>
+          <div id="currentdate"></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="scripts/windchill.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/hamburger.js"></script>
+</body>
+
+</html>

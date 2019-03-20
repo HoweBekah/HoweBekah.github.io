@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Preston page of Southeast ID the Weather website" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small-8.css" media="screen and (max-width: 450px)" />
+    <link rel="stylesheet" href="css/medium-8.css" media="screen and (min-width: 451px) and (max-width: 800px)" />
+    <link rel="stylesheet" href="css/large-8.css" media="screen and (min-width: 801px)" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville");
+    </style>
+    <title>Preston, ID Weather</title>
+    <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script>
+        $(function () {
+            $("a").each(function () {
+                if ($(this).prop("href") == window.location.href) {
+                    $(this).addClass("current");
+                }
+            });
+        })
+
+        function adjustRange(rating) {
+            document.getElementById("rangeValue").innerHTML = rating;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div id="navandtop">
+                <div class="top">
+                    <div id="logo">
+                        <a href="/assignments/lesson-9/index.html"><img src="images/logo.jpg" alt="Southeast ID The Weather logo" /></a>
+                    </div>
+                    <div id="titlemotto">
+                        <h1 id="webname">Southeast ID the Weather</h1>
+                        <div id="motto">We ID the weather for you!</div>
+                    </div>
+                </div>
+                <nav id="nav">
+                    <button id="menubutton" onclick="iconFunction()">Menu &#9776;</button>
+                    <div class="table">
+                        <ul class="hide" id="navul">
+                            <li><a href="/assignments/lesson-9/index.html">Home</a></li>
+                            <li>
+                                <a href="preston-8.html">Preston</a>
+                            </li>
+                            <li><a href="random.html">Soda Springs</a></li>
+                            <li><a href="random.html">Fish Haven</a></li>
+                            <li><a href="stormcenter.html">Storm Center</a></li>
+                            <li><a href="gallery-8.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div id="mainthanks">
+                <h1>Thank you for filling out the Storm Center form!</h1>
+                <h2>We appreciate the time you took to share this information with us.</h2>
+            </div>
+        </main>
+        <footer>
+            <div id="contactbox">
+                <div id="contactinfo">
+                    <p>Contact info.<br><br>Number.<br><br>Email.</p>
+                    <ul id="socialmedia">
+                        <li><a href="https://www.facebook.com/"><img src="images/fblogo.png" alt="facebook icon" id="facebook" /></a></li>
+                        <li><a href="https://www.instagram.com/"><img src="images/instagramlogo.jpg" alt="instagram icon"
+                                    id="insta" /></a></li>
+                        <li><a href="https://twitter.com/?lang=en"><img src="images/twitterlogo.png" alt="twitter icon"
+                                    id="twitter" /></a></li>
+                    </ul>
+                </div>
+
+                <div id="map">
+                    <img src="images/prestonmap.jpg" alt="Map of Preston, ID." />
+                </div>
+            </div>
+            <div id="footerbar">
+                <div id="copywrite">
+                    <p>&copy; 2019 | Southeast ID the Weather | Bekah Howe</p>
+                    <div id="currentdate"></div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+
+</html>

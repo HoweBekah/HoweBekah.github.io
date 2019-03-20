@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Preston page of Southeast ID the Weather website" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" media="screen and (max-width: 450px)" />
+    <link rel="stylesheet" href="css/medium.css" media="screen and (min-width: 451px) and (max-width: 800px)" />
+    <link rel="stylesheet" href="css/large.css" media="screen and (min-width: 801px)" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville");
+        @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+    </style>
+    <title>Fish Haven, ID Weather</title>
+    <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script>
+        $(function () {
+            $("a").each(function () {
+                if ($(this).prop("href") == window.location.href) {
+                    $(this).addClass("current");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div id="navandtop">
+                <div class="top">
+                    <div id="logo">
+                        <a href="index.html"><img src="images/logo.jpg" alt="Southeast ID The Weather logo" /></a>
+                    </div>
+                    <div id="titlemotto">
+                        <h1 id="webname">Southeast ID the Weather</h1>
+                        <div id="motto">We ID the weather for you!</div>
+                    </div>
+                </div>
+                <nav id="nav">
+                    <button id="menubutton" onclick="iconFunction()">
+                        Menu &#9776;
+                    </button>
+                    <div class="table">
+                        <ul class="hide" id="navul">
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <a href="preston.html">Preston</a>
+                            </li>
+                            <li><a href="sodasprings.html">Soda Springs</a></li>
+                            <li><a href="fishhaven.html">Fish Haven</a></li>
+                            <li>
+                                <a href="stormcenter.html">Storm Center</a>
+                            </li>
+                            <li>
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h1 id="preston">Fish Haven</h1>
+            <section id="weathersummary">
+                <img id="sunnyid" src="images/newhero.jpg" alt="Sunny day with bright blue skies in Idaho." srcset="
+              images/heroimage.320.jpg 320w,
+              images/heroimage.500.jpg 500w,
+              images/heroimage.800.jpg 800w
+            "
+                    sizes="(max-width: 320px) 280px, (max-width: 500px) 460px, 800px" />
+                <div id="summarybox">
+                    <div id="allsumword">
+                        <h2 id="summarytitle">
+                            Weather Summary
+                        </h2>
+                        <div id="sumwords">
+                            Currently:
+                            <div id="currently"></div>
+                            High:
+                            <div id="hightemp"></div>
+                            Wind Chill:
+                            <div id="windchill"></div>
+                            Humidity:
+                            <div id="humidity"></div>
+                            Wind Speed:
+                            <div id="windspeed"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="forcast">
+                <h2 id="fortitle">5 Day Forcast</h2>
+                <section id="forcastbox">
+                    <ul id="days">
+                        <li id="day1">Day 1</li>
+                        <li id="day2">Day 2</li>
+                        <li id="day3">Day 3</li>
+                        <li id="day4">Day 4</li>
+                        <li id="day5">Day 5</li>
+                    </ul>
+                    <ul id="daytemp">
+
+                    </ul>
+                </section>
+            </section>
+            <section id="events">
+                <h2 id="townevents">Town Events</h2>
+            </section>
+            <article id="idarticle">
+                <div id="articlewords">
+                    <h2>Idaho Snow Potential</h2>
+                    <h4>by Kelly Sunderson</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, ex eam clita pertinax, in vis saperet
+                        interesset. Ea usu ferri indoctum mnesarchum, justo augue id vis,
+                        legendos persequeris nam at. Sit stet quando denique ne, per id
+                        docendi nominavi tincidunt, quem definiebas assueverit vix ne. Mel
+                        ex modo eruditi. In delicata perpetua ius, omnes admodum ne eum.
+                        Error graece ei sed, duo an bonorum omittantur. Quo tation legimus
+                        nusquam an, dicunt regione ne pro, ex autem omnes mea. Sit
+                        suscipit copiosae placerat ad, ut vix ubique urbanitas. Sit ad
+                        suas delectus moderatius, nonumes patrioque cu vix. At eam viris
+                        similique, mea et labitur accommodare.
+
+                    </p>
+                </div>
+
+                <img id="snowidaho" src="images/articlephoto.jpg" alt="Snowboarder on fresh powder" />
+            </article>
+        </main>
+        <footer>
+            <div id="contactbox">
+                <div id="contactinfo">
+                    <p>Contact info.<br /><br />Number.<br /><br />Email</p>
+                    <ul id="socialmedia">
+                        <li>
+                            <a href="https://www.facebook.com/"><img src="images/fblogo.png" alt="facebook icon" id="facebook" /></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/"><img src="images/instagramlogo.jpg" alt="instagram icon"
+                                    id="insta" /></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/?lang=en"><img src="images/twitterlogo.png" alt="twitter icon"
+                                    id="twitter" /></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="map">
+                    <img src="images/prestonmap.jpg" alt="Map of Preston, ID." />
+                </div>
+            </div>
+            <div id="footerbar">
+                <div id="copywrite">
+                    <p>
+                        &copy; 2019 | Southeast ID the Weather | Bekah Howe | Weather data
+                        provided by
+                        <a href="https://openweathermap.org">OpenWeatherMap</a>
+                    </p>
+                    <div id="currentdate"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts/eventpop.js"></script>
+    <script src="scripts/prestonweather.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+
+</html>

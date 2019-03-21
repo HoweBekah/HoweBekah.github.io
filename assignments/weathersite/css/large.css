@@ -92,7 +92,9 @@ ul {
 #home,
 #gallery,
 #stormcenter,
-#preston {
+#preston,
+#sodasprings,
+#fishhaven {
   border: thick solid #75485e;
   border-radius: 0.5rem;
   padding: 0.5rem;
@@ -354,14 +356,14 @@ li article img {
   width: 75%;
   margin: auto;
   margin-bottom: 2rem;
-  /*background-color: #75485e;
-    color: #f4fbeb;*/
+  background-color: #75485e;
+  color: #f4fbeb;
   font-size: 2rem;
   padding: 0.5rem;
 }
 
-#events ul li {
-  padding: 0.5rem;
+#events p {
+  margin: 1rem;
 }
 
 body {

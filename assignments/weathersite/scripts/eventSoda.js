@@ -9,9 +9,9 @@ eventRequest.onload = function () {
     console.log(eventInfo);
 
     var eventid = document.getElementById('events');
-    for (var i = 0; i < eventInfo.towns[4].events.length; i++) {
+    for (var i = 0; i < eventInfo.towns[5].events.length; i++) {
         var eventP = document.createElement('p');
-        eventP.textContent = eventInfo.towns[4].events[i];
+        eventP.textContent = eventInfo.towns[5].events[i];
         eventid.appendChild(eventP);
     }
 }

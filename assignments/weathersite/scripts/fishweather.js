@@ -1,11 +1,11 @@
-let URLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=bf627dd42edb954b2c151102940b1674';
+let URLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&APPID=bf627dd42edb954b2c151102940b1674';
 let weatherRequest = new XMLHttpRequest();
 weatherRequest.open('GET', URLstring, true);
 weatherRequest.responseType = 'text';
 weatherRequest.send();
 
 let forcastRequest = new XMLHttpRequest();
-let apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=bf627dd42edb954b2c151102940b1674';
+let apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&APPID=bf627dd42edb954b2c151102940b1674';
 forcastRequest.open('GET', apiURL, true);
 forcastRequest.responseType = 'text';
 forcastRequest.send();

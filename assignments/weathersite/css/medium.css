@@ -59,7 +59,7 @@ nav ul.hide {
     color: #f4fbeb;
     font-size: 1.5em;
     height: auto;
-    display: -inline-block;
+    display: inline-block;
     text-decoration: none;
     padding: .25rem;
     text-align: center;
@@ -187,7 +187,6 @@ h3 {
 #weathersummary {
     position: relative;
     display: flex;
-    display: -webkit-flex;
     margin: auto;
     justify-content: center;
 }
@@ -367,7 +366,6 @@ footer {
 
 #socialmedia {
     display: flex;
-    display: -webkit-flex;
     flex-direction: row;
 
     align-items: flex-end;

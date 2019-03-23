@@ -181,7 +181,7 @@ h3 {
 #weathersummary {
   position: relative;
   display: flex;
-  display: -webkit-flex;
+
   margin: auto;
   justify-content: center;
 }
@@ -419,9 +419,7 @@ footer {
 
 #socialmedia {
   display: flex;
-  display: -webkit-flex;
   flex-direction: row;
-
   align-items: flex-end;
   justify-content: center;
 }

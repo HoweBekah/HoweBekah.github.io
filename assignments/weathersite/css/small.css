@@ -92,15 +92,19 @@ ul {
 }
 
 #home,
-#stormcenter,
 #gallery,
-#preston {
+#stormcenter,
+#preston,
+#sodasprings,
+#fishhaven {
   border: thick solid #75485e;
-  border-radius: .5rem;
-  padding: .4rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
   display: inline-block;
+  text-align: center;
   background-color: #f4fbeb;
 }
+
 
 h1,
 h2,
@@ -162,11 +166,20 @@ section p {
   margin-top: 0;
 }
 
-#picwithcap1,
-#picwithcap2,
-#picwithcap3,
-#picwithcap4,
-#picwithcap5,
+#picwithcap1:hover,
+#picwithcap2:hover,
+#picwithcap3:hover,
+#picwithcap4:hover,
+#picwithcap5:hover,
+#picwithcap6:hover {
+  box-shadow: 0.5rem 0.5rem 0.5rem #51a3a3;
+}
+
+#picwithcap1 img,
+#picwithcap2 img,
+#picwithcap3 img,
+#picwithcap4 img,
+#picwithcap5 img,
 #picwithcap6 img {
   border-bottom: .25rem solid #cb904d;
   margin-bottom: .25rem;
@@ -175,11 +188,10 @@ section p {
 #summarytitle {
   color: #75485e;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 #weathersummary {
-
   position: relative;
   display: inline-block;
   display: -webkit-flex;
@@ -191,37 +203,49 @@ section p {
   background-color: #cb904d;
   width: 40%;
   z-index: 2;
-  left: 1rem;
+  left: 2.5rem;
   position: absolute;
   box-shadow: .5rem .5rem .5rem #51a3a3;
-}
-
-#summarybox p {
-  text-align: left;
-  font-size: .75rem;
 }
 
 #sumwords {
   text-align: center;
   display: block;
   color: #f4fbeb;
-  text-shadow: .2rem .2rem #75485e;
+  text-shadow: 0.25rem 0.25rem 0.25rem #75485e;
+  line-height: 1.5rem;
 }
 
-#currenttemp {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0;
+#townevents {
+  color: #75485e;
+  background-color: #f4fbeb;
+  border-radius: 50%;
+  padding: 1rem;
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  margin: auto;
 }
 
-#windspeed {
+#events {
+  justify-content: center;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  background-color: #75485e;
+  color: #f4fbeb;
   font-size: 1.5rem;
-  margin: 0;
-  padding-bottom: .3rem;
+  padding: 0.5rem;
 }
 
-#windchill {
+#events p {
+  margin: .5rem;
+  margin: auto;
+}
+
+#hightemp {
   font-size: 1rem;
+  font-weight: bold;
 }
 
 #sunnyid {
@@ -240,10 +264,10 @@ article {
   padding: 1rem;
   z-index: 0;
   position: relative;
-  margin-top: 4rem;
-
-
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
+
 
 #articlewords {
   grid-row: 2/7;
@@ -320,21 +344,16 @@ img {
   align-content: center;
   width: 85%;
   margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: auto;
   background-color: #cb904d;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 #inputtext {
-  grid-column: 1;
   padding: 1rem;
 }
 
 #stormdescript {
-  grid-column: 2;
   padding: 1rem;
 }
 

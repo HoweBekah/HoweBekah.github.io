@@ -29,59 +29,56 @@
 }
 
 #menubutton {
-    display: none;
-}
-
-#navandtop {
-    display: flex;
-    flex-flow: column wrap;
-
-}
-
-#nav {
+    font-size: 2em;
+    background-color: #75485e;
+    color: #f4fbeb;
+    border: none;
+    text-decoration: none;
+    padding: .25rem;
+    display: block;
     width: 85%;
-    text-align: center;
     margin: auto;
+    font-family: "Fjalla One",
+        sans-serif;
 }
 
-.table {
-    display: table;
-    margin: 0 auto;
+#menubutton:hover {
+    background-color: #f4fbeb;
+    color: #75485e;
 }
 
 nav {
-    font-family: "Fjalla One", sans-serif;
-    background-color: #75485e;
-    display: flex;
-    margin: 0 auto;
+    display: block;
 }
 
-nav li {
-    float: left;
-    background-color: #75485e;
+nav ul.hide {
+    display: none;
 }
 
-nav a {
+#navul a {
     color: #f4fbeb;
     font-size: 1.5em;
     height: auto;
-    display: block;
+    display: -inline-block;
     text-decoration: none;
-    padding: 0.3rem;
+    padding: .25rem;
     text-align: center;
+    background-color: #75485e;
+    font-family: "Fjalla One",
+        sans-serif;
 }
 
-nav a:hover {
+#navul li {
+    padding: .5rem;
+}
+
+#navul a:hover {
     background-color: #f4fbeb;
     color: #75485e;
 }
 
 #navul a.current {
     background: #51a3a3;
-}
-
-#navul {
-    margin: auto;
 }
 
 ul {
@@ -93,7 +90,9 @@ ul {
 #home,
 #gallery,
 #stormcenter,
-#preston {
+#preston,
+#sodasprings,
+#fishhaven {
     border: thick solid #75485e;
     border-radius: 0.5rem;
     padding: 0.5rem;
@@ -151,11 +150,20 @@ section p {
     margin-top: 0;
 }
 
-#picwithcap1,
-#picwithcap2,
-#picwithcap3,
-#picwithcap4,
-#picwithcap5,
+#picwithcap1:hover,
+#picwithcap2:hover,
+#picwithcap3:hover,
+#picwithcap4:hover,
+#picwithcap5:hover,
+#picwithcap6:hover {
+    box-shadow: 0.5rem 0.5rem 0.5rem #51a3a3;
+}
+
+#picwithcap1 img,
+#picwithcap2 img,
+#picwithcap3 img,
+#picwithcap4 img,
+#picwithcap5 img,
 #picwithcap6 img {
     border-bottom: .25rem solid #cb904d;
     margin-bottom: .25rem;
@@ -173,6 +181,7 @@ h3 {
     font-weight: bold;
     display: block;
     margin: .5rem;
+    font-size: 1.5rem;
 }
 
 #weathersummary {
@@ -186,7 +195,7 @@ h3 {
 #summarybox {
     padding: 0.5rem;
     background-color: #cb904d;
-    width: 30%;
+    width: 40%;
     z-index: 2;
     left: 1rem;
     top: 2rem;
@@ -199,24 +208,15 @@ h3 {
     text-align: center;
     display: block;
     color: #f4fbeb;
-    text-shadow: .2rem .2rem #75485e;
+    text-shadow: 0.25rem 0.25rem 0.25rem #75485e;
+    line-height: 1.5rem;
 }
 
-#currenttemp {
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0;
-}
-
-#windspeed {
+#hightemp {
     font-size: 1.5rem;
-    margin: 0;
-    padding-bottom: .3rem;
+    font-weight: bold;
 }
 
-#windchill {
-    font-size: 1.25rem;
-}
 
 #sunnyid {
 
@@ -227,9 +227,9 @@ h3 {
 article {
     background-color: #f4fbeb;
     padding: 1rem;
-    clear: both;
     display: flex;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 #snowidaho {
@@ -239,97 +239,78 @@ article {
     padding-left: 0.5rem;
 }
 
+#fortitle {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    border: thick solid #75485e;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: inline-block;
+    text-align: center;
+    background-color: #f4fbeb;
+}
+
 #forcast {
     margin: auto;
     padding: 1rem;
     text-align: center;
     display: block;
     padding-top: 0;
-    margin-bottom: 3rem;
     margin-top: 2rem;
 }
 
 #days {
+    display: none;
+
+}
+
+#daytemp {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     align-items: center;
     margin: auto;
-    margin-bottom: 2.5rem;
-    grid-column-gap: .5rem;
+    column-gap: 0.5rem;
 }
 
-#day1,
-#day2,
-#day3,
-#day4,
-#day5 {
-    border: 0.2rem solid #75485e;
-    padding: 0.5rem;
-    font-weight: bold;
+li article {
+    display: block;
+    justify-content: center;
+    background-color: #51a3a3;
+    color: #f4fbeb;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    padding-bottom: 0;
+}
+
+li article img {
+    width: 4rem;
+}
+
+#townevents {
+    color: #75485e;
     background-color: #f4fbeb;
+    border-radius: 50%;
+    padding: 2rem;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-#day1 {
-    grid-column: 1;
-    grid-row: 1;
+#events {
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #75485e;
+    color: #f4fbeb;
+    font-size: 1.5rem;
+    padding: 0.5rem;
 }
 
-#day2 {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-#day3 {
-    grid-column: 3;
-    grid-row: 1;
-}
-
-#day4 {
-    grid-column: 4;
-    grid-row: 1;
-}
-
-#day5 {
-    grid-column: 5;
-    grid-row: 1;
-}
-
-#days li {
-    float: left;
-}
-
-#weather1,
-#weather2,
-#weather3,
-#weather4,
-#weather5 {
-    height: 3rem;
-}
-
-#weather1 {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-#weather2 {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-#weather3 {
-    grid-column: 3;
-    grid-row: 2;
-}
-
-#weather4 {
-    grid-column: 4;
-    grid-row: 2;
-}
-
-#weather5 {
-    grid-column: 5;
-    grid-row: 2;
+#events p {
+    margin: .5rem;
 }
 
 body {
@@ -400,15 +381,11 @@ footer {
     height: auto;
 }
 
-
-
 #formstorming {
     text-align: left;
     align-content: center;
     width: 85%;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     margin: auto;
     background-color: #cb904d;
     font-weight: bold;
@@ -416,12 +393,10 @@ footer {
 }
 
 #inputtext {
-    grid-column: 1;
     padding: 1rem;
 }
 
 #stormdescript {
-    grid-column: 2;
     padding: 1rem;
 }
 
@@ -492,4 +467,46 @@ input[type=range] {
 
 #mainthanks h2 {
     color: #75485e;
+}
+
+#towninfo {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1rem;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    width: 80%;
+
+}
+
+#towninfo article {
+    display: block;
+    margin-top: 1rem;
+    box-shadow: .3rem .3rem .5rem #75485e;
+
+}
+
+#towninfo p {
+    background-color: #f4fbeb;
+    color: #75485e;
+    padding: 0;
+}
+
+#towninfo h3 {
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    border-bottom: .25rem dashed #cb904d;
+    display: inline-block;
+    padding-bottom: .2rem;
+    margin-bottom: 1rem;
+}
+
+#towninfo article img {
+    height: 8rem;
+    width: 20rem;
+
+}
+
+#home {
+    margin-bottom: .5rem;
 }

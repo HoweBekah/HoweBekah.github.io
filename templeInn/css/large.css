@@ -77,8 +77,6 @@ nav a {
     text-align: center;
 }
 
-
-
 nav a:hover {
     background-color: #2b303a;
     color: #9ee493;
@@ -104,6 +102,52 @@ ul {
     padding-left: 0px;
     margin-left: 0px;
     list-style-type: none;
+}
+
+h2 {
+    color: #2b303a;
+    border: .5rem solid #9ee493;
+    font-size: 2rem;
+    display: inline-block;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+#calltoaction {
+    width: 50%;
+    font-size: 2.5rem;
+    background-color: #2b303a;
+    color: #eee5e9;
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: .5rem .5rem .5rem #7c7c7c;
+    margin: auto;
+    margin-bottom: 1rem;
+
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #9ee493;
+    column-gap: 0;
+    padding: 1.5rem;
+    align-items: center;
+}
+
+#articlewords {
+    grid-column: 2;
+}
+
+#tuctemple {
+    grid-column: 1;
+    margin: auto;
+    float: left;
+    padding-right: 1.5rem;
 }
 
 footer {

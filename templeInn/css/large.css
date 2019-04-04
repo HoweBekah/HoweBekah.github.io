@@ -1,30 +1,40 @@
 body {
     background-color: #eee5e9;
     color: #2b303a;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    font-family: 'Lora', serif;
 }
 
 
 #logo {
-    height: auto;
     float: left;
     margin: auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 #webname {
     font-family: 'Lora', serif;
-    align-self: center;
+}
+
+header {
+
+    margin: auto;
 }
 
 .top {
-    width: 75%;
+
     background-color: #92dce5;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
     color: #2b303a;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin: 0 auto;
+    align-items: center;
 }
 
 #motto {
@@ -37,16 +47,6 @@ body {
     display: none;
 }
 
-#navandtop {
-    display: flex;
-    flex-flow: column wrap;
-}
-
-#nav {
-    width: 75%;
-    text-align: center;
-    margin: auto;
-}
 
 .table {
     display: table;
@@ -77,6 +77,8 @@ nav a {
     text-align: center;
 }
 
+
+
 nav a:hover {
     background-color: #2b303a;
     color: #9ee493;
@@ -102,4 +104,20 @@ ul {
     padding-left: 0px;
     margin-left: 0px;
     list-style-type: none;
+}
+
+footer {
+    color: #92dce5;
+    background-color: #2b303a;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #92dce5;
+}
+
+footer a:hover {
+    color: #eee5e9;
 }

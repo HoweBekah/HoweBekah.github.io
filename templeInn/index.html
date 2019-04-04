@@ -9,11 +9,48 @@
     <link rel="stylesheet" href="css/small.css" media="screen and (max-width: 450px)" />
     <link rel="stylesheet" href="css/medium.css" media="screen and (min-width: 451px) and (max-width: 800px)" />
     <link rel="stylesheet" href="css/large.css" media="screen and (min-width: 801px)" />
+    <link href="https://fonts.googleapis.com/css?family=Lora|Oswald" rel="stylesheet">
     <title>Temple Inn & Suites</title>
+    <script>
+        $(function () {
+            $("a").each(function () {
+                if ($(this).prop("href") == window.location.href) {
+                    $(this).addClass("current");
+                }
+            });
+        })
+    </script>
 </head>
 
 <body>
-    <h1>Temple Inn & Suites</h1>
+    <header>
+        <div id="navandtop">
+            <div class="top">
+                <div id="logo">
+                    <a href="index.html"><img src="images/templeinnlogo.png" alt="Temple Inn & Suites logo" /></a>
+                </div>
+                <div id="title">
+                    <h1 id="webname">Temple Inn & Suites</h1>
+                </div>
+            </div>
+            <nav id="nav">
+                <button id="menubutton" onclick="iconFunction()">Menu &#9776;</button>
+                <div class="table">
+                    <ul class="hide" id="navul">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="temple.html">Temples</a>
+                        </li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <script src="js/hamburger.js"></script>
 </body>
 
 </html>

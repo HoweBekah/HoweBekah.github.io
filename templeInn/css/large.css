@@ -3,7 +3,103 @@ body {
     color: #2b303a;
 }
 
-h1 {
-    color: #7c7c7c;
+
+#logo {
+    height: auto;
+    float: left;
+    margin: auto;
+}
+
+#webname {
+    font-family: 'Lora', serif;
+    align-self: center;
+}
+
+.top {
+    width: 75%;
     background-color: #92dce5;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: #2b303a;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
+}
+
+#motto {
+    margin-top: -5px;
+    padding-bottom: 10px;
+}
+
+
+#menubutton {
+    display: none;
+}
+
+#navandtop {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#nav {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+
+.table {
+    display: table;
+    margin: 0 auto;
+    border-right: .2rem solid #7c7c7c;
+    border-left: .2rem solid #7c7c7c;
+}
+
+nav {
+    font-family: 'Oswald', sans-serif;
+    background-color: #9ee493;
+    display: flex;
+    margin: 0 auto;
+}
+
+nav li {
+    float: left;
+    background-color: #9ee493;
+}
+
+nav a {
+    color: #2b303a;
+    font-size: 1.5em;
+    height: auto;
+    display: block;
+    text-decoration: none;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #2b303a;
+    color: #9ee493;
+}
+
+#navul a.current {
+    background: #eee5e9;
+}
+
+#navul {
+    margin: auto;
+}
+
+#navul li {
+    border-right: .2rem solid #7c7c7c;
+}
+
+#navul li:last-child {
+    border-right: none;
+}
+
+ul {
+    padding-left: 0px;
+    margin-left: 0px;
+    list-style-type: none;
 }

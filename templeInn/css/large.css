@@ -141,6 +141,7 @@ a {
 article {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     background-color: #9ee493;
     column-gap: 0;
     padding: 1.5rem;
@@ -160,11 +161,28 @@ article {
     margin-bottom: 1rem;
 }
 
-#tuctemple {
+#tuctemple,
+#ogtemple {
     grid-column: 1;
     margin: auto;
     float: left;
     padding-right: 1.5rem;
+}
+
+#agarticlewords,
+#pccarticlewords {
+    grid-column: 1;
+    line-height: 1.5rem;
+    text-align: right;
+    grid-row: 1;
+}
+
+#ghanatemple,
+#pcctemple {
+    grid-row: 1;
+    margin: auto;
+    grid-column: 2;
+    padding-left: 1.5rem;
 }
 
 #sumtitle {
@@ -179,6 +197,11 @@ article {
 #weathersum {
     border: .3rem dashed #eee5e9;
     text-align: center;
+}
+
+#moreArtWords {
+    grid-column: 1;
+    grid-row: 2;
 }
 
 #contactbox {

@@ -1,170 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/small.css" media="screen and (max-width: 450px)" />
-    <link rel="stylesheet" href="css/medium.css" media="screen and (min-width: 451px) and (max-width: 800px)" />
-    <link rel="stylesheet" href="css/large.css" media="screen and (min-width: 801px)" />
+    <link
+      rel="stylesheet"
+      href="css/small.css"
+      media="screen and (max-width: 450px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/medium.css"
+      media="screen and (min-width: 451px) and (max-width: 800px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/large.css"
+      media="screen and (min-width: 801px)"
+    />
     <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
     <script>
-        $(function () {
-            $("a").each(function () {
-                if ($(this).prop("href") == window.location.href) {
-                    $(this).addClass("current");
-                }
-            });
-        })
+      $(function() {
+        $("a").each(function() {
+          if ($(this).prop("href") == window.location.href) {
+            $(this).addClass("current");
+          }
+        });
+      });
     </script>
     <title>Temples</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div id="navandtop">
-            <div class="top">
-                <div id="logo">
-                    <a href="index.html"><img src="images/templeinnlogo.png" alt="Temple Inn & Suites logo" /></a>
-                </div>
-                <div id="title">
-                    <h1 id="webname">Temple Inn & Suites</h1>
-                    <h3><em>"Our services help you serve"</em></h3>
-                </div>
-            </div>
-            <nav id="nav">
-                <button id="menubutton" onclick="iconFunction()">Menu &#9776;</button>
-                <div class="table">
-                    <ul class="hide" id="navul">
-                        <li><a href="index.html">Home</a></li>
-                        <li>
-                            <a href="temple.html">Temples</a>
-                        </li>
-                        <li><a href="reservations.html">Reservations</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-
-                    </ul>
-                </div>
-            </nav>
+      <div id="navandtop">
+        <div class="top">
+          <div id="logo">
+            <a href="index.html"
+              ><img
+                src="images/templeinnlogo.png"
+                alt="Temple Inn & Suites logo"
+            /></a>
+          </div>
+          <div id="title">
+            <h1 id="webname">Temple Inn & Suites</h1>
+            <h3><em>"Our services help you serve"</em></h3>
+          </div>
         </div>
+        <nav id="nav">
+          <button id="menubutton" onclick="iconFunction()">Menu &#9776;</button>
+          <div class="table">
+            <ul class="hide" id="navul">
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="temple.html">Temples</a>
+              </li>
+              <li><a href="reservations.html">Reservations</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
-        <h2>Temples</h2>
-        <a href="reservations.html">
-            <div id="calltoaction">Make reservations now!</div>
-        </a>
-        <article>
-            <img id="tuctemple" src="images/tucsontemple.jpg"
-                alt="Tucson AZ LDS Temple with mountains in the background" />
-            <div id="articlewords">
-                <h3 id="templetitle">Tucson Arizona Temple</h3>
+      <h2>Temples</h2>
+      <a href="reservations.html">
+        <div id="calltoaction">Make reservations now!</div>
+      </a>
+      <article>
+        <img
+          id="tuctemple"
+          src="images/tucsontemple.jpg"
+          alt="Tucson AZ LDS Temple with mountains in the background"
+        />
+        <div id="articlewords">
+          <h3 id="templetitle">Tucson Arizona Temple</h3>
 
-                <ul>
-                    <li><b>Announced:</b> October 6, 2012</li>
-                    <li><b>Groundbreaking:</b> October 17, 2015</li>
-                    <li><b>Dedication:</b>August 13, 2017</li>
-                    <li><b>Address:</b> 7281 North Skyline Dr Tucson, AZ 85718 United States</li>
-                </ul>
-                <div id="weathersum">
-                    <h4 id="tucsumtitle">Tucson Weather Summary</h4>
-                    <p><b>Currently: </b>
-                        <span id="tuccurrently"></span></p>
-                    <p><b>High: </b>
-                        <span id="tuchightemp"></span></p>
-                    <p><b>Humidity: </b>
-                        <span id="tuchumidity"></span></p>
-                    <p><b>Wind Speed: </b>
-                        <span id="tucwindspeed"></span></p>
-                </div>
-            </div>
-        </article>
-        <article>
-            <img id="ghanatemple" src="images/accratemple.jpg"
-                alt="Accra Ghana LDS Temple with pink and yellow sunset in the background" />
-            <div id="articlewords">
-                <h3 id="templetitle">Accra Ghana Temple</h3>
+          <ul>
+              <li>
+              <b>Address:</b> 7281 North Skyline Dr Tucson, AZ 85718 United
+              States
+            </li>
+            <li><b>Telephone:</b> (1) 520-395-3900</li>
+            <li><b>Services:</b> No clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby</li>
+          </ul>
+          <div id="weathersum">
+            <h4 id="sumtitle">Tucson Weather Summary</h4>
+            <p><b>Currently: </b> <span id="tuccurrently"></span></p>
+            <p><b>High: </b> <span id="tuchightemp"></span></p>
+            <p><b>Humidity: </b> <span id="tuchumidity"></span></p>
+            <p><b>Wind Speed: </b> <span id="tucwindspeed"></span></p>
+          </div>
+        </div>
+        <div id="moreArtWords">
+            <ul>
+                <li><b>Announced:</b> October 6, 2012</li>
+                <li><b>Groundbreaking:</b> October 17, 2015</li>
+                <li><b>Dedication:</b>August 13, 2017</li>
+                <li>
+                    <b>Address:</b> 7281 North Skyline Dr Tucson, AZ 85718 United
+                    States
+                </li>
+            </ul>
+      </article>
+      <article>
+        <img
+          id="ghanatemple"
+          src="images/accratemple.jpg"
+          alt="Accra Ghana LDS Temple with pink and yellow sunset in the background"
+        />
+        <div id="agarticlewords">
+          <h3 id="templetitle">Accra Ghana Temple</h3>
 
-                <ul>
-                    <li><b>Announced:</b> October 6, 2012</li>
-                    <li><b>Groundbreaking:</b> October 17, 2015</li>
-                    <li><b>Dedication:</b>August 13, 2017</li>
-                    <li><b>Address:</b> 7281 North Skyline Dr Tucson, AZ 85718 United States</li>
-                </ul>
-                <div id="weathersum">
-                    <h4 id="ghanasumtitle">Accra Weather Summary</h4>
-                    <p><b>Currently: </b>
-                        <span id="ghanacurrently"></span></p>
-                    <p><b>High: </b>
-                        <span id="ghanahightemp"></span></p>
-                    <p><b>Humidity: </b>
-                        <span id="ghanahumidity"></span></p>
-                    <p><b>Wind Speed: </b>
-                        <span id="ghanawindspeed"></span></p>
-                </div>
-            </div>
-        </article>
-        <article>
-            <img id="ogtemple" src="images/OgdenTemple.jpg"
-                alt="Ogden Utah LDS Temple with clear skies" />
-            <div id="articlewords">
-                <h3 id="templetitle">Ogden Utah Temple</h3>
+          <ul>
+              <li>
+              <b>Address:</b> Accra Ghana Temple Complex 57 Independence Ave, North Ridge P.M.B. CT 209, Cantonments, Accra, Ghana,</li>
+            <li><b>Telephone:</b> (233) 302-650-123</li>
+            <li><b>Services:</b> No clothing rental available, No cafeteria available, Patron housing available, Distribution center nearby</li>
+          </ul>
+          <div id="weathersum">
+            <h4 id="sumtitle">Accra Weather Summary</h4>
+            <p><b>Currently: </b> <span id="agcurrently"></span></p>
+            <p><b>High: </b> <span id="aghightemp"></span></p>
+            <p><b>Humidity: </b> <span id="aghumidity"></span></p>
+            <p><b>Wind Speed: </b> <span id="agwindspeed"></span></p>
+          </div>
+        </div>
+        <div id="moreArtWords">
+            <ul>
+                <li><b>Announced:</b> February 16, 1998</li>
+                <li><b>Groundbreaking:</b> November 16, 2001</li>
+                <li><b>Dedication:</b>January 11, 2004</li>
+                <li>
+                    <b>Address:</b> 7281 North Skyline Dr Tucson, AZ 85718 United
+                    States
+                </li>
+            </ul>
+        </div>
+      </article>
+      <article>
+        <img
+          id="ogtemple"
+          src="images/OgdenTemple.jpg"
+          alt="Ogden Utah LDS Temple with clear skies"
+        />
+        <div id="articlewords">
+          <h3 id="templetitle">Ogden Utah Temple</h3>
 
-                <ul>
-                    <li><b>Announced:</b> October 6, 2012</li>
-                    <li><b>Groundbreaking:</b> October 17, 2015</li>
-                    <li><b>Dedication:</b>August 13, 2017</li>
-                    <li><b>Address:</b> 7281 North Skyline Dr Tucson, AZ 85718 United States</li>
-                </ul>
-                <div id="weathersum">
-                    <h4 id="sumtitle">Ogden Weather Summary</h4>
-                    <p><b>Currently: </b>
-                        <span id="ogcurrently"></span></p>
-                    <p><b>High: </b>
-                        <span id="oghightemp"></span></p>
-                    <p><b>Humidity: </b>
-                        <span id="oghumidity"></span></p>
-                    <p><b>Wind Speed: </b>
-                        <span id="ogwindspeed"></span></p>
-                </div>
-            </div>
-        </article>
-        <article>
-            <img id="pcctemple" src="images/citycentertemple.jpg"
-                alt="Provo City Center LDS Temple with " />
-            <div id="articlewords">
-                <h3 id="templetitle">Provo City Center Temple</h3>
+          <ul>
+              <li>
+              <b>Address:</b> 350 22nd St Ogden, UT 84401-1487 United States</li>
+            <li><b>Telephone:</b> (1) 801-621-6880</li>
+            <li><b>Services:</b> Clothing rental available, Cafeteria available, No patron housing available, Distribution center nearby</li>   
+          </ul>
+          <div id="weathersum">
+            <h4 id="sumtitle">Ogden Weather Summary</h4>
+            <p><b>Currently: </b> <span id="ogcurrently"></span></p>
+            <p><b>High: </b> <span id="oghightemp"></span></p>
+            <p><b>Humidity: </b> <span id="oghumidity"></span></p>
+            <p><b>Wind Speed: </b> <span id="ogwindspeed"></span></p>
+          </div>
+        </div>
+        <div id="moreArtWords">
+            <ul>
+                <li><b>Announced:</b> August 24, 1967</li>
+                <li><b>Groundbreaking:</b> September 8, 1969</li>
+                <li><b>Dedication:</b> January 18, 1972</li>
+                <li><b>Rededication:</b> September 21, 2014</li>
+            </ul>
+        </div>
+      </article>
+      <article>
+        <img
+          id="pcctemple"
+          src="images/citycentertemple.jpg"
+          alt="Provo City Center LDS Temple with "
+        />
+        <div id="pccarticlewords">
+          <h3 id="templetitle">Provo City Center Temple</h3>
 
-                <ul>
-                    <li><b>Announced:</b> October 6, 2012</li>
-                    <li><b>Groundbreaking:</b> October 17, 2015</li>
-                    <li><b>Dedication:</b>August 13, 2017</li>
-                    <li><b>Address:</b> 7281 North Skyline Dr Tucson, AZ 85718 United States</li>
-                </ul>
-                <div id="weathersum">
-                    <h4 id="sumtitle">Provo Weather Summary</h4>
-                    <p><b>Currently: </b>
-                        <span id="pcccurrently"></span></p>
-                    <p><b>High: </b>
-                        <span id="pcchightemp"></span></p>
-                    <p><b>Humidity: </b>
-                        <span id="pcchumidity"></span></p>
-                    <p><b>Wind Speed: </b>
-                        <span id="pccwindspeed"></span></p>
-                </div>
-            </div>
-        </article>
+          <ul>
+              <li>
+              <b>Address:</b> 50 South University Ave Provo, UT 84601 United States</li>
+            <li><b>Telephone:</b> (1) 801-343-2700</li>
+            <li><b>Services:</b> Clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby</li> 
+          </ul>
+          <div id="weathersum">
+            <h4 id="sumtitle">Provo Weather Summary</h4>
+            <p><b>Currently: </b> <span id="pcccurrently"></span></p>
+            <p><b>High: </b> <span id="pcchightemp"></span></p>
+            <p><b>Humidity: </b> <span id="pcchumidity"></span></p>
+            <p><b>Wind Speed: </b> <span id="pccwindspeed"></span></p>
+          </div>
+        </div>
+        <div id="moreArtWords">
+            <ul>
+                <li><b>Announced:</b> October 1, 2011</li>
+                <li><b>Groundbreaking:</b> May 12, 2012</li>
+                <li><b>Dedication:</b> March 20, 2016</li>
+            </ul>
+        </div>
+      </article>
     </main>
     <footer>
-        <div id="copywrite">
-            <p>&copy; 2019 | <a href="index.html">Temple Inn & Suites</a> | Bekah Howe | <a href="contact.html">Contact
-                    Us</a> | <a href="resources.html">References & Resources</a></p>
-        </div>
+      <div id="copywrite">
+        <p>
+          &copy; 2019 | <a href="index.html">Temple Inn & Suites</a> | Bekah
+          Howe | <a href="contact.html">Contact Us</a> |
+          <a href="resources.html">References & Resources</a>
+        </p>
+      </div>
     </footer>
     <script src="js/templeweather.js"></script>
     <script src="js/hamburger.js"></script>
-</body>
-
+  </body>
 </html>

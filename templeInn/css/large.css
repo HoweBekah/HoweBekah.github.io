@@ -5,6 +5,7 @@ body {
     width: 75%;
     margin: auto;
     font-family: 'Lora', serif;
+    font-size: 1.25rem;
 }
 
 
@@ -17,6 +18,13 @@ body {
 
 #webname {
     font-family: 'Lora', serif;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+header h3 {
+    margin-top: .5rem;
+    color: #7c7c7c;
 }
 
 header {
@@ -119,14 +127,14 @@ a {
 
 #calltoaction {
     width: 50%;
-    font-size: 2.5rem;
+    font-size: 2rem;
     background-color: #2b303a;
     color: #eee5e9;
     border-radius: .5rem;
     padding: 1rem;
     box-shadow: .5rem .5rem .5rem #7c7c7c;
     margin: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
 }
 
@@ -137,10 +145,19 @@ article {
     column-gap: 0;
     padding: 1.5rem;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 #articlewords {
     grid-column: 2;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+#templetitle {
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 1rem;
 }
 
 #tuctemple {
@@ -150,18 +167,32 @@ article {
     padding-right: 1.5rem;
 }
 
-footer {
+#sumtitle {
+    margin-bottom: 0;
+    padding-bottom: .1rem;
+    border-bottom: .2rem solid #eee5e9;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-top: .75rem;
+}
+
+#weathersum {
+    border: .3rem dashed #eee5e9;
+    text-align: center;
+}
+
+#contactbox {
     color: #92dce5;
     background-color: #2b303a;
     padding: .5rem;
     font-size: 1.5rem;
 }
 
-footer a {
+#copywrite a {
     text-decoration: none;
-    color: #92dce5;
+    color: #2b303a;
 }
 
-footer a:hover {
-    color: #eee5e9;
+#copywrite a:hover {
+    color: #7c7c7c;
 }

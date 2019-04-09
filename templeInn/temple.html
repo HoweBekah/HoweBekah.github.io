@@ -1,92 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link
-      rel="stylesheet"
-      href="css/small.css"
-      media="screen and (max-width: 450px)"
-    />
-    <link
-      rel="stylesheet"
-      href="css/medium.css"
-      media="screen and (min-width: 451px) and (max-width: 800px)"
-    />
-    <link
-      rel="stylesheet"
-      href="css/large.css"
-      media="screen and (min-width: 801px)"
-    />
-    <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
-    <script>
-      $(function() {
-        $("a").each(function() {
-          if ($(this).prop("href") == window.location.href) {
-            $(this).addClass("current");
-          }
-        });
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/small.css" media="screen and (max-width: 450px)" />
+  <link rel="stylesheet" href="css/medium.css" media="screen and (min-width: 451px) and (max-width: 800px)" />
+  <link rel="stylesheet" href="css/large.css" media="screen and (min-width: 801px)" />
+  <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+  <script>
+    $(function () {
+      $("a").each(function () {
+        if ($(this).prop("href") == window.location.href) {
+          $(this).addClass("current");
+        }
       });
-    </script>
-    <title>Temples</title>
-  </head>
+    });
+  </script>
+  <title>Temples</title>
+</head>
 
-  <body>
-    <header>
-      <div id="navandtop">
-        <div class="top">
-          <div id="logo">
-            <a href="index.html"
-              ><img
-                src="images/templeinnlogo.png"
-                alt="Temple Inn & Suites logo"
-            /></a>
-          </div>
-          <div id="title">
-            <h1 id="webname">Temple Inn & Suites</h1>
-            <h3><em>"Our services help you serve"</em></h3>
-          </div>
+<body>
+  <header>
+    <div id="navandtop">
+      <div class="top">
+        <div id="logo">
+          <a href="index.html"><img src="images/templeinnlogo.png" alt="Temple Inn & Suites logo" /></a>
         </div>
-        <nav id="nav">
-          <button id="menubutton" onclick="iconFunction()">Menu &#9776;</button>
-          <div class="table">
-            <ul class="hide" id="navul">
-              <li><a href="index.html">Home</a></li>
-              <li>
-                <a href="temple.html">Temples</a>
-              </li>
-              <li><a href="reservations.html">Reservations</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-          </div>
-        </nav>
+        <div id="title">
+          <h1 id="webname">Temple Inn & Suites</h1>
+          <h3><em>"Our services help you serve"</em></h3>
+        </div>
       </div>
-    </header>
-    <main>
-      <h2>Temples</h2>
-      <a href="reservations.html">
-        <div id="calltoaction">Make reservations now!</div>
-      </a>
-      <article>
-        <img
-          id="tuctemple"
-          src="images/tucsontemple.jpg"
-          alt="Tucson AZ LDS Temple with mountains in the background"
-        />
-        <div id="articlewords">
-          <h3 id="templetitle">Tucson Arizona Temple</h3>
-
-          <ul>
-              <li>
-              <b>Address:</b> 7281 North Skyline Dr Tucson, AZ 85718 United
-              States
+      <nav id="nav">
+        <button id="menubutton" onclick="iconFunction()">Menu &#9776;</button>
+        <div class="table">
+          <ul class="hide" id="navul">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="temple.html">Temples</a>
             </li>
-            <li><b>Telephone:</b> (1) 520-395-3900</li>
-            <li><b>Services:</b> No clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby</li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h2>Temples</h2>
+    <a href="reservations.html">
+      <div id="calltoaction">Make reservations now!</div>
+    </a>
+    <article>
+      <a href="https://www.lds.org/temples/details/tucson-arizona-temple?lang=eng"><img id="tuctemple"
+          src="images/tucsontemple.jpg" alt="Tucson AZ LDS Temple with mountains in the background" /></a>
+      <div id="articlewords">
+        <div id="tuctopart">
+          <h3 id="templetitle">Tucson Arizona Temple</h3>
           <div id="weathersum">
             <h4 id="sumtitle">Tucson Weather Summary</h4>
             <p><b>Currently: </b> <span id="tuccurrently"></span></p>
@@ -95,32 +69,68 @@
             <p><b>Wind Speed: </b> <span id="tucwindspeed"></span></p>
           </div>
         </div>
-        <div id="moreArtWords">
-            <ul>
-                <li><b>Announced:</b> October 6, 2012</li>
-                <li><b>Groundbreaking:</b> October 17, 2015</li>
-                <li><b>Dedication:</b>August 13, 2017</li>
-                <li>
-                    <b>Address:</b> 7281 North Skyline Dr Tucson, AZ 85718 United
-                    States
-                </li>
-            </ul>
-      </article>
-      <article>
-        <img
-          id="ghanatemple"
-          src="images/accratemple.jpg"
-          alt="Accra Ghana LDS Temple with pink and yellow sunset in the background"
-        />
-        <div id="agarticlewords">
-          <h3 id="templetitle">Accra Ghana Temple</h3>
-
+        <div id="tuctherest">
           <ul>
-              <li>
-              <b>Address:</b> Accra Ghana Temple Complex 57 Independence Ave, North Ridge P.M.B. CT 209, Cantonments, Accra, Ghana,</li>
-            <li><b>Telephone:</b> (233) 302-650-123</li>
-            <li><b>Services:</b> No clothing rental available, No cafeteria available, Patron housing available, Distribution center nearby</li>
+            <li>
+              <b>Address:</b> 7281 North Skyline Dr Tucson, AZ 85718 United
+              States
+            </li>
+            <li><b>Telephone:</b> (1) 520-395-3900</li>
+            <li><b>Services:</b> No clothing rental available, No cafeteria available, No patron housing available,
+              Distribution center nearby</li>
           </ul>
+        </div>
+
+        <div id="tucmoreArtWords">
+          <ul>
+            <li><b>Announced:</b> October 6, 2012</li>
+            <li><b>Groundbreaking:</b> October 17, 2015</li>
+            <li><b>Dedication:</b> August 13, 2017</li>
+            <li>
+              <b>History:</b> 157th operating temple. The Tucson Arizona Temple was originally designed with a 95-foot
+              steeple, which would
+              have
+              required a special permit. However, plans were altered, and the steeple was replaced with a dome-shaped
+              cupola—reminiscent of the famous dome that crowns Italy's Florence Cathedral—which does comply with Pima
+              County planning and zoning regulations. The site for the Tucson Arizona Temple is located in the
+              Catalina
+              Foothills where East Ina Road curves into Skyline Drive. Cactus plants at the Tucson Arizona Temple site
+              were transplanted to an on-site nursery and reintegrated into the final landscaping.
+            </li>
+          </ul>
+
+        </div>
+        <div id="tucsched">
+          <h4>Endowment Schedule</h4>
+          <p><b>Sunday: </b>Closed</p>
+          <p><b>Monday: </b>Closed</p>
+          <p><b>Tuesday: </b>8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 4:00 PM, 5:00 PM, 6:30 PM, 7:00 PM</p>
+          <p><b>Wednesday: </b>6:30 AM, 8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 12:30 PM, 4:00 PM, 5:00 PM, 6:30 PM,
+            7:00
+            PM
+          </p>
+          <p><b>Thursday: </b>8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 4:00 PM, 5:00 PM, 6:30 PM, 7:00 PM</p>
+          <p><b>Friday: </b>6:30 AM, 8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 12:30 PM, 1:30 PM, 3:00 PM, 4:00 PM, 5:00
+            PM,
+            6:30 PM, 7:00 PM
+          </p>
+          <p><b>Saturday: </b>6:30 AM, 8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 12:30 PM, 1:30 PM, 3:00 PM, 4:00 PM, 5:00
+            PM
+          </p>
+          <div id="tucclosewhole">
+            <ul id="tucclosuresched">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <a href="https://www.lds.org/temples/details/accra-ghana-temple?lang=eng"><img id="ghanatemple"
+          src="images/accratemple.jpg" alt="Accra Ghana LDS Temple with pink and yellow sunset in the background" /></a>
+      <div id="agarticlewords">
+        <div id="agtopart">
+          <h3 id="templetitle">Accra Ghana Temple</h3>
           <div id="weathersum">
             <h4 id="sumtitle">Accra Weather Summary</h4>
             <p><b>Currently: </b> <span id="agcurrently"></span></p>
@@ -129,33 +139,67 @@
             <p><b>Wind Speed: </b> <span id="agwindspeed"></span></p>
           </div>
         </div>
-        <div id="moreArtWords">
-            <ul>
-                <li><b>Announced:</b> February 16, 1998</li>
-                <li><b>Groundbreaking:</b> November 16, 2001</li>
-                <li><b>Dedication:</b>January 11, 2004</li>
-                <li>
-                    <b>Address:</b> 7281 North Skyline Dr Tucson, AZ 85718 United
-                    States
-                </li>
-            </ul>
-        </div>
-      </article>
-      <article>
-        <img
-          id="ogtemple"
-          src="images/OgdenTemple.jpg"
-          alt="Ogden Utah LDS Temple with clear skies"
-        />
-        <div id="articlewords">
-          <h3 id="templetitle">Ogden Utah Temple</h3>
-
+        <div id="agtherest">
           <ul>
-              <li>
-              <b>Address:</b> 350 22nd St Ogden, UT 84401-1487 United States</li>
-            <li><b>Telephone:</b> (1) 801-621-6880</li>
-            <li><b>Services:</b> Clothing rental available, Cafeteria available, No patron housing available, Distribution center nearby</li>   
+            <li>
+              <b>Address:</b> Accra Ghana Temple Complex 57 Independence Ave, North Ridge P.M.B. CT 209, Cantonments,
+              Accra, Ghana,</li>
+            <li><b>Telephone:</b> (233) 302-650-123</li>
+            <li><b>Services:</b> No clothing rental available, No cafeteria available, Patron housing available,
+              Distribution center nearby</li>
           </ul>
+        </div>
+      </div>
+      <div id="agmoreArtWords">
+        <ul>
+          <li><b>Announced:</b> February 16, 1998</li>
+          <li><b>Groundbreaking:</b> November 16, 2001</li>
+          <li><b>Dedication:</b> January 11, 2004</li>
+          <li>
+            <b>History:</b> 117th operating temple. The Accra Ghana Temple was the second temple built in Africa,
+            following the Johannesburg South Africa Temple (1985), and the first built in West Africa (and in Ghana).
+            The first Missionary Training
+            Center in Africa opened in Tema, Ghana (just east of Accra) in 2002. The tradition of holding a youth
+            cultural celebration before the dedication of a temple began with the dedication of the Accra Ghana Temple
+            at the request of President Gordon B. Hinckley. The announcement of the
+            Accra Ghana Temple by President Gordon B. Hinckley came after he had challenged members to make a special
+            effort to fellowship new converts to the Church. "Put your arms around them, make them feel at home. Teach
+            them the doctrines of the kingdom. Befriend them and help them in every way possible," he said. "I make you
+            a promise that if you will do that you will be blessed with a temple in your midst." The day of the
+            announcement, at an outdoor gathering of some assembled members in Accra's Independence Square, President
+            Hinckley said, "You've gone a long time without a temple. When I was here five years ago
+            [as a member of the First Presidency], we tried to find a place to build a temple. We didn't find anything
+            and we didn't say anything to anybody. But efforts Monday, February 16, were more fruitful. This morning we
+            approved the purchase of a beautiful piece of ground," President Hinckley announced.
+          </li>
+        </ul>
+
+      </div>
+      <div id="agsched">
+        <h4>Endowment Schedule</h4>
+        <p><b>Sunday: </b>Closed</p>
+        <p><b>Monday: </b>Closed</p>
+        <p><b>Tuesday: </b>7:00 AM, 8:30 AM, 10:30 AM, 12:30 PM, 2:30 PM, 4:30 PM, 6:30 PM</p>
+        <p><b>Wednesday: </b>7:00 AM, 8:30 AM, 10:30 AM, 12:30 PM, 2:30 PM, 4:30 PM, 6:30 PM
+        </p>
+        <p><b>Thursday: </b>7:00 AM, 8:30 AM, 10:30 AM, 12:30 PM, 2:30 PM, 4:30 PM, 6:30 PM</p>
+        <p><b>Friday: </b>7:00 AM, 8:30 AM, 10:30 AM, 12:30 PM, 2:30 PM, 4:30 PM, 6:30 PM
+        </p>
+        <p><b>Saturday: </b>7:00 AM, 8:30 AM, 10:30 AM, 12:30 PM
+        </p>
+        <div id="agclosewhole">
+          <ul id="agclosuresched">
+
+          </ul>
+        </div>
+      </div>
+    </article>
+    <article>
+      <a href="https://www.lds.org/temples/details/ogden-utah-temple?lang=eng"><img id="ogtemple"
+          src="images/OgdenTemple.jpg" alt="Ogden Utah LDS Temple with clear skies" /></a>
+      <div id="articlewords">
+        <div id="ogtopart">
+          <h3 id="templetitle">Ogden Utah Temple</h3>
           <div id="weathersum">
             <h4 id="sumtitle">Ogden Weather Summary</h4>
             <p><b>Currently: </b> <span id="ogcurrently"></span></p>
@@ -164,57 +208,156 @@
             <p><b>Wind Speed: </b> <span id="ogwindspeed"></span></p>
           </div>
         </div>
-        <div id="moreArtWords">
-            <ul>
-                <li><b>Announced:</b> August 24, 1967</li>
-                <li><b>Groundbreaking:</b> September 8, 1969</li>
-                <li><b>Dedication:</b> January 18, 1972</li>
-                <li><b>Rededication:</b> September 21, 2014</li>
-            </ul>
-        </div>
-      </article>
-      <article>
-        <img
-          id="pcctemple"
-          src="images/citycentertemple.jpg"
-          alt="Provo City Center LDS Temple with "
-        />
-        <div id="pccarticlewords">
-          <h3 id="templetitle">Provo City Center Temple</h3>
-
+        <div id="ogtherest">
           <ul>
-              <li>
-              <b>Address:</b> 50 South University Ave Provo, UT 84601 United States</li>
-            <li><b>Telephone:</b> (1) 801-343-2700</li>
-            <li><b>Services:</b> Clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby</li> 
+            <li>
+              <b>Address:</b> 350 22nd St Ogden, UT 84401-1487 United States</li>
+            <li><b>Telephone:</b> (1) 801-621-6880</li>
+            <li><b>Services:</b> Clothing rental available, Cafeteria available, No patron housing available,
+              Distribution
+              center nearby</li>
           </ul>
-          <div id="weathersum">
-            <h4 id="sumtitle">Provo Weather Summary</h4>
-            <p><b>Currently: </b> <span id="pcccurrently"></span></p>
-            <p><b>High: </b> <span id="pcchightemp"></span></p>
-            <p><b>Humidity: </b> <span id="pcchumidity"></span></p>
-            <p><b>Wind Speed: </b> <span id="pccwindspeed"></span></p>
+        </div>
+      </div>
+      <div id="ogmoreArtWords">
+        <ul>
+          <li><b>Announced:</b> August 24, 1967</li>
+          <li><b>Groundbreaking:</b> September 8, 1969</li>
+          <li><b>Dedication:</b> January 18, 1972</li>
+          <li><b>Rededication:</b> September 21, 2014</li>
+          <li>
+            <b>History:</b> 14th operating temple. On November 18, 2002, an angel Moroni statue was added to the Ogden
+            Utah Temple, 30 years after its dedication, as part of an exterior renovation project. The spire—originally
+            colored gold—was painted a brilliant white to lend distinction to the statue. The Ogden Utah Temple was
+            rededicated in 2014 after a three-and-a-half-year renovation project that architecturally transformed its
+            exterior appearance. While much of the interior layout remained the same, some rooms were reconfigured, and
+            all of the auxiliary systems and interior design were replaced. The adjacent tabernacle was also refurbished
+            and altered including the removal of its spire, lending more prominence to the temple. All landscaping was
+            redone, featuring two beautiful water features on the east and west sides of the temple. The above-ground
+            parking structure was replaced with surface and underground parking.
+          </li>
+        </ul>
+        <div id="ogsched">
+          <h4>Endowment Schedule</h4>
+          <p><b>Sunday: </b>Closed</p>
+          <p><b>Monday: </b>Closed</p>
+          <p><b>Tuesday: </b>7:00 AM, 7:30 AM, 8:00 AM, 8:30 AM, 9:00 AM, 9:30 AM, 10:00 AM, 10:30 AM, 11:00
+            AM, 11:30 AM, 12:00 PM, 12:30 PM, 1:00 PM, 1:30 PM, 2:00 PM, 2:30 PM, 3:00 PM, 3:30 PM, 4:00 PM, 4:30 PM,
+            5:00 PM, 5:30 PM, 6:00 PM, 6:30 PM,
+            7:00 PM, 7:30 PM, 8:00 PM</p>
+          <p><b>Wednesday: </b>6:00 AM, 7:00 AM, 7:30 AM, 8:00 AM, 8:30 AM, 9:00 AM, 9:30 AM, 10:00 AM, 10:30 AM, 11:00
+            AM, 11:30 AM, 12:00 PM, 12:30 PM, 1:00 PM, 1:30 PM, 2:00 PM, 2:30 PM, 3:00 PM, 3:30 PM, 4:00 PM, 4:30 PM,
+            5:00 PM, 5:30 PM, 6:00 PM, 6:30 PM,
+            7:00 PM, 7:30 PM, 8:00 PM
+          </p>
+          <p><b>Thursday: </b>7:00 AM, 7:30 AM, 8:00 AM, 8:30 AM, 9:00 AM, 9:30 AM, 10:00 AM, 10:30 AM, 11:00
+            AM, 11:30 AM, 12:00 PM, 12:30 PM, 1:00 PM, 1:30 PM, 2:00 PM, 2:30 PM, 3:00 PM, 3:30 PM, 4:00 PM, 4:30 PM,
+            5:00 PM, 5:30 PM, 6:00 PM, 6:30 PM,
+            7:00 PM, 7:30 PM, 8:00 PM</p>
+          <p><b>Friday: </b>7:00 AM, 7:30 AM, 8:00 AM, 8:30 AM, 9:00 AM, 9:30 AM, 10:00 AM, 10:30 AM, 11:00
+            AM, 11:30 AM, 12:00 PM, 12:30 PM, 1:00 PM, 1:30 PM, 2:00 PM, 2:30 PM, 3:00 PM, 3:30 PM, 4:00 PM, 4:30 PM,
+            5:00 PM, 5:30 PM, 6:00 PM, 6:30 PM,
+            7:00 PM, 7:30 PM, 8:00 PM
+          </p>
+          <p><b>Saturday: </b>7:00 AM, 7:30 AM, 8:00 AM, 8:30 AM, 9:00 AM, 9:30 AM, 10:00 AM, 10:30 AM, 11:00
+            AM, 11:30 AM, 12:00 PM, 12:30 PM, 1:00 PM, 1:30 PM, 2:00 PM, 2:30 PM, 3:00 PM, 3:30 PM, 4:00 PM, 4:30 PM,
+            5:00 PM, 5:30 PM, 6:00 PM, 6:30 PM,
+            7:00 PM, 7:30 PM, 8:00 PM
+          </p>
+          <div id="ogclosewhole">
+            <ul id="ogclosuresched">
+
+            </ul>
           </div>
         </div>
-        <div id="moreArtWords">
-            <ul>
-                <li><b>Announced:</b> October 1, 2011</li>
-                <li><b>Groundbreaking:</b> May 12, 2012</li>
-                <li><b>Dedication:</b> March 20, 2016</li>
-            </ul>
-        </div>
-      </article>
-    </main>
-    <footer>
-      <div id="copywrite">
-        <p>
-          &copy; 2019 | <a href="index.html">Temple Inn & Suites</a> | Bekah
-          Howe | <a href="contact.html">Contact Us</a> |
-          <a href="resources.html">References & Resources</a>
-        </p>
       </div>
-    </footer>
-    <script src="js/templeweather.js"></script>
-    <script src="js/hamburger.js"></script>
-  </body>
+    </article>
+    <article>
+      <a href="https://www.lds.org/temples/details/provo-city-center-temple?lang=eng"><img id="pcctemple"
+          src="images/citycentertemple.jpg" alt="Provo City Center LDS Temple with " />
+        <div id="pccarticlewords">
+      </a>
+      <div id="pcctopart">
+        <h3 id="templetitle">Provo City Center Temple</h3>
+        <div id="weathersum">
+          <h4 id="sumtitle">Provo Weather Summary</h4>
+          <p><b>Currently: </b> <span id="pcccurrently"></span></p>
+          <p><b>High: </b> <span id="pcchightemp"></span></p>
+          <p><b>Humidity: </b> <span id="pcchumidity"></span></p>
+          <p><b>Wind Speed: </b> <span id="pccwindspeed"></span></p>
+        </div>
+      </div>
+      <div id="pcctherest">
+        <ul>
+          <li>
+            <b>Address:</b> 50 South University Ave Provo, UT 84601 United States</li>
+          <li><b>Telephone:</b> (1) 801-343-2700</li>
+          <li><b>Services:</b> Clothing rental available, No cafeteria available, No patron housing available,
+            Distribution center nearby</li>
+        </ul>
+      </div>
+      </div>
+      <div id="pccmoreArtWords">
+        <ul>
+          <li><b>Announced:</b> October 1, 2011</li>
+          <li><b>Groundbreaking:</b> May 12, 2012</li>
+          <li><b>Dedication:</b> March 20, 2016</li>
+          <li>
+            <b>History:</b> 150th operating temple. After standing unharmed for 125 years, the Provo Tabernacle met
+            tragedy on December 17, 2010, when a four-alarm fire, reported at 2:43 a.m., engulfed the building—ripping
+            through wooden pews, organ pipes, a rented Fazioli piano, priceless pioneer craftsmanship, and original
+            pieces of art. For hours, a crew of approximately 25 firefighters subdued flames and doused the building
+            with water. Around 5:00 a.m., the roof began to collapse, giving way completely within the hour and dragging
+            with it portions of the front parapet and wall. Crews were still drenching hot spots by mid-afternoon, but
+            felt encouraged by the still-standing exterior walls. Tearful crowds gathered throughout the day, looking on
+            in reverent dismay as black smoke billowed from the iconic edifice. Perhaps the most remarkable discovery
+            made among the ashes the day after the fire was a giclee print of The Second Coming by Harry Anderson, which
+            depicts Jesus Christ coming through the clouds with heralding angels on either side—a picture frequently
+            featured in LDS temples. The tabernacle painting, which sat inside the east front door, was completely
+            blackened by residual fire except for the untouched figure of Jesus Christ himself with hands outstretched.
+            Those who saw the painting in person were awestruck. Officials directed the print to be removed immediately
+            for conservation and stabilization. It was handled with the greatest care, wrapped in plastic, and loaded
+            into a waiting truck. The extraordinary occurrence was dubbed by some to be a "Christmas miracle."
+          </li>
+        </ul>
+        <div id="pccsched">
+          <h4>Endowment Schedule</h4>
+          <p><b>Sunday: </b>Closed</p>
+          <p><b>Monday: </b>Closed</p>
+          <p><b>Tuesday: </b>6:00 AM, 7:00 AM, 8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 12:00 PM, 1:00 PM, 2:00 PM, 3:00
+            PM, 4:00 PM, 5:00 PM, 6:00 PM, 7:00 PM, 8:00 PM</p>
+          <p><b>Wednesday: </b>6:00 AM, 7:00 AM, 8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 12:00 PM, 1:00 PM, 2:00 PM, 3:00
+            PM, 4:00 PM, 5:00 PM, 6:00 PM, 7:00 PM, 8:00 PM
+          </p>
+          <p><b>Thursday: </b>6:00 AM, 7:00 AM, 8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 12:00 PM, 1:00 PM, 2:00 PM, 3:00
+            PM, 4:00 PM, 5:00 PM, 6:00 PM, 7:00 PM, 8:00 PM</p>
+          <p><b>Friday: </b>6:00 AM, 7:00 AM, 8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 12:00 PM, 1:00 PM, 2:00 PM, 3:00 PM,
+            4:00 PM, 5:00 PM, 6:00 PM, 7:00 PM, 8:00 PM
+          </p>
+          <p><b>Saturday: </b>6:00 AM, 7:00 AM, 8:00 AM, 9:00 AM, 10:00 AM, 11:00 AM, 12:00 PM, 1:00 PM, 2:00 PM, 3:00
+            PM, 4:00 PM, 5:00 PM, 6:00 PM, 7:00 PM, 8:00 PM
+          </p>
+          <div id="pcclosewhole">
+            <ul id="pcclosuresched">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <div id="copywrite">
+      <p>
+        &copy; 2019 | <a href="index.html">Temple Inn & Suites</a> | Bekah
+        Howe | <a href="contact.html">Contact Us</a> |
+        <a href="resources.html">References & Resources</a>
+      </p>
+    </div>
+  </footer>
+  <script src="js/templeclosure.js"></script>
+  <script src="js/templeweather.js"></script>
+  <script src="js/hamburger.js"></script>
+</body>
+
 </html>

@@ -387,7 +387,7 @@ h5 {
     border: none;
     border-bottom: .5rem dashed #9ee493;
     text-shadow: .1rem .1rem .3rem #7c7c7c;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 0;
 
 }
@@ -405,60 +405,76 @@ h5 {
     margin: 1rem;
 }
 
-#galpicsmish {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 1rem;
-    padding: 0.5rem;
-    margin: auto;
+
+#galtitle {
+    display: inline-block;
+    padding: .5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: .25rem solid #9ee493;
+    border-top: .25rem solid #9ee493;
 }
 
-#galpicsrecept {
+#galpics {
+    justify-content: center;
     margin: auto;
     display: flex;
-    flex-wrap: wrap column;
-    grid-gap: 1rem;
-    padding: 0.5rem;
+    flex-flow: row wrap;
 }
 
-#picwithcap1:hover,
-#picwithcap2:hover,
-#picwithcap3:hover,
-#picwithcap4:hover,
-#picwithcap5:hover,
-#picwithcap6:hover,
-#picwithcap7:hover,
-#picwithcap8:hover {
-    box-shadow: 0.5rem 0.5rem 0.5rem #51a3a3;
-    float: left;
+#pic1:hover,
+#pic2:hover,
+#pic3:hover,
+#pic4:hover,
+#pic5:hover,
+#pic6:hover,
+#pic7:hover,
+#pic8:hover {
+    transform: scale(1.5);
+    box-shadow: .5rem .5rem .5rem #92dce5;
 }
 
-#picwithcap1,
-#picwithcap2,
-#picwithcap3,
-#picwithcap4,
-#picwithcap5,
-#picwithcap6,
-#picwithcap7,
-#picwithcap8 {
-    background-color: #75485e;
-    color: #f4fbeb;
+#pic1 p,
+#pic2 p,
+#pic3 p,
+#pic4 p,
+#pic5 p,
+#pic6 p,
+#pic7 p,
+#pic8 p {
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+}
+
+#pic1 img,
+#pic2 img,
+#pic3 img,
+#pic4 img,
+#pic5 img,
+#pic6 img,
+#pic7 img,
+#pic8 img {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 0.35rem solid #92dce5;
+    margin-bottom: 0.25rem;
+}
+
+#pic1,
+#pic2,
+#pic3,
+#pic4,
+#pic5,
+#pic6,
+#pic7,
+#pic8 {
+    width: 25%;
+    background-color: #7c7c7c;
+    color: #eee5e9;
     font-size: 1rem;
     text-align: center;
-    padding: 0.35rem;
-    margin: 0;
+    margin: .5rem;
     justify-content: center;
-}
-
-#picwithcap1 img,
-#picwithcap2 img,
-#picwithcap3 img,
-#picwithcap4 img,
-#picwithcap5 img,
-#picwithcap6 img,
-#picwithcap7 img,
-#picwithcap8 img {
-    border-bottom: 0.35rem solid #cb904d;
-    margin-bottom: 0.25rem;
+    padding: .75rem;
+    border-radius: .5rem;
 }

@@ -258,6 +258,8 @@ h4 {
     background-color: #2b303a;
     padding: .5rem;
     font-size: 1.5rem;
+    margin-top: 2rem;
+    clear: both;
 }
 
 #copywrite a {
@@ -341,4 +343,122 @@ h5 {
     display: inline-block;
     margin-bottom: 2rem;
     margin-top: 2rem;
+}
+
+#servbuttons {
+    column-gap: 2rem;
+    margin: auto;
+    align-items: center;
+    float: left;
+    margin-right: 1rem;
+}
+
+#receptionbutton,
+#missionbutton {
+    margin: auto;
+    width: 75%;
+    background-color: #7c7c7c;
+    color: #9ee493;
+    display: block;
+    font-size: 2.5rem;
+    padding: 2rem;
+    box-shadow: .5rem .5rem .5rem #2b303a;
+    border-radius: .75rem;
+    margin-bottom: 2rem;
+
+}
+
+#amenities h3 {
+    text-align: center;
+    border-bottom: .5rem ridge #92dce5;
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#amenities {
+    margin-bottom: 2rem;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.serveheading {
+    border: none;
+    border-bottom: .5rem dashed #9ee493;
+    text-shadow: .1rem .1rem .3rem #7c7c7c;
+    font-size: 3rem;
+    margin-top: 0;
+
+}
+
+#mishlist,
+#reclist {
+    font-size: 2rem;
+    text-align: left;
+    width: 85%;
+    margin: auto;
+}
+
+#mishlist li,
+#reclist li {
+    margin: 1rem;
+}
+
+#galpicsmish {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+    padding: 0.5rem;
+    margin: auto;
+}
+
+#galpicsrecept {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap column;
+    grid-gap: 1rem;
+    padding: 0.5rem;
+}
+
+#picwithcap1:hover,
+#picwithcap2:hover,
+#picwithcap3:hover,
+#picwithcap4:hover,
+#picwithcap5:hover,
+#picwithcap6:hover,
+#picwithcap7:hover,
+#picwithcap8:hover {
+    box-shadow: 0.5rem 0.5rem 0.5rem #51a3a3;
+    float: left;
+}
+
+#picwithcap1,
+#picwithcap2,
+#picwithcap3,
+#picwithcap4,
+#picwithcap5,
+#picwithcap6,
+#picwithcap7,
+#picwithcap8 {
+    background-color: #75485e;
+    color: #f4fbeb;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.35rem;
+    margin: 0;
+    justify-content: center;
+}
+
+#picwithcap1 img,
+#picwithcap2 img,
+#picwithcap3 img,
+#picwithcap4 img,
+#picwithcap5 img,
+#picwithcap6 img,
+#picwithcap7 img,
+#picwithcap8 img {
+    border-bottom: 0.35rem solid #cb904d;
+    margin-bottom: 0.25rem;
 }

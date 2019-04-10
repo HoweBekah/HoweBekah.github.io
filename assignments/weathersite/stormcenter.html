@@ -13,21 +13,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <style>
     @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville");
-    </style>
+  </style>
   <title>ID Weather Storm Center</title>
   <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
   <script>
-    $(function() {
-        $("a").each(function() {
-          if ($(this).prop("href") == window.location.href) {
-            $(this).addClass("current");
-          }
-        });
+    $(function () {
+      $("a").each(function () {
+        if ($(this).prop("href") == window.location.href) {
+          $(this).addClass("current");
+        }
       });
-      function adjustRange(rating) {
-        document.getElementById("rangeValue").innerHTML = rating;
-      }
-    </script>
+    });
+
+    function adjustRange(rating) {
+      document.getElementById("rangeValue").innerHTML = rating;
+    }
+  </script>
 </head>
 
 <body>
@@ -72,11 +73,12 @@
             <fieldset>
               <legend>Personal Information</legend>
               <label for="fullname" class="textinput">Enter Your Full Name:</label>
-              <input type="text" name="fullname" id="fullname" class="textinput" minlength="5" pattern="[a-zA-Z]+[ ][a-zA-Z]+"
-                required /><br />
+              <input type="text" name="fullname" id="fullname" class="textinput" minlength="5"
+                pattern="[a-zA-Z]+[ ][a-zA-Z]+" required /><br />
 
               <label for="email" class="textinput">Enter Your Email:</label>
-              <input type="email" name="email" id="email" placeholder="jonsmith@demo.com" class="textinput" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" /><br />
+              <input type="email" name="email" id="email" placeholder="jonsmith@demo.com" class="textinput"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" /><br />
 
               <label for="phone" class="textinput">Enter Your Phone Number:</label>
               <input type="tel" name="phone" id="phone" required class="textinput" pattern="[0-9]{7,10}" /><br />
@@ -96,7 +98,8 @@
               <input type="date" name="stormdate" id="stormdate" class="textinput" /><br />
 
               <label for="stormtype" class="textinput">Type of Storm:</label>
-              <input type="text" id="stormtype" name="stormtype" list="typeoptions" class="textinput" pattern="[Ff]lash [Ff]lood|[Hh]ail|[Hh]urricane|[Tt]hunderstorm|[Tt]ornado" />
+              <input type="text" id="stormtype" name="stormtype" list="typeoptions" class="textinput"
+                pattern="[Ff]lash [Ff]lood|[Hh]ail|[Hh]urricane|[Tt]hunderstorm|[Tt]ornado" />
               <datalist id="typeoptions">
                 <option>Flash Flood</option>
                 <option>Hail</option>
@@ -140,10 +143,12 @@
               <a href="https://www.facebook.com/"><img src="images/fblogo.png" alt="facebook icon" id="facebook" /></a>
             </li>
             <li>
-              <a href="https://www.instagram.com/"><img src="images/instagramlogo.jpg" alt="instagram icon" id="insta" /></a>
+              <a href="https://www.instagram.com/"><img src="images/instagramlogo.jpg" alt="instagram icon"
+                  id="insta" /></a>
             </li>
             <li>
-              <a href="https://twitter.com/?lang=en"><img src="images/twitterlogo.png" alt="twitter icon" id="twitter" /></a>
+              <a href="https://twitter.com/?lang=en"><img src="images/twitterlogo.png" alt="twitter icon"
+                  id="twitter" /></a>
             </li>
           </ul>
         </div>

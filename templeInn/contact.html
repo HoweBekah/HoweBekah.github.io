@@ -56,8 +56,46 @@
         <a href="reservations.html">
             <div id="calltoaction">Make reservations now!</div>
         </a>
+        <h5><b>Temple Inn & Suites</b><br><b>Telephone: </b> #324-543-7532<br><b>Address: </b>4800 Montgomery Ln #300
+            Bethesda, MD 20814</h5>
+        <form class="resform" action="index.html">
+            <div id="formresing">
+                <div id="inputtext">
+                    <fieldset>
+                        <legend>Contact Form</legend>
+                        <label for="fullname" class="textinput">Enter Your Full Name:</label>
+                        <input type="text" name="fullname" id="fullname" class="textinput" minlength="5"
+                            pattern="[a-zA-Z]+[ ][a-zA-Z]+" required /><br />
+
+                        <label for="email" class="textinput">Enter Your Email:</label>
+                        <input type="email" name="email" id="email" placeholder="jonsmith@demo.com" class="textinput"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required /><br />
+
+                        <label for="phone" class="textinput">Enter Your Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" required class="textinput"
+                            pattern="[0-9]{7,10}" /><br />
+
+
+                        <div id="coms">
+                            <label for="comments" class="addComments">Questions or Comments:</label>
+                            <textarea name="comments" id="comments" rows="3" cols="20" class="addComments"></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <input type="submit" name="submit" id="submit" />
+        </form>
+        <div id="mapandtitle">
+            <h5>Temple Inn & Suites Headquarters</h5>
+            <iframe id="embedmap"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4050188057963!2d-77.0955318!3d38.9832518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1554854543669!5m2!1sen!2sus"
+                width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
     </main>
     <footer>
+        <div id="contactbox">
+            <p><b>Temple Inn & Suites<b><br> #324-543-7532<br>4800 Montgomery Ln #300<br> Bethesda, MD 20814
+        </div>
         <div id="copywrite">
             <p>&copy; 2019 | <a href="index.html">Temple Inn & Suites</a> | Bekah Howe | <a href="contact.html">Contact
                     Us</a> | <a href="resources.html">References & Resources</a></p>

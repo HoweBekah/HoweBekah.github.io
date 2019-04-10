@@ -56,8 +56,39 @@
         <a href="reservations.html">
             <div id="calltoaction">Make reservations now!</div>
         </a>
+        <form class="resform" action="index.html">
+            <div id="formresing">
+                <div id="inputtext">
+                    <fieldset>
+                        <legend>Reservation Information</legend>
+                        <label for="fullname" class="textinput">Enter Your Full Name:</label>
+                        <input type="text" name="fullname" id="fullname" class="textinput" minlength="5"
+                            pattern="[a-zA-Z]+[ ][a-zA-Z]+" required /><br />
+
+                        <label for="email" class="textinput">Enter Your Email:</label>
+                        <input type="email" name="email" id="email" placeholder="jonsmith@demo.com" class="textinput"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required /><br />
+
+                        <label for="phone" class="textinput">Enter Your Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" required class="textinput"
+                            pattern="[0-9]{7,10}" /><br />
+
+                        <label for="homeplace" class="textinput">Enter Your Home State or Country:</label>
+                        <input type="text" id="homeplace" name="homeplace" required class="textinput" /><br />
+                        <div id="coms">
+                            <label for="comments" class="addComments">Special Accommodations or Comments:</label>
+                            <textarea name="comments" id="comments" rows="3" cols="20" class="addComments"></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <input type="submit" name="submit" id="submit" />
+        </form>
     </main>
     <footer>
+        <div id="contactbox">
+            <p><b>Temple Inn & Suites<b><br> #324-543-7532<br>4800 Montgomery Ln #300<br> Bethesda, MD 20814
+        </div>
         <div id="copywrite">
             <p>&copy; 2019 | <a href="index.html">Temple Inn & Suites</a> | Bekah Howe | <a href="contact.html">Contact
                     Us</a> | <a href="resources.html">References & Resources</a></p>

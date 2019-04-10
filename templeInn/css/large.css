@@ -268,3 +268,77 @@ h4 {
 #copywrite a:hover {
     color: #7c7c7c;
 }
+
+#formresing {
+    text-align: left;
+    align-content: center;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    margin: auto;
+    background-color: #7c7c7c;
+    color: #2b303a;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: .75rem;
+}
+
+#inputtext {
+    padding: 1rem;
+    color: whitesmoke;
+    margin: auto;
+}
+
+#comments {
+    display: block;
+}
+
+input#submit {
+    font-size: 2rem;
+    padding: 0.5rem;
+    background-color: #92dce5;
+    color: #7c7c7c;
+    font-weight: bold;
+    box-shadow: 0.35rem 0.35rem 0.25rem #2b303a;
+    margin: 1rem;
+    text-align: center;
+}
+
+input.textinput {
+    margin: 0.5rem;
+}
+
+fieldset {
+    border: none;
+    padding: 1rem;
+}
+
+legend {
+    font-size: 2rem;
+    color: #9ee493;
+    border-bottom: 0.25rem dashed whitesmoke;
+    text-align: center;
+}
+
+input {
+    padding: 0.25rem;
+}
+
+textarea {
+    margin: 0.25rem;
+}
+
+h5 {
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+#mapandtitle {
+    background-color: #9ee493;
+    border-radius: .75rem;
+    padding: 2rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}

@@ -1,9 +1,480 @@
 body {
     background-color: #eee5e9;
     color: #2b303a;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    font-family: 'Lora', serif;
+    font-size: 1.25rem;
 }
 
-h1 {
+
+#logo {
+    float: left;
+    margin: auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+#webname {
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+header h3 {
+    margin-top: .5rem;
     color: #7c7c7c;
+}
+
+header {
+
+    margin: auto;
+}
+
+.top {
+
     background-color: #92dce5;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #2b303a;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#motto {
+    margin-top: -5px;
+    padding-bottom: 10px;
+}
+
+
+#menubutton {
+    display: none;
+}
+
+
+.table {
+    display: table;
+    margin: 0 auto;
+    border-right: .2rem solid #7c7c7c;
+    border-left: .2rem solid #7c7c7c;
+}
+
+nav {
+    font-family: 'Oswald', sans-serif;
+    background-color: #9ee493;
+    display: flex;
+    margin: 0 auto;
+}
+
+nav li {
+    float: left;
+    background-color: #9ee493;
+}
+
+nav a {
+    color: #2b303a;
+    font-size: 1.5em;
+    height: auto;
+    display: block;
+    text-decoration: none;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #2b303a;
+    color: #9ee493;
+}
+
+#navul a.current {
+    background: #eee5e9;
+}
+
+#navul {
+    margin: auto;
+}
+
+#navul li {
+    border-right: .2rem solid #7c7c7c;
+}
+
+#navul li:last-child {
+    border-right: none;
+}
+
+ul {
+    padding-left: 0px;
+    margin-left: 0px;
+    list-style-type: none;
+}
+
+h2 {
+    color: #2b303a;
+    border: .5rem solid #9ee493;
+    font-size: 2rem;
+    display: inline-block;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+#calltoaction {
+    width: 50%;
+    font-size: 2rem;
+    background-color: #2b303a;
+    color: #eee5e9;
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: .5rem .5rem .5rem #7c7c7c;
+    margin: auto;
+    margin-bottom: 2rem;
+
+}
+
+#hometemple {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #9ee493;
+    column-gap: 0;
+    padding: 1.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+article {
+    background-color: #9ee493;
+    padding: 1.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+#articlewords {
+    line-height: 1.5rem;
+    text-align: left;
+    display: inline;
+}
+
+#tuctopart,
+#agtopart,
+#ogtopart,
+#pcctopart {
+    text-align: center;
+    justify-content: center;
+}
+
+#templetitle {
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#tuctemple,
+#ogtemple {
+    margin: auto;
+    float: left;
+    padding-right: 1.5rem;
+}
+
+#agarticlewords,
+#pccarticlewords {
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+#ghanatemple,
+#pcctemple {
+    margin: auto;
+    float: right;
+    padding-left: 1.5rem;
+}
+
+#sumtitle {
+    margin-bottom: 0;
+    padding-bottom: .1rem;
+    border-bottom: .2rem solid #eee5e9;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-top: .75rem;
+}
+
+#homeweathersum {
+    border: .3rem dashed #eee5e9;
+    text-align: center;
+    padding: .5rem;
+    margin: auto;
+}
+
+#weathersum {
+    border: .3rem dashed #eee5e9;
+    text-align: center;
+    display: inline-block;
+    padding: .5rem;
+    margin: auto;
+}
+
+#tuctherest,
+#agtherest,
+#ogtherest,
+#pcctherest {
+    clear: both;
+    padding-top: .5rem;
+}
+
+h4 {
+    margin-top: .5rem;
+    margin-bottom: 0;
+    border-bottom: .2rem solid #7c7c7c;
+    display: inline-block;
+}
+
+#tucclosuresched,
+#agclosuresched,
+#ogclosuresched,
+#pcclosuresched {
+    margin-top: .1rem;
+    margin-bottom: 0;
+}
+
+#tucsched p,
+#agsched p,
+#ogsched p,
+#pccsched p {
+    margin: .2rem;
+}
+
+#contactbox {
+    color: #92dce5;
+    background-color: #2b303a;
+    padding: .5rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    clear: both;
+}
+
+#copywrite a {
+    text-decoration: none;
+    color: #2b303a;
+}
+
+#copywrite a:hover {
+    color: #7c7c7c;
+}
+
+#formresing {
+    text-align: left;
+    align-content: center;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    margin: auto;
+    background-color: #7c7c7c;
+    color: #2b303a;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: .75rem;
+}
+
+#inputtext {
+    padding: 1rem;
+    color: whitesmoke;
+    margin: auto;
+}
+
+#comments {
+    display: block;
+}
+
+input#submit {
+    font-size: 2rem;
+    padding: 0.5rem;
+    background-color: #92dce5;
+    color: #7c7c7c;
+    font-weight: bold;
+    box-shadow: 0.35rem 0.35rem 0.25rem #2b303a;
+    margin: 1rem;
+    text-align: center;
+}
+
+input.textinput {
+    margin: 0.5rem;
+}
+
+fieldset {
+    border: none;
+    padding: 1rem;
+}
+
+legend {
+    font-size: 2rem;
+    color: #9ee493;
+    border-bottom: 0.25rem dashed whitesmoke;
+    text-align: center;
+}
+
+input {
+    padding: 0.25rem;
+}
+
+textarea {
+    margin: 0.25rem;
+}
+
+h5 {
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+#mapandtitle {
+    background-color: #9ee493;
+    border-radius: .75rem;
+    padding: 2rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+#servbuttons {
+    column-gap: 2rem;
+    margin: auto;
+    align-items: center;
+    float: left;
+    margin-right: 1rem;
+}
+
+#receptionbutton,
+#missionbutton {
+    margin: auto;
+    width: 75%;
+    background-color: #7c7c7c;
+    color: #9ee493;
+    display: block;
+    font-size: 2.5rem;
+    padding: 2rem;
+    box-shadow: .5rem .5rem .5rem #2b303a;
+    border-radius: .75rem;
+    margin-bottom: 2rem;
+
+}
+
+#amenities h3 {
+    text-align: center;
+    border-bottom: .5rem ridge #92dce5;
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#amenities {
+    margin-bottom: 2rem;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.serveheading {
+    border: none;
+    border-bottom: .5rem dashed #9ee493;
+    text-shadow: .1rem .1rem .3rem #7c7c7c;
+    font-size: 2rem;
+    margin-top: 0;
+
+}
+
+#mishlist,
+#reclist {
+    font-size: 2rem;
+    text-align: left;
+    width: 85%;
+    margin: auto;
+}
+
+#mishlist li,
+#reclist li {
+    margin: 1rem;
+}
+
+
+#galtitle {
+    display: inline-block;
+    padding: .5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: .25rem solid #9ee493;
+    border-top: .25rem solid #9ee493;
+}
+
+#galpics {
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#pic1:hover,
+#pic2:hover,
+#pic3:hover,
+#pic4:hover,
+#pic5:hover,
+#pic6:hover,
+#pic7:hover,
+#pic8:hover {
+    transform: scale(1.5);
+    box-shadow: .5rem .5rem .5rem #92dce5;
+}
+
+#pic1 p,
+#pic2 p,
+#pic3 p,
+#pic4 p,
+#pic5 p,
+#pic6 p,
+#pic7 p,
+#pic8 p {
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+}
+
+#pic1 img,
+#pic2 img,
+#pic3 img,
+#pic4 img,
+#pic5 img,
+#pic6 img,
+#pic7 img,
+#pic8 img {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 0.35rem solid #92dce5;
+    margin-bottom: 0.25rem;
+}
+
+#pic1,
+#pic2,
+#pic3,
+#pic4,
+#pic5,
+#pic6,
+#pic7,
+#pic8 {
+    width: 25%;
+    background-color: #7c7c7c;
+    color: #eee5e9;
+    font-size: 1rem;
+    text-align: center;
+    margin: .5rem;
+    justify-content: center;
+    padding: .75rem;
+    border-radius: .5rem;
 }

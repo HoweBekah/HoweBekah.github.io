@@ -138,15 +138,18 @@ a {
 
 }
 
+#hometuctemple {
+    float: left;
+    margin-right: 1rem;
+}
+
 #hometemple {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
     background-color: #9ee493;
-    column-gap: 0;
     padding: 1.5rem;
     align-items: center;
     margin-bottom: 2rem;
+    justify-content: center;
+    text-align: center;
 }
 
 article {
@@ -157,11 +160,14 @@ article {
     text-align: left;
 }
 
-#articlewords {
+.articlewords {
     line-height: 1.5rem;
     text-align: left;
     display: inline;
+    justify-content: center;
 }
+
+
 
 #tuctopart,
 #agtopart,
@@ -171,16 +177,17 @@ article {
     justify-content: center;
 }
 
-#templetitle {
+.templetitle {
     font-size: 2rem;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-top: 0;
     text-align: center;
 }
 
 #tuctemple,
 #ogtemple {
+    width: 55%;
     margin: auto;
     float: left;
     padding-right: 1.5rem;
@@ -194,33 +201,32 @@ article {
 
 #ghanatemple,
 #pcctemple {
+    width: 55%;
     margin: auto;
     float: right;
     padding-left: 1.5rem;
 }
 
-#sumtitle {
+.sumtitle {
     margin-bottom: 0;
     padding-bottom: .1rem;
     border-bottom: .2rem solid #eee5e9;
     display: inline-block;
     font-size: 1.3rem;
-    margin-top: .75rem;
+    margin-top: 0;
 }
 
-#homeweathersum {
-    border: .3rem dashed #eee5e9;
-    text-align: center;
-    padding: .5rem;
-    margin: auto;
-}
 
-#weathersum {
+.weathersum {
     border: .3rem dashed #eee5e9;
     text-align: center;
     display: inline-block;
     padding: .5rem;
     margin: auto;
+}
+
+.weathersum p {
+    margin: .5rem;
 }
 
 #tuctherest,
@@ -271,24 +277,20 @@ h4 {
     color: #7c7c7c;
 }
 
-#formresing {
+
+#inputtext {
+    padding: 1rem;
     text-align: left;
     align-content: center;
     width: 85%;
     margin: auto;
     display: flex;
-    margin: auto;
+
     background-color: #7c7c7c;
     color: #2b303a;
     font-weight: bold;
     font-size: 1.5rem;
     border-radius: .75rem;
-}
-
-#inputtext {
-    padding: 1rem;
-    color: whitesmoke;
-    margin: auto;
 }
 
 #comments {
@@ -307,12 +309,14 @@ input#submit {
 }
 
 input.textinput {
-    margin: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: .5rem;
 }
 
 fieldset {
     border: none;
     padding: 1rem;
+    margin: auto;
 }
 
 legend {
@@ -328,6 +332,7 @@ input {
 
 textarea {
     margin: 0.25rem;
+    width: 100%;
 }
 
 h5 {

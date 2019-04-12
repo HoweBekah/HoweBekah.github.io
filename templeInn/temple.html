@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/small.css" media="screen and (max-width: 450px)" />
   <link rel="stylesheet" href="css/medium.css" media="screen and (min-width: 451px) and (max-width: 800px)" />
   <link rel="stylesheet" href="css/large.css" media="screen and (min-width: 801px)" />
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
   <script>
     $(function () {
@@ -58,11 +60,11 @@
     <article>
       <a href="https://www.lds.org/temples/details/tucson-arizona-temple?lang=eng"><img id="tuctemple" class="temppics"
           src="images/tucsontemple.jpg" alt="Tucson AZ LDS Temple with mountains in the background" /></a>
-      <div id="articlewords">
+      <div class="articlewords">
         <div id="tuctopart">
-          <h3 id="templetitle">Tucson Arizona Temple</h3>
-          <div id="weathersum">
-            <h4 id="sumtitle">Tucson Weather Summary</h4>
+          <h3 class="templetitle">Tucson Arizona Temple</h3>
+          <div class="weathersum">
+            <h4 class="sumtitle">Tucson Weather Summary</h4>
             <p><b>Currently: </b> <span id="tuccurrently"></span></p>
             <p><b>High: </b> <span id="tuchightemp"></span></p>
             <p><b>Humidity: </b> <span id="tuchumidity"></span></p>
@@ -131,9 +133,9 @@
           src="images/accratemple.jpg" alt="Accra Ghana LDS Temple with pink and yellow sunset in the background" /></a>
       <div id="agarticlewords">
         <div id="agtopart">
-          <h3 id="templetitle">Accra Ghana Temple</h3>
-          <div id="weathersum">
-            <h4 id="sumtitle">Accra Weather Summary</h4>
+          <h3 class="templetitle">Accra Ghana Temple</h3>
+          <div class="weathersum">
+            <h4 class="sumtitle">Accra Weather Summary</h4>
             <p><b>Currently: </b> <span id="agcurrently"></span></p>
             <p><b>High: </b> <span id="aghightemp"></span></p>
             <p><b>Humidity: </b> <span id="aghumidity"></span></p>
@@ -201,11 +203,11 @@
     <article>
       <a href="https://www.lds.org/temples/details/ogden-utah-temple?lang=eng"><img id="ogtemple" class="temppics"
           src="images/OgdenTemple.jpg" alt="Ogden Utah LDS Temple with clear skies" /></a>
-      <div id="articlewords">
+      <div class="articlewords">
         <div id="ogtopart">
-          <h3 id="templetitle">Ogden Utah Temple</h3>
-          <div id="weathersum">
-            <h4 id="sumtitle">Ogden Weather Summary</h4>
+          <h3 class="templetitle">Ogden Utah Temple</h3>
+          <div class="weathersum">
+            <h4 class="sumtitle">Ogden Weather Summary</h4>
             <p><b>Currently: </b> <span id="ogcurrently"></span></p>
             <p><b>High: </b> <span id="oghightemp"></span></p>
             <p><b>Humidity: </b> <span id="oghumidity"></span></p>
@@ -284,27 +286,28 @@
     <article>
       <a href="https://www.lds.org/temples/details/provo-city-center-temple?lang=eng"><img id="pcctemple"
           class="temppics" src="images/citycentertemple.jpg" alt="Provo City Center LDS Temple with " />
-        <div id="pccarticlewords">
       </a>
-      <div id="pcctopart">
-        <h3 id="templetitle">Provo City Center Temple</h3>
-        <div id="weathersum">
-          <h4 id="sumtitle">Provo Weather Summary</h4>
-          <p><b>Currently: </b> <span id="pcccurrently"></span></p>
-          <p><b>High: </b> <span id="pcchightemp"></span></p>
-          <p><b>Humidity: </b> <span id="pcchumidity"></span></p>
-          <p><b>Wind Speed: </b> <span id="pccwindspeed"></span></p>
+      <div id="pccarticlewords">
+
+        <div id="pcctopart">
+          <h3 class="templetitle">Provo City Center Temple</h3>
+          <div class="weathersum">
+            <h4 class="sumtitle">Provo Weather Summary</h4>
+            <p><b>Currently: </b> <span id="pcccurrently"></span></p>
+            <p><b>High: </b> <span id="pcchightemp"></span></p>
+            <p><b>Humidity: </b> <span id="pcchumidity"></span></p>
+            <p><b>Wind Speed: </b> <span id="pccwindspeed"></span></p>
+          </div>
         </div>
-      </div>
-      <div id="pcctherest">
-        <ul>
-          <li>
-            <b>Address:</b> 50 South University Ave Provo, UT 84601 United States</li>
-          <li><b>Telephone:</b> (1) 801-343-2700</li>
-          <li><b>Services:</b> Clothing rental available, No cafeteria available, No patron housing available,
-            Distribution center nearby</li>
-        </ul>
-      </div>
+        <div id="pcctherest">
+          <ul>
+            <li>
+              <b>Address:</b> 50 South University Ave Provo, UT 84601 United States</li>
+            <li><b>Telephone:</b> (1) 801-343-2700</li>
+            <li><b>Services:</b> Clothing rental available, No cafeteria available, No patron housing available,
+              Distribution center nearby</li>
+          </ul>
+        </div>
       </div>
       <div id="pccmoreArtWords">
         <div class="history">
@@ -364,7 +367,7 @@
   </main>
   <footer>
     <div id="contactbox">
-      <p><b>Temple Inn & Suites<b><br> #324-543-7532<br>4800 Montgomery Ln #300<br> Bethesda, MD 20814
+      <p><b>Temple Inn & Suites</b><br> #324-543-7532<br>4800 Montgomery Ln #300<br> Bethesda, MD 20814
     </div>
     <div id="copywrite">
       <p>

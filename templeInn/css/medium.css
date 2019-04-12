@@ -165,7 +165,7 @@ a {
     margin-right: auto;
 }
 
-#articlewords {
+.articlewords {
     line-height: 1.5rem;
     text-align: left;
 }
@@ -194,7 +194,7 @@ article {
     margin-right: auto;
 }
 
-#templetitle {
+.templetitle {
     font-size: 2rem;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 1rem;
@@ -212,7 +212,7 @@ article {
     text-align: left;
 }
 
-#sumtitle {
+.sumtitle {
     margin-bottom: 0;
     padding-bottom: .1rem;
     border-bottom: .2rem solid #eee5e9;
@@ -228,7 +228,7 @@ article {
     margin: auto;
 }
 
-#weathersum {
+.weathersum {
     display: none;
 }
 
@@ -303,7 +303,9 @@ input#submit {
 }
 
 input.textinput {
-    margin: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: .5rem;
+    width: 100%;
 }
 
 fieldset {
@@ -323,7 +325,8 @@ input {
 }
 
 textarea {
-    margin: 0.25rem;
+    margin-top: 0.25rem;
+    width: 100%;
 }
 
 h5 {

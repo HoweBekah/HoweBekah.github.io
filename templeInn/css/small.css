@@ -419,6 +419,7 @@ h5 {
     margin: auto;
     display: flex;
     flex-flow: row wrap;
+    margin-bottom: 1rem;
 }
 
 

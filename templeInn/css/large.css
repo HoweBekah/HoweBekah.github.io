@@ -287,7 +287,7 @@ h4 {
     display: flex;
 
     background-color: #7c7c7c;
-    color: #2b303a;
+    color: #eee5e9;
     font-weight: bold;
     font-size: 1.5rem;
     border-radius: .75rem;
@@ -425,6 +425,7 @@ h5 {
     margin: auto;
     display: flex;
     flex-flow: row wrap;
+    margin-bottom: 1rem;
 }
 
 #pic1:hover,

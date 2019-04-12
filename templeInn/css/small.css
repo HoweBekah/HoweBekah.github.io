@@ -2,7 +2,7 @@ body {
     background-color: #eee5e9;
     color: #2b303a;
     text-align: center;
-    width: 75%;
+    width: 90%;
     margin: auto;
     font-family: 'Lora', serif;
     font-size: 1.25rem;
@@ -10,21 +10,25 @@ body {
 
 
 #logo {
-    float: left;
+    width: 85%;
     margin: auto;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-top: .5rem;
+
 }
 
 #webname {
+    margin-top: .5rem;
     font-family: 'Lora', serif;
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin-bottom: 0;
 }
 
 header h3 {
-    margin-top: .5rem;
+    margin-top: .25rem;
     color: #7c7c7c;
+    font-size: 1rem;
+    padding-bottom: .5rem;
+    margin-bottom: 0;
 }
 
 header {
@@ -39,39 +43,44 @@ header {
     padding-bottom: 0;
     color: #2b303a;
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+
     margin: 0 auto;
     align-items: center;
 }
 
-#motto {
-    margin-top: -5px;
-    padding-bottom: 10px;
-}
-
 
 #menubutton {
-    display: none;
+    font-size: 1.5em;
+    background-color: #2b303a;
+    color: #9ee493;
+    border: none;
+    text-decoration: none;
+    padding: .35rem;
+    display: block;
+    width: 100%;
+    margin: auto;
+    font-family: 'Oswald',
+        sans-serif;
 }
 
+#menubutton:hover {
+    background-color: #9ee493;
+    color: #2b303a;
+}
 
 .table {
     display: table;
     margin: 0 auto;
-    border-right: .2rem solid #7c7c7c;
-    border-left: .2rem solid #7c7c7c;
 }
 
 nav {
     font-family: 'Oswald', sans-serif;
     background-color: #9ee493;
-    display: flex;
+    display: block;
     margin: 0 auto;
 }
 
 nav li {
-    float: left;
     background-color: #9ee493;
 }
 
@@ -90,6 +99,10 @@ nav a:hover {
     color: #9ee493;
 }
 
+nav ul.hide {
+    display: none
+}
+
 #navul a.current {
     background: #eee5e9;
 }
@@ -99,11 +112,11 @@ nav a:hover {
 }
 
 #navul li {
-    border-right: .2rem solid #7c7c7c;
+    border-top: .2rem solid #7c7c7c;
 }
 
 #navul li:last-child {
-    border-right: none;
+    border-bottom: .2rem solid #7c7c7c;
 }
 
 ul {
@@ -115,7 +128,7 @@ ul {
 h2 {
     color: #2b303a;
     border: .5rem solid #9ee493;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: inline-block;
     padding: .5rem;
     margin-bottom: 1rem;
@@ -126,8 +139,8 @@ a {
 }
 
 #calltoaction {
-    width: 50%;
-    font-size: 2rem;
+    width: 60%;
+    font-size: 1.25rem;
     background-color: #2b303a;
     color: #eee5e9;
     border-radius: .5rem;
@@ -139,28 +152,30 @@ a {
 }
 
 #hometemple {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    background-color: #9ee493;
-    column-gap: 0;
     padding: 1.5rem;
     align-items: center;
     margin-bottom: 2rem;
+    text-align: left;
+    background-color: #9ee493;
+    font-size: 1rem;
 }
+
+#hometuctemple {
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 article {
     background-color: #9ee493;
+    display: block;
+    margin-bottom: 1.5rem;
     padding: 1.5rem;
     align-items: center;
-    margin-bottom: 2rem;
     text-align: left;
-}
-
-#articlewords {
-    line-height: 1.5rem;
-    text-align: left;
-    display: inline;
 }
 
 #tuctopart,
@@ -171,19 +186,22 @@ article {
     justify-content: center;
 }
 
+.temppics {
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #templetitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 1rem;
-    margin-top: 1rem;
     text-align: center;
 }
 
-#tuctemple,
-#ogtemple {
-    margin: auto;
-    float: left;
-    padding-right: 1.5rem;
+.history {
+    display: none;
 }
 
 #agarticlewords,
@@ -192,20 +210,13 @@ article {
     text-align: left;
 }
 
-#ghanatemple,
-#pcctemple {
-    margin: auto;
-    float: right;
-    padding-left: 1.5rem;
-}
-
 #sumtitle {
     margin-bottom: 0;
+    margin-top: 0;
     padding-bottom: .1rem;
     border-bottom: .2rem solid #eee5e9;
     display: inline-block;
-    font-size: 1.3rem;
-    margin-top: .75rem;
+    font-size: 1.1rem;
 }
 
 #homeweathersum {
@@ -213,23 +224,13 @@ article {
     text-align: center;
     padding: .5rem;
     margin: auto;
+    font-size: 1rem;
 }
 
 #weathersum {
-    border: .3rem dashed #eee5e9;
-    text-align: center;
-    display: inline-block;
-    padding: .5rem;
-    margin: auto;
+    display: none;
 }
 
-#tuctherest,
-#agtherest,
-#ogtherest,
-#pcctherest {
-    clear: both;
-    padding-top: .5rem;
-}
 
 h4 {
     margin-top: .5rem;
@@ -246,20 +247,24 @@ h4 {
     margin-bottom: 0;
 }
 
-#tucsched p,
-#agsched p,
-#ogsched p,
-#pccsched p {
-    margin: .2rem;
+#tucsched,
+#agsched,
+#ogsched,
+#pccsched {
+    display: none;
 }
 
 #contactbox {
     color: #92dce5;
     background-color: #2b303a;
     padding: .5rem;
-    font-size: 1.5rem;
-    margin-top: 2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
     clear: both;
+}
+
+#copywrite {
+    font-size: .75rem;
 }
 
 #copywrite a {
@@ -271,32 +276,22 @@ h4 {
     color: #7c7c7c;
 }
 
-#formresing {
+#inputtext {
+    padding: .5rem;
     text-align: left;
     align-content: center;
-    width: 85%;
-    margin: auto;
     display: flex;
     margin: auto;
+
     background-color: #7c7c7c;
-    color: #2b303a;
-    font-weight: bold;
-    font-size: 1.5rem;
+    color: #eee5e9;
+    font-weight: 300;
+    font-size: 1rem;
     border-radius: .75rem;
 }
 
-#inputtext {
-    padding: 1rem;
-    color: whitesmoke;
-    margin: auto;
-}
-
-#comments {
-    display: block;
-}
-
 input#submit {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
     background-color: #92dce5;
     color: #7c7c7c;
@@ -307,12 +302,13 @@ input#submit {
 }
 
 input.textinput {
-    margin: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    width: 90%;
 }
 
 fieldset {
     border: none;
-    padding: 1rem;
 }
 
 legend {
@@ -320,6 +316,7 @@ legend {
     color: #9ee493;
     border-bottom: 0.25rem dashed whitesmoke;
     text-align: center;
+    margin-bottom: .5rem;
 }
 
 input {
@@ -328,39 +325,37 @@ input {
 
 textarea {
     margin: 0.25rem;
+    width: 90%;
 }
 
 h5 {
     margin-bottom: 1rem;
     margin-top: 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 #mapandtitle {
     background-color: #9ee493;
     border-radius: .75rem;
-    padding: 2rem;
+    padding: 1rem;
     display: inline-block;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
-#servbuttons {
-    column-gap: 2rem;
-    margin: auto;
-    align-items: center;
-    float: left;
-    margin-right: 1rem;
+#embedmap {
+    width: 100%;
+    height: auto;
 }
 
 #receptionbutton,
 #missionbutton {
     margin: auto;
-    width: 75%;
+    width: 50%;
     background-color: #7c7c7c;
     color: #9ee493;
     display: block;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     padding: 2rem;
     box-shadow: .5rem .5rem .5rem #2b303a;
     border-radius: .75rem;
@@ -372,29 +367,33 @@ h5 {
     text-align: center;
     border-bottom: .5rem ridge #92dce5;
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.25rem;
     margin-bottom: 0;
     margin-top: 0;
 }
 
+#amenities ul {
+    margin-top: .25rem;
+}
+
 #amenities {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .serveheading {
     border: none;
-    border-bottom: .5rem dashed #9ee493;
+    border-bottom: .25rem dashed #9ee493;
     text-shadow: .1rem .1rem .3rem #7c7c7c;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 0;
 
 }
 
 #mishlist,
 #reclist {
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: left;
     width: 85%;
     margin: auto;
@@ -402,14 +401,14 @@ h5 {
 
 #mishlist li,
 #reclist li {
-    margin: 1rem;
+    margin: .5rem;
 }
 
 
 #galtitle {
     display: inline-block;
     padding: .5rem;
-    font-size: 2rem;
+    font-size: 1.25rem;
     margin-bottom: 1rem;
     border-bottom: .25rem solid #9ee493;
     border-top: .25rem solid #9ee493;
@@ -422,14 +421,15 @@ h5 {
     flex-flow: row wrap;
 }
 
-#pic1:hover,
-#pic2:hover,
-#pic3:hover,
-#pic4:hover,
-#pic5:hover,
-#pic6:hover,
-#pic7:hover,
-#pic8:hover {
+
+#pic1 img:hover,
+#pic2 img:hover,
+#pic3 img:hover,
+#pic4 img:hover,
+#pic5 img:hover,
+#pic6 img:hover,
+#pic7 img:hover,
+#pic8 img:hover {
     transform: scale(1.5);
     box-shadow: .5rem .5rem .5rem #92dce5;
 }
@@ -468,7 +468,7 @@ h5 {
 #pic6,
 #pic7,
 #pic8 {
-    width: 25%;
+    width: 100%;
     background-color: #7c7c7c;
     color: #eee5e9;
     font-size: 1rem;

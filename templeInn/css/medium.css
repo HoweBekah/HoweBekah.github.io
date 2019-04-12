@@ -14,17 +14,19 @@ body {
     margin: auto;
     padding-bottom: 1rem;
     padding-top: 1rem;
+    margin-left: .5rem;
 }
 
 #webname {
     font-family: 'Lora', serif;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 0;
 }
 
 header h3 {
     margin-top: .5rem;
     color: #7c7c7c;
+    font-size: 1rem;
 }
 
 header {
@@ -45,33 +47,39 @@ header {
     align-items: center;
 }
 
-#motto {
-    margin-top: -5px;
-    padding-bottom: 10px;
-}
-
 
 #menubutton {
-    display: none;
+    font-size: 2em;
+    background-color: #2b303a;
+    color: #9ee493;
+    border: none;
+    text-decoration: none;
+    padding: .25rem;
+    display: block;
+    width: 100%;
+    margin: auto;
+    font-family: 'Oswald',
+        sans-serif;
 }
 
+#menubutton:hover {
+    background-color: #9ee493;
+    color: #2b303a;
+}
 
 .table {
     display: table;
     margin: 0 auto;
-    border-right: .2rem solid #7c7c7c;
-    border-left: .2rem solid #7c7c7c;
 }
 
 nav {
     font-family: 'Oswald', sans-serif;
     background-color: #9ee493;
-    display: flex;
+    display: block;
     margin: 0 auto;
 }
 
 nav li {
-    float: left;
     background-color: #9ee493;
 }
 
@@ -90,6 +98,10 @@ nav a:hover {
     color: #9ee493;
 }
 
+nav ul.hide {
+    display: none
+}
+
 #navul a.current {
     background: #eee5e9;
 }
@@ -99,11 +111,11 @@ nav a:hover {
 }
 
 #navul li {
-    border-right: .2rem solid #7c7c7c;
+    border-top: .2rem solid #7c7c7c;
 }
 
 #navul li:last-child {
-    border-right: none;
+    border-bottom: .2rem solid #7c7c7c;
 }
 
 ul {
@@ -115,7 +127,7 @@ ul {
 h2 {
     color: #2b303a;
     border: .5rem solid #9ee493;
-    font-size: 2rem;
+    font-size: 1.75rem;
     display: inline-block;
     padding: .5rem;
     margin-bottom: 1rem;
@@ -127,7 +139,7 @@ a {
 
 #calltoaction {
     width: 50%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: #2b303a;
     color: #eee5e9;
     border-radius: .5rem;
@@ -139,28 +151,32 @@ a {
 }
 
 #hometemple {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    background-color: #9ee493;
-    column-gap: 0;
-    padding: 1.5rem;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-article {
-    background-color: #9ee493;
     padding: 1.5rem;
     align-items: center;
     margin-bottom: 2rem;
     text-align: left;
+    background-color: #9ee493;
+}
+
+#hometuctemple {
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #articlewords {
     line-height: 1.5rem;
     text-align: left;
-    display: inline;
+}
+
+article {
+    background-color: #9ee493;
+    display: block;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    align-items: center;
+    text-align: left;
 }
 
 #tuctopart,
@@ -171,32 +187,29 @@ article {
     justify-content: center;
 }
 
+.temppics {
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #templetitle {
     font-size: 2rem;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 1rem;
-    margin-top: 1rem;
+
     text-align: center;
 }
 
-#tuctemple,
-#ogtemple {
-    margin: auto;
-    float: left;
-    padding-right: 1.5rem;
+.history {
+    display: none;
 }
 
 #agarticlewords,
 #pccarticlewords {
     line-height: 1.5rem;
     text-align: left;
-}
-
-#ghanatemple,
-#pcctemple {
-    margin: auto;
-    float: right;
-    padding-left: 1.5rem;
 }
 
 #sumtitle {
@@ -216,20 +229,9 @@ article {
 }
 
 #weathersum {
-    border: .3rem dashed #eee5e9;
-    text-align: center;
-    display: inline-block;
-    padding: .5rem;
-    margin: auto;
+    display: none;
 }
 
-#tuctherest,
-#agtherest,
-#ogtherest,
-#pcctherest {
-    clear: both;
-    padding-top: .5rem;
-}
 
 h4 {
     margin-top: .5rem;
@@ -257,9 +259,13 @@ h4 {
     color: #92dce5;
     background-color: #2b303a;
     padding: .5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 2rem;
     clear: both;
+}
+
+#copywrite {
+    font-size: .8rem;
 }
 
 #copywrite a {
@@ -271,28 +277,18 @@ h4 {
     color: #7c7c7c;
 }
 
-#formresing {
+#inputtext {
+    padding: 1rem;
     text-align: left;
     align-content: center;
     width: 85%;
-    margin: auto;
     display: flex;
     margin: auto;
     background-color: #7c7c7c;
-    color: #2b303a;
+    color: #eee5e9;
     font-weight: bold;
     font-size: 1.5rem;
     border-radius: .75rem;
-}
-
-#inputtext {
-    padding: 1rem;
-    color: whitesmoke;
-    margin: auto;
-}
-
-#comments {
-    display: block;
 }
 
 input#submit {
@@ -341,30 +337,23 @@ h5 {
     border-radius: .75rem;
     padding: 2rem;
     display: inline-block;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-
-#servbuttons {
-    column-gap: 2rem;
-    margin: auto;
-    align-items: center;
-    float: left;
-    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 #receptionbutton,
 #missionbutton {
     margin: auto;
-    width: 75%;
+    width: 55%;
     background-color: #7c7c7c;
     color: #9ee493;
     display: block;
-    font-size: 2.5rem;
-    padding: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem;
     box-shadow: .5rem .5rem .5rem #2b303a;
     border-radius: .75rem;
     margin-bottom: 2rem;
+    text-shadow: .5rem .25rem .5rem #2b303a;
 
 }
 
@@ -372,29 +361,33 @@ h5 {
     text-align: center;
     border-bottom: .5rem ridge #92dce5;
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.25rem;
     margin-bottom: 0;
     margin-top: 0;
+}
+
+#amenities ul {
+    margin-top: .5rem;
 }
 
 #amenities {
     margin-bottom: 2rem;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .serveheading {
     border: none;
-    border-bottom: .5rem dashed #9ee493;
+    border-bottom: .25rem dashed #9ee493;
     text-shadow: .1rem .1rem .3rem #7c7c7c;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 0;
 
 }
 
 #mishlist,
 #reclist {
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: left;
     width: 85%;
     margin: auto;
@@ -402,14 +395,14 @@ h5 {
 
 #mishlist li,
 #reclist li {
-    margin: 1rem;
+    margin: .5rem;
 }
 
 
 #galtitle {
     display: inline-block;
     padding: .5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     border-bottom: .25rem solid #9ee493;
     border-top: .25rem solid #9ee493;
@@ -422,15 +415,16 @@ h5 {
     flex-flow: row wrap;
 }
 
-#pic1:hover,
-#pic2:hover,
-#pic3:hover,
-#pic4:hover,
-#pic5:hover,
-#pic6:hover,
-#pic7:hover,
-#pic8:hover {
-    transform: scale(1.5);
+
+#pic1 img:hover,
+#pic2 img:hover,
+#pic3 img:hover,
+#pic4 img:hover,
+#pic5 img:hover,
+#pic6 img:hover,
+#pic7 img:hover,
+#pic8 img:hover {
+    transform: scale(2);
     box-shadow: .5rem .5rem .5rem #92dce5;
 }
 
@@ -468,7 +462,7 @@ h5 {
 #pic6,
 #pic7,
 #pic8 {
-    width: 25%;
+    width: 33%;
     background-color: #7c7c7c;
     color: #eee5e9;
     font-size: 1rem;

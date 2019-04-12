@@ -64,6 +64,23 @@
             <div id="inputtext">
                 <fieldset>
                     <legend>Reservation Information</legend>
+                    <label for="resdate" class="textinput">Date of Reservation:</label>
+                    <input type="date" name="resdate" id="resdate" class="textinput" /><br />
+
+                    <label for="numpeople" class="textinput">Enter the Number of Occupants:</label>
+                    <input type="text" name="numpeople" id="numpeople" class="textinput" minlength="5" pattern="[0-9]"
+                        required /><br />
+
+                    <label for="roomtype" class="textinput">Type of Room:</label>
+                    <input type="text" id="roomtype" name="roomtype" list="typeoptions" class="textinput"
+                        pattern="[Ff]amily | 1 | 2" />
+                    <datalist id="typeoptions">
+                        <option>2 Twin Beds</option>
+                        <option>2 Queen Beds</option>
+                        <option>1 Twin Bed</option>
+                        <option>1 Queen Bed</option>
+                        <option>Family Suite (6 Beds)</option>
+                    </datalist><br />
                     <label for="fullname" class="textinput">Enter Your Full Name:</label>
                     <input type="text" name="fullname" id="fullname" class="textinput" minlength="5"
                         pattern="[a-zA-Z]+[ ][a-zA-Z]+" required /><br />

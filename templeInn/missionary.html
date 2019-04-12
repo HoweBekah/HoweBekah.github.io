@@ -102,6 +102,32 @@
                 <p>Small, simple one bedroom apartment with plaid couch. </p>
             </section>
         </div>
+        <form class="resform" id="formresing" action="index.html">
+
+            <div id="inputtext">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <label for="fullname" class="textinput">Enter Your Full Name:</label>
+                    <input type="text" name="fullname" id="fullname" class="textinput" minlength="5"
+                        pattern="[a-zA-Z]+[ ][a-zA-Z]+" required /><br />
+
+                    <label for="email" class="textinput">Enter Your Email:</label>
+                    <input type="email" name="email" id="email" placeholder="jonsmith@demo.com" class="textinput"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required /><br />
+
+                    <label for="phone" class="textinput">Enter Your Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" required class="textinput" pattern="[0-9]{7,10}" /><br />
+
+
+                    <div id="coms">
+                        <label for="comments" class="addComments">Questions or Comments:</label>
+                        <textarea name="comments" id="comments" rows="3" cols="30" class="addComments"></textarea>
+                    </div>
+                </fieldset>
+
+            </div>
+            <input type="submit" name="submit" id="submit" />
+        </form>
     </main>
     <footer>
         <div id="contactbox">
